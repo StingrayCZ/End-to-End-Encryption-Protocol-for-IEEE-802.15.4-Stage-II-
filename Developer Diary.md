@@ -105,7 +105,7 @@ int main()
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SPUST_PROGRAM test();
+#define SPUST_PROGRAM test();    // Volaci makro podpogramu
 
 int main()
 {
@@ -119,7 +119,7 @@ int main()
 }
 
 
-int test()
+int test()   // Definice podpogramu
 {
     printf("Program jede\n");
 }
