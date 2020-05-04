@@ -1,4 +1,4 @@
-## Preprocesor (#define SOMETHING)
+## Preprocesor (#define SOMETHING) - basic
 
 ```sh
 #include <stdio.h>
@@ -35,9 +35,6 @@ int main()
 
 
     float d = DVE_PI;                // pouziti preprocesoru
-
-
-
     printf("Vytiskni cislo: %f", d);
 
 
