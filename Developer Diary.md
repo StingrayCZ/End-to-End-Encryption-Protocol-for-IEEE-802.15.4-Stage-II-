@@ -124,3 +124,29 @@ int test()   // Definice podpogramu
     printf("Program jede\n");
 }
 ```
+
+## Pomíněný překlad #ifdef
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+#define SPUST_PROGRAM;   // pokud zakomentuji, program ve vlakne #ifdef nebude proveden
+
+int main()
+{
+
+
+    printf("Hello world!\n");
+
+    #ifdef SPUST_PROGRAM
+
+    printf("Test\n");  // TEST podprogramu
+
+    #endif // SPUST_PROGRAM
+
+
+    return 0;
+}
+
+```
