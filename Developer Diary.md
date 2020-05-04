@@ -91,7 +91,7 @@ int main()
 
     if(a JE_VETSI b) POSITIVE   // pouziti dvou maker. Jedno jako podminka, druhe jako operace k provedeni
 
-    else ERROR
+    else ERROR                  // makro jako operace k provedeni
 
 
     return 0;
