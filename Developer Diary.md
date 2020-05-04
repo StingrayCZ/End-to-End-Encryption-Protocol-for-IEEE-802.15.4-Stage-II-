@@ -42,3 +42,27 @@ int main()
 
 }
 ```
+
+## Define / undef
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+#define POCET 10
+#undef  POCET
+#define POCET 20
+
+
+
+int main()
+{
+
+    printf("Vytiskni cislo: %d\n", POCET);
+    printf("Vytiskni cislo: %d\n", POCET);
+
+
+    return 0;
+
+}
+```
