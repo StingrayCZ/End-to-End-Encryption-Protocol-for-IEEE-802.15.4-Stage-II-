@@ -89,7 +89,7 @@ int main()
     a = 30;
     b = 20;
 
-    if(a JE_VETSI b) POSITIVE
+    if(a JE_VETSI b) POSITIVE   // pouziti dvou maker. Jedno jako podminka, druhe jako operace k provedeni
 
     else ERROR
 
