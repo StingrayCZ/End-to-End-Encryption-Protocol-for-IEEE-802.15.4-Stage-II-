@@ -66,3 +66,36 @@ int main()
 
 }
 ```
+
+## Makro jako chybová hláška
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#define JE_VETSI >
+#define JE_MENSI <
+
+
+#define POSITIVE {printf("Spravne");}
+#define ERROR {printf("Chyba!");}
+
+int main()
+{
+
+    int a, b;
+
+    a = 30;
+    b = 20;
+
+    if(a JE_VETSI b) POSITIVE
+
+    else ERROR
+
+
+    return 0;
+
+}
+
+```
