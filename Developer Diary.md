@@ -20,21 +20,21 @@ int main()
     a = 20;
     b = 20;
 
-    if(a JE_VETSI b)
+    if(a JE_VETSI b)               // pouziti preprocesoru
     {
         printf("Je vetsi\n");
     }
-    else if(a JE_MENSI b)
+    else if(a JE_MENSI b)           // pouziti preprocesoru
     {
         printf("Je mensi\n");
     }
     else
     {
-        printf("jsou stejne\n");
+        printf("jsou stejne\n");      
     }
 
 
-    float d = DVE_PI;
+    float d = DVE_PI;                // pouziti preprocesoru
 
 
 
