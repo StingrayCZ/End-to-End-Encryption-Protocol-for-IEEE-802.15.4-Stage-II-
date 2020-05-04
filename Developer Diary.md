@@ -99,3 +99,28 @@ int main()
 }
 
 ```
+## Spuštění podprogramu pomocí makra
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+#define SPUST_PROGRAM test();
+
+int main()
+{
+
+
+    printf("Hello world!\n");
+
+    SPUST_PROGRAM
+
+    return 0;
+}
+
+
+int test()
+{
+    printf("Program jede\n");
+}
+```
