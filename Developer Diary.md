@@ -150,3 +150,26 @@ int main()
 }
 
 ```
+## Rekurze
+
+```sh
+#include <stdio.h>
+
+
+int fakt(int n)
+{
+    return ((n <= 0) ? 1 : n * fakt(n - 1));
+}
+
+int main()
+{
+    int i;
+    printf("Zadadej cislo: ");
+    scanf("%d", &i);
+
+    printf("Faktorial je %d\n", fakt(i));
+
+    return 0;
+}
+
+```
