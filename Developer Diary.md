@@ -284,6 +284,7 @@ int main()
 
 ## Tvorba knihovny .h
 
+### Spustitelny main
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -303,6 +304,13 @@ int main()
 }
 
 ```
+### Knihovna "Lib.h"
+```sh
+# define SOUCET +
+# define ODECET -
+# define ERROR {printf("Toto je chyba");}
+```
+
 
 ## Different between char object[10]; and char object
 
