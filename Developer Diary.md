@@ -167,7 +167,7 @@ int main()
     printf("Zadadej cislo: ");
     scanf("%d", &i);
 
-    printf("Faktorial je %d\n", fakt(i));
+    printf("Faktorial je %d\n", fakt(i));  // rekurze funkce pro vypocet faktorialu
 
     return 0;
 }
