@@ -204,3 +204,102 @@ int main()
 
 }
 ```
+
+## Příklad použití Switch (integer)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int  grade = 4;
+
+    switch(grade)
+    {
+
+    case 1 :
+        printf("You did great");
+        break;
+
+    case 2 :
+        printf("You did second");
+        break;
+
+    case 3 :
+        printf("You did third");
+        break;
+
+    default :
+        printf("Niiic");
+        break;
+    }
+
+
+    return 0;
+}
+
+```
+
+## Příklad použití Switch (char)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char pismeno;
+
+    printf("Zadej pismeno\n");
+    scanf("%c", &pismeno);
+
+
+    switch(pismeno)
+    {
+
+    case 'A' :                       // Ukonceni retezce
+        printf("You did great");     // Vnorena operace
+        break;                       // Ukonceni retezce
+
+    case 'B' :
+        printf("You did second");
+        break;
+
+    case 'C' :
+        printf("You did third");
+        break;
+
+    default :                         // neco jako funkce else
+        printf("Niiic");
+        break;
+    }
+
+
+    return 0;
+}
+
+```
+
+## Tvorba knihovny .h
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+#include "lib.h"
+
+int main()
+{
+    int x = 20;
+
+    x = 222 ODECET 2;
+
+    printf("Napi vysledek %d \n", x);
+
+    ERROR
+}
+
+```sh
