@@ -369,3 +369,38 @@ int main()
 <p float="left">
   <img src="/Pictures (general)/Snippets/Snip_000001.PNG" width="600" />
 </p>
+
+## Přetypování proměnné
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int a = 2;
+    char *b = 3;
+
+    int c = a + (int)b;
+
+    printf("%d", c);
+
+
+```
+
+## Ověření velikosti proměnnné (Sizeof)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+float a;
+
+int main()
+{
+    printf("%d\n", sizeof(a));
+
+    return 0;
+}
+```
