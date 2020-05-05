@@ -181,3 +181,26 @@ int main()
 }
 
 ```
+
+## Příklad použití BREAK
+
+```sh
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    a = 1;
+
+
+ for(int i = 1; i <= 50; i++){
+
+    printf("Cislo je %d\n", a);
+    a++;
+
+    if(a == 31) break;
+  }
+
+}
+```
