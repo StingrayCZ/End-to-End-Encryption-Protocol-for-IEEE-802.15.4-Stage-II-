@@ -306,6 +306,10 @@ int main()
 
 ## Different between char object[10]; and char object
 
+```sh
+   char s[] = "geeksquiz";
+   char *s  = "geeksquiz";
+```
 
 <p float="left">
   <img src="/Pictures (general)/CharVariableArray.png" width="600" />
