@@ -404,3 +404,8 @@ int main()
     return 0;
 }
 ```
+## Typy parametrů
+
+<p float="left">
+  <img src="/Pictures (general)/Type of Parameters.PNG" width="800" />
+</p>
