@@ -314,3 +314,47 @@ int main()
 <p float="left">
   <img src="/Pictures (general)/CharVariableArray.png" width="600" />
 </p>
+
+## Struktura [struct], práce s řetězci
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+struct Student
+{
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
+
+int main()
+{
+    //****** Student 1 ******
+    struct Student student1;
+    student1.age = 22;
+    student1.gpa = 3.2;
+    strcpy(student1.name, "Jim");
+    strcpy(student1.major, "Bussiness");
+
+    //****** Student 2 ******
+    struct Student student2;
+    student2.age = 32;
+    student2.gpa = 5.2;
+    strcpy(student2.name, "Bob");
+    strcpy(student2.major, "Plumber");
+
+    strcat(student1.major, student2.major);  // Spojeni retezcu
+    printf("%s\n", student1.major);
+
+    int ret = strcmp(student1.major, student2.major);  // Porovnavani dvou retezcu
+    printf("%d\n", ret);
+
+    // Vyprintovani hodnoty retezce student1.gpa
+    printf("%f", student1.gpa);
+
+    return 0;
+}
+```
