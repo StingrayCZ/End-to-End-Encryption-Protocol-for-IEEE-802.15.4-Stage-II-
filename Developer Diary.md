@@ -411,5 +411,5 @@ int main()
 </p>
 
 <p float="left">
-  <img src="/Pictures (general)/Type of Parameters verB.PNG" width="800" />
+  <img src="/Pictures (general)/Type of Parameters verB.PNG" width="600" />
 </p>
