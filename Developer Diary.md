@@ -159,6 +159,10 @@ int main()
 int fakt(int n)
 {
     return ((n <= 0) ? 1 : n * fakt(n - 1));
+    
+    /*
+    If Condition is true ? then value X : otherwise value Y
+    */
 }
 
 int main()
@@ -168,6 +172,10 @@ int main()
     scanf("%d", &i);
 
     printf("Faktorial je %d\n", fakt(i));  // rekurze funkce pro vypocet faktorialu
+    
+    /*
+    If Condition is true ? then value X : otherwise value Y
+    */
 
     return 0;
 }
