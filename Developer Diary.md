@@ -409,3 +409,7 @@ int main()
 <p float="left">
   <img src="/Pictures (general)/Type of Parameters.PNG" width="800" />
 </p>
+
+<p float="left">
+  <img src="/Pictures (general)/Type of Parameters verB.PNG" width="800" />
+</p>
