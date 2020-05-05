@@ -303,3 +303,10 @@ int main()
 }
 
 ```
+
+## Different between char object[10]; and char object
+
+
+<p float="left">
+  <img src="/Pictures (general)/CharVariableArray.png" width="600" />
+</p>
