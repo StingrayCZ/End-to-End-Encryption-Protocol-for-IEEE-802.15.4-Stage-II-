@@ -302,4 +302,4 @@ int main()
     ERROR
 }
 
-```sh
+```
