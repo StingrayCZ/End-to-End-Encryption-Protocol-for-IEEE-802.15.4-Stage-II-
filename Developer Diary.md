@@ -439,3 +439,9 @@ int main(int argc, char** argv) {
 }
 
 ```
+
+## Práce s řetězci
+
+<p float="left">
+  <img src="/Pictures (general)/StringCommands.PNG" width="600" />
+</p>
