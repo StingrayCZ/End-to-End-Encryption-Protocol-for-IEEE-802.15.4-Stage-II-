@@ -491,7 +491,7 @@ void math(int *x, int *y){
 </p>
 
 
-## 2D Arrays & Nested Loops
+## 2D Arrays & Nested Loops (part 1)
 
 ```sh
 #include <stdio.h>
@@ -512,6 +512,30 @@ int main()
 
 
     printf("%d\n", nums[4][1]);
+
+    return 0;
+}
+```
+## 2D Arrays & Nested Loops (part 2)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int nums[20][2] = {
+    {1, 2}, {1, 2}, {3, 4}, {5, 6}
+    };
+
+
+    if(nums[0][0] == nums[1][0] && nums[0][1] == nums[1][1]) {
+       printf("Ano\n");
+    }
+    else{
+        printf("Ne\n");
+    }
 
     return 0;
 }
