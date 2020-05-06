@@ -489,3 +489,30 @@ void math(int *x, int *y){
 <p float="left">
   <img src="/Pictures (general)/StringCommands.PNG" width="700" />
 </p>
+
+
+## 2D Arrays & Nested Loops
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int nums[20][2] = {
+    {1, 2}, {2, 3}, {3, 4}, {5, 6}
+    };
+
+    printf("%d\n", nums[3][1]);
+
+    printf("%d\n", nums[4][1]);
+
+    nums [4][1] = 5;
+
+
+    printf("%d\n", nums[4][1]);
+
+    return 0;
+}
+```
