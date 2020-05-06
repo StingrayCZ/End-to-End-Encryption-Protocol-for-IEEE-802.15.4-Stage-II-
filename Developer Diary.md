@@ -407,7 +407,7 @@ int main()
 ## Typy parametrů
 
 <p float="left">
-  <img src="/Pictures (general)/Type of Parameters.PNG" width="800" />
+  <img src="/Pictures (general)/Type of Parameters.PNG" width="1200" />
 </p>
 
 <p float="left">
