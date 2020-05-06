@@ -422,20 +422,23 @@ Hlavicka funkce obsahuje nusledujici promenenne **void prohod(int a, int b){}**,
 #include <stdio.h>
 #include <stdlib.h>
 
-// Tento kód nefunguje
-void prohod(int a, int b)
+int main()
 {
-    int pomocna = a;
-    a = b;
-    b = pomocna;
+    int a, b;
+
+    a = 20;
+    b = 30;
+
+    math(&a, &b);
+
+    printf("Cislo a je %d", a);
+
 }
 
-int main(int argc, char** argv) {
-    int cislo1 = 15;
-    int cislo2 = 8;
-    prohod(cislo1, cislo2);
-    printf("V cislo1 je číslo %d a v cislo2 je číslo %d.", cislo1, cislo2);
-    return (EXIT_SUCCESS);
+
+void math(int *x, int *y){
+
+    *x = *x + *y;
 }
 
 ```
