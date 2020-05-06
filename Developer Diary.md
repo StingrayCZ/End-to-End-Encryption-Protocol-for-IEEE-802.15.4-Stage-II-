@@ -437,7 +437,12 @@ int main()
 
     printf("Ukazatel p_a má hodnotu %d ukazuje na hodnotu %d", p_a, *p_a);
 
-    /*
+    /*    
+    Zvykněte si pointery pojmenovávat vždy tak, aby začínaly na p_.
+    Vyhnete se tak v budoucnu velkým problémům, protože pointery jsou
+    poměrně nebezpečné, jak dále zjistíme, a měli bychom si srozumitelně
+    označit, zda je proměnná pointerem či nikoli.
+    
     Do ukazatele p_a (zatím bez hvězdičky) se uloží adresa proměnné a,
     kterou získáme pomocí referenčního operátoru &. Nyní chceme tam,
     kam ukazuje pointer p_a, uložit číslo 15. Použijeme dereferenční
