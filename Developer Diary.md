@@ -440,7 +440,7 @@ int main(int argc, char** argv) {
 
 ```
 
-## Práce s řetězci
+## Práce s řetězci <string.h>
 
 <p float="left">
   <img src="/Pictures (general)/StringCommands.PNG" width="700" />
