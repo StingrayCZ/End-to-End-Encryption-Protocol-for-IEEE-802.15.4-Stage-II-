@@ -413,3 +413,29 @@ int main()
 <p float="left">
   <img src="/Pictures (general)/Type of Parameters verB.PNG" width="600" />
 </p>
+
+## promene v hlavicce podprogramu
+
+Hlavicka funkce obsahuje nusledujici promenenne **void prohod(int a, int b){}**, ktere jsou zastoupeny pri volni funkce **prohod(cislo1, cislo2);**.
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+// Tento kód nefunguje
+void prohod(int a, int b)
+{
+    int pomocna = a;
+    a = b;
+    b = pomocna;
+}
+
+int main(int argc, char** argv) {
+    int cislo1 = 15;
+    int cislo2 = 8;
+    prohod(cislo1, cislo2);
+    printf("V cislo1 je číslo %d a v cislo2 je číslo %d.", cislo1, cislo2);
+    return (EXIT_SUCCESS);
+}
+
+```
