@@ -21,7 +21,7 @@ int main()
 }
 ```
 
-## Pointery (ukazatele)
+## Example 2
 
 ```sh
 #include <stdio.h>
@@ -60,4 +60,29 @@ int main()
     return (EXIT_SUCCESS);
 }
 
+```
+
+## Example 3
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int getSum(int *array_val, int size)
+{
+    int sum = 0;
+    for(int i = 0; i < size; i++)
+    {
+        sum += array_val[i];                        // operator prirazeni  +=  ekvi. sum = sum + array_val[];
+        return sum;
+    }
+}
+
+int main ()
+{
+    int my_array[4] = {10, 20, 30, 40};
+    int mySum = getSum(my_array, 4);                // proc tu neni ampersand?
+
+    printf("the value of my sum is %d", mySum);
+}
 ```
