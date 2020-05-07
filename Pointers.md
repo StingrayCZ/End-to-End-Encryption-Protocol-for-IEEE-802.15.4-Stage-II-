@@ -20,3 +20,44 @@ int main()
     printf("The value of get_the_value is %d", get_the_value);
 }
 ```
+
+## Pointery (ukazatele)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, *p_a;;
+
+    a = 56;
+
+    p_a = &a; // Uloží do p_a adresu proměnné a
+    *p_a = 15; // Uloží hodnotu 15 na adresu v p_a
+
+
+
+    printf("Promenna a s hodnotou %d je v pameti ulozena na adrese %p", a, &a);
+
+    printf("\n");
+
+    printf("Ukazatel p_a má hodnotu %d ukazuje na hodnotu %d", p_a, *p_a);
+
+    /*    
+    Zvykněte si pointery pojmenovávat vždy tak, aby začínaly na p_.
+    Vyhnete se tak v budoucnu velkým problémům, protože pointery jsou
+    poměrně nebezpečné, jak dále zjistíme, a měli bychom si srozumitelně
+    označit, zda je proměnná pointerem či nikoli.
+    
+    Do ukazatele p_a (zatím bez hvězdičky) se uloží adresa proměnné a,
+    kterou získáme pomocí referenčního operátoru &. Nyní chceme tam,
+    kam ukazuje pointer p_a, uložit číslo 15. Použijeme dereferenční
+    operátor (*) a tím neuložíme hodnotu do ukazatele, ale tam, kam
+    ukazatel ukazuje.
+    */
+
+    return (EXIT_SUCCESS);
+}
+
+```
