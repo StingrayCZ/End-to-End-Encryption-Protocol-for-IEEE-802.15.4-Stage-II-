@@ -551,6 +551,8 @@ int main ()
 
 ## String (řetězce)
 
+### Example A
+
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -578,3 +580,43 @@ int main()
 
 :white_check_mark: supported
 :x: NOT supported
+
+### Example A (extended ver)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+
+    char stringA[12] = "Alpha";
+    char stringB[12] = "Bravo";
+    char stringC[12] = "Charlie";
+
+    char stringD[12] = "Delta";
+    char stringE[12] = "Echo";
+
+
+
+    // *** Strcpy ***
+    strcpy(stringB, stringC);   // strcpy(dest., source);
+    strcpy(stringA, stringB);   // strcpy(dest., source);
+
+
+    // *** Strcat ***
+    strcat(stringD, stringE);   // Add StringB to String C, like a strcpy(dest., source);
+
+    // *** Strlen ***
+    int lenght_stringA = strlen(stringA);
+
+
+
+    printf("strcpy = %s \n", stringA);          // result of stringA: Charlie
+    printf("stracat = %s \n", stringD);         // result of stringD: DeltaEcho
+    printf("strlen = %d \n", lenght_stringA);   //
+
+    return 0;
+}
+```
