@@ -504,6 +504,27 @@ int main()
   <img src="/Pictures (general)/AssignmentOperators.PNG" width="700" />
 </p>
 
+Zjednodušený příklad na operátoty přiřazení.
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int a = 5;
+    int b = 25;
+
+
+//    a *= a;   // vysldek je 25
+//    a *= a + b; // (a+b)*a = (5+10)*5 = 75
+
+    return 0;
+}
+
+```
+
 Příklad přiřazeni v příkladu s ukazateli (pointery).
 ```sh
 #include <stdio.h>
