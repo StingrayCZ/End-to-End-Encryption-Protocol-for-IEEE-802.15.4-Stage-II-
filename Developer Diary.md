@@ -549,4 +549,29 @@ int main ()
 }
 ```
 
+## String (řetězce)
 
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+
+    char my_string[6] = {'H','E','L','L','O'};         // puvodni
+    char my_string_uprage[] = {'H','E','L','L','O'};   // zmena
+
+    char other_string[6] = "Hello";  // zmena
+    char other_string_uprage[] = "Hello";   // puvodni
+
+
+    printf("My string value is %s\n", my_string);
+    printf("My string value is %s\n", my_string_uprage);
+
+    printf("Other string value is %s \n", other_string);
+    printf("Other string value is %s \n", other_string_uprage);
+
+    return 0;
+}
+```
