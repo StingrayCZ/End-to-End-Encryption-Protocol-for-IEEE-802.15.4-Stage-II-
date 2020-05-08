@@ -701,8 +701,6 @@ int prog(int *x, int *y)
 ```
 ## Return
 
-Ukázka, jak používat návratový typ.
-
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -716,5 +714,47 @@ int main()
     int sum = Product(5,6) + 20;
     printf("Vysledek je %d", sum);
     return 0;
+}
+```
+## Pointery (rozd9l, kdy je Nepoužiji a kdy je použiji)
+
+Ukázka, jak proč používat ukazatele. Příklad na promíchání čísel
+Zdroj  <a href="http://kmlinux.fjfi.cvut.cz/~fabiadav/cecko/poznamky-k-jazyku-c/ukazatele">
+
+```sh
+#include <stdio.h>
+void swap (int a, int b)
+{
+  int c = a;
+  a = b;
+  b = c;
+}
+
+int main (void)
+{
+  int a = 3, b = 2;
+  swap(a, b);
+  printf("%d, %d\n", a, b);
+  return 0;
+}
+```
+
+Očekávaným výstupem je **2, 3**. Ale ve skutečnosti je je to **3, 2**. Proto je nutné, viz níže použít pointery.
+
+```sh
+#include <stdio.h>
+void swap (int *a, int *b)    //  int *a = &a  ukazatel na typ int, do ktere jsme ulozili adresu promene a
+{
+  int c = *a;
+  *a = *b;
+  *b = c;
+}
+
+int main (void)
+{
+  int a = 3, b = 2;
+  swap(&a, &b);
+  printf("%d, %d\n", a, b);
+  return 0;
 }
 ```
