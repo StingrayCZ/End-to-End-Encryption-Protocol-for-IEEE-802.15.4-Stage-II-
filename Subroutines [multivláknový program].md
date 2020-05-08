@@ -20,7 +20,7 @@ int main()
     d = a PLUS b MINUS c;             // pouziti define prikazu z headeru
 
 #ifdef SERIAL_H                       // cast kodu aktiv/deaktiv z headeru
-    e = prog(&a, &b);
+    e = prog(&a, &b);                 // naliti vysledku (navratova hodnota) do promenne e
     printf("hodnota e je %d", e);
 #endif
 
@@ -51,9 +51,10 @@ int prog(int *x, int *y)
 ```sh
 // Toto je soubor Serial.h
 
-#define PLUS +
-#define MINUS -
+#define PLUS +          // defeinice funkce plus
+#define MINUS -         // defeinice funkce minus
 
-#define SERIAL_H
-#define PRGB
+#define SERIAL_H        // aktivace podprogramu, #ifdef/#endif
+#define PRGB            // aktivace podprogramu, #ifdef/#endif
+
 ```
