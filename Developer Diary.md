@@ -719,10 +719,8 @@ int main()
 ## Pointery (rozdíl, kdy je Nepoužiji a kdy je použiji)
 
 Ukázka, jak proč používat ukazatele. Příklad na promíchání čísel
-Zdroj <br/>
-*IEF 2018 - <a href="https://www.bvv.cz/en/msv/msv-2018/">International Engineering Fair </a> in Brno, CZ
+Zdroj <a href="http://kmlinux.fjfi.cvut.cz/~fabiadav/cecko/poznamky-k-jazyku-c/ukazatele">zde </a>.
 
-<a href="http://kmlinux.fjfi.cvut.cz/~fabiadav/cecko/poznamky-k-jazyku-c/ukazatele"> </a>
 
 ```sh
 #include <stdio.h>
@@ -742,7 +740,7 @@ int main (void)
 }
 ```
 
-Očekávaným výstupem je **2, 3**. Ale ve skutečnosti je je to **3, 2**. Proto je nutné, viz níže použít pointery.
+Očekávaným výstupem je **2, 3**. Ale ve skutečnosti je je to **3, 2**. Proto je nutné, viz níže použít pointery. Jak je to možné? Funkce swap() totiž pracuje s parametrem předávaným hodnotou, tzn., že se při volání funkce vytvoří lokální kopie všech parametrů. V našem případě se tedy vytvoří kopie parametru a a b, ty se mezi sebou přehodí a na konci funkce se zničí. Původní hodnoty proměnných zůstanou nezměněné. Abychom dosáhli svého, musíme se na data dostat nepřímo. Zde nacházejí uplatnění ukazatele.
 
 ```sh
 #include <stdio.h>
