@@ -719,7 +719,7 @@ int main()
 ## Pointery (rozd9l, kdy je Nepoužiji a kdy je použiji)
 
 Ukázka, jak proč používat ukazatele. Příklad na promíchání čísel
-Zdroj  <a href="http://kmlinux.fjfi.cvut.cz/~fabiadav/cecko/poznamky-k-jazyku-c/ukazatele">
+Zdroj  <a href="http://kmlinux.fjfi.cvut.cz/~fabiadav/cecko/poznamky-k-jazyku-c/ukazatele"> </a>
 
 ```sh
 #include <stdio.h>
