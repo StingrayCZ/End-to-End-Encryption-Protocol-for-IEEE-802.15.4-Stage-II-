@@ -620,3 +620,21 @@ int main()
     return 0;
 }
 ```
+## Alternativní zadání proměnných (na jeden řádek)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 5, b = 3, c = 2, d;
+
+    d = a + b + c;
+
+    printf("Ze zadani int a = 5, b = 3, c = 2, d; je vysledek: %d", d);
+
+    return 0;
+}
+
+```
