@@ -699,3 +699,22 @@ int prog(int *x, int *y)
 #define PRGB            // aktivace podprogramu, #ifdef/#endif
 
 ```
+## Return
+
+Ukázka, jak používat návratový typ.
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int Product(int a, int b){
+    return (a * b);
+}
+
+int main()
+{
+    int sum = Product(5,6) + 20;
+    printf("Vysledek je %d", sum);
+    return 0;
+}
+```
