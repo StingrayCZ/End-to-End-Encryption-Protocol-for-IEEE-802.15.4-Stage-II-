@@ -758,3 +758,12 @@ int main (void)
   return 0;
 }
 ```
+## Pointers - How it works
+
+```sh
+int i, *p_i1, *p_i2;
+```
+
+<p float="left">
+  <img src="/Pictures (general)/DedicationOfPointers.PNG" width="600" />
+</p>
