@@ -780,3 +780,25 @@ int main()
     return 0;
 }
 ```
+
+## Printf (decimal number)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    double a = 2.37;
+
+    printf("Vypis %f, %e, %g", a, a, a);
+
+    return 0;
+}
+```
+
+<p float="left">
+  <img src="/Pictures (general)/PrintfDeciamlNumber.PNG" width="600" />
+</p>
+
