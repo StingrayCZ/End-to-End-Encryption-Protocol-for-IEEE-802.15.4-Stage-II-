@@ -802,3 +802,47 @@ int main()
   <img src="/Pictures (general)/PrintfDeciamlNumber.PNG" width="450" />
 </p>
 
+## ATOI
+
+Změna  pole/řetězcr na integer...
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    char numA[34] = "123";
+    char numB = 15;
+
+    int IntegerA = atoi(numA);
+
+    printf("Vypis %d\n", IntegerA);
+}
+```
+
+## ITOA (Integer To Array)
+
+Změna integeru na pole/řetězec...
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int MyInteger = 88;
+    char String[10] = {};
+    itoa(MyInteger, String, 10);     \\ je pot5eba zadat velikost retezce
+
+    printf("Vypis A: %d\n", String);
+    printf("Vypis B: %c\n", String);
+    printf("Vypis C: %s\n", String);
+
+    return 0;
+}
+
+```
+
