@@ -1,5 +1,9 @@
 # Pointers (examples)
 
+<p float="left">
+  <img src="/Pictures (general)/DedicationOfPointers.PNG" width="700" />
+</p>
+
 ## Example 1
 
 ```sh
