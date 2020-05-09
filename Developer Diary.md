@@ -767,3 +767,16 @@ int i, *p_i1, *p_i2;
 <p float="left">
   <img src="/Pictures (general)/DedicationOfPointers.PNG" width="600" />
 </p>
+
+## Pointery (tisk adresy)
+
+```sh
+int main()
+{
+    int i, *p_i = &i;
+
+    printf("%p\n%p", &i, p_i);
+
+    return 0;
+}
+```
