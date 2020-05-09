@@ -86,3 +86,32 @@ int main ()
     printf("the value of my sum is %d", mySum);
 }
 ```
+
+## Example 4 (based on book)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, *p_i;
+
+    i = 5;
+
+    // *p_i = &i;
+    /* incializace adresou promenne i
+    */
+
+
+
+    p_i = &i;
+    /* prirazovaci prikaz, ktery v programu provede
+       prirazeni adresy promenne i do promenne (pointeru) p_i
+    */
+
+    printf("Cislo %d", *p_i);
+
+}
+
+```
