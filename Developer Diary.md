@@ -835,7 +835,7 @@ int main()
 
     int MyInteger = 88;
     char String[10] = {};
-    itoa(MyInteger, String, 10);     \\ je pot5eba zadat velikost retezce
+    itoa(MyInteger, String, 10);     \\ je potreba zadat velikost retezce
 
     printf("Vypis A: %d\n", String);
     printf("Vypis B: %c\n", String);
