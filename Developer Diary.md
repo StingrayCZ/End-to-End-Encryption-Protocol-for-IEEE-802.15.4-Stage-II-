@@ -799,6 +799,6 @@ int main()
 ```
 
 <p float="left">
-  <img src="/Pictures (general)/PrintfDeciamlNumber.PNG" width="600" />
+  <img src="/Pictures (general)/PrintfDeciamlNumber.PNG" width="450" />
 </p>
 
