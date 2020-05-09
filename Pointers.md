@@ -115,3 +115,25 @@ int main()
 }
 
 ```
+
+## Example 5 (based on book)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, *p_i;
+
+    p_i = &i;
+    i = 5;
+    *p_i = i;
+
+    printf("Vytiskni %d", *p_i);
+
+    return 0;
+}
+
+//  Vysledek kompilace je 5
+```
