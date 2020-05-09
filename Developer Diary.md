@@ -804,7 +804,7 @@ int main()
 
 ## ATOI
 
-Změna  pole/řetězcr na integer...
+Změna  pole/řetězce na integer...
 
 ```sh
 #include <stdio.h>
