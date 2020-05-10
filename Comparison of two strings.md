@@ -71,4 +71,27 @@ int main()
 }
 ```
 
-## Solution #3 (kombinace 1 a 2 reseni)
+### Solution #3 (kombinace 1 a 2 reseni)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char nums1[] = "1988";
+    char nums2[] = "1988";
+
+
+    if(memcmp(nums1, nums2, sizeof(nums1)) == 0)
+    {
+        printf("Rovnaji se");
+    }
+    else
+    {
+        printf("NE rovnaji se");
+    }
+
+    return 0;
+}
+```
