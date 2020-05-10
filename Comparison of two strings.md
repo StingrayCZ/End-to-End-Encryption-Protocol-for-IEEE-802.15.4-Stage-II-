@@ -70,3 +70,5 @@ int main()
     return 0;
 }
 ```
+
+## Solution #3 (kombinace 1 a 2 reseni)
