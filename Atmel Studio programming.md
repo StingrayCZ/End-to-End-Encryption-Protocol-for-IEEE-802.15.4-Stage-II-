@@ -2,14 +2,13 @@ This repository contain all codes what I have done in the Atmel Studio...
 
 ## GPIO (General Purpose Input Output)
 
-```sh
-/*
-* GccApplication10.c
-*
-* Created: 03.05.2020 22:07:18
-* Author : jarom
-*/
+˜ – bitová negace
+| – bitový součet
+& – bitový součin
+ˆ – bitová nonekvivalence
 
+
+```sh
 #include <avr/io.h>
 #include <util/delay.h>
 
