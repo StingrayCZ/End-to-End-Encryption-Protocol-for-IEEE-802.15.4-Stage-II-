@@ -61,5 +61,34 @@ int main(void)
 	return 0;
 }
 
+```
+
+## GPIO (Second Excercise)
+
+```sh
+//#define F_CPU 16000000                 // dulezite
+#include <avr/io.h>
+#include <util/delay.h>
+//#include <avr/iom128rfa1.h >
+//#define F_CPU 8000000UL // 8 MHz internal crystal
+
+
+
+int main(void)
+{
+	DDRE|= (1 << 3);
+	
+
+	
+	while(1)
+	{
+		PORTE |= (1 << 3);
+		_delay_ms(200);
+		
+		PORTE &= ~(1 << 3);
+		_delay_ms(200);		
+		
+	}
+}
 
 ```
