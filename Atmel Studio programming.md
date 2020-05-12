@@ -97,6 +97,8 @@ int main(void)
 ## GPIO - Bitové operace a makra
 
 ```sh 
+// Assignment Operators
+
 &=	Bitwise AND assignment operator.	        C &= 2 is same as C = C & 2
 ^=	Bitwise exclusive OR and assignment operator.	C ^= 2 is same as C = C ^ 2
 |=	Bitwise inclusive OR and assignment operator.	C |= 2 is same as C = C | 2
