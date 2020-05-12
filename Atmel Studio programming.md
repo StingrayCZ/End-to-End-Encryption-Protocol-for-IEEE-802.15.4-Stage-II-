@@ -2,10 +2,10 @@ This repository contain all codes what I have done in the Atmel Studio...
 
 ## GPIO (General Purpose Input Output)
 
-˜ – bitová negace<br/>
-| – bitový součet<br/>
-& – bitový součin<br/>
-ˆ – bitová nonekvivalence<br/>
+˜  bitová negace<br/>
+|  bitový součet<br/>
+&  bitový součin<br/>
+ˆ  bitová nonekvivalence<br/>
 
 
 ```sh
