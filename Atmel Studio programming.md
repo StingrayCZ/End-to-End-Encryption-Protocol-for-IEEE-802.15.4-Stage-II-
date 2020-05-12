@@ -94,7 +94,14 @@ int main(void)
 
 ```
 
-## GPIO (Excercise 3)
+## GPIO - Bitové operace a makra
+
+```sh 
+&=	Bitwise AND assignment operator.	        C &= 2 is same as C = C & 2
+^=	Bitwise exclusive OR and assignment operator.	C ^= 2 is same as C = C ^ 2
+|=	Bitwise inclusive OR and assignment operator.	C |= 2 is same as C = C | 2
+```
+
 
 ```sh
 #define F_CPU 16000000   
@@ -103,7 +110,7 @@ int main(void)
 
 #define SETBIT(VAR, BIT) (VAR |= ( 1 << BIT ) )
 #define CLEARBIT(VAR, BIT) (VAR &= ~(1 << BIT ) ) // SOUCIN + NEGACE
-#define ISSET(VAR, BIT) (VAR & ( 1 << BIT ) )
+#define ISSET(VAR, BIT) (VAR & ( 1 << BIT ) )     // SOUCIN
 
 int main(void)
 {
