@@ -93,3 +93,72 @@ int main(void)
 }
 
 ```
+
+## GPIO (Excercise 3)
+
+```sh
+#define F_CPU 16000000   
+#include <avr/io.h>
+#include <util/delay.h>
+
+#define SETBIT(VAR, BIT) (VAR |= ( 1 << BIT ) )
+#define CLEARBIT(VAR, BIT) (VAR &= ~(1 << BIT ) ) // SOUCIN + NEGACE
+#define ISSET(VAR, BIT) (VAR & ( 1 << BIT ) )
+
+int main(void)
+{
+
+	
+	SETBIT(DDRG, 5);
+	SETBIT(DDRE, 3);
+	SETBIT(DDRE, 4);
+	
+	
+	/* Replace with your application code */
+	while (1)
+	{
+			
+		SETBIT(PORTG, 5);
+		_delay_ms(200);
+				
+		SETBIT(PORTE, 3);
+		_delay_ms(200);
+		
+		SETBIT(PORTE, 4);
+		_delay_ms(200);
+		
+		CLEARBIT(PORTG, 5);
+		_delay_ms(200);
+					
+		CLEARBIT(PORTE, 3);
+		_delay_ms(200);
+		
+		CLEARBIT(PORTE, 4);
+		_delay_ms(200);
+		
+		
+		SETBIT(PORTE, 4);
+		_delay_ms(200);
+		
+		SETBIT(PORTE, 3);
+		_delay_ms(200);
+		
+		SETBIT(PORTG, 5);
+		_delay_ms(200);
+		
+		
+				
+		CLEARBIT(PORTE, 4);
+		_delay_ms(200);
+		
+		CLEARBIT(PORTE, 3);
+		_delay_ms(200);
+		
+		CLEARBIT(PORTG, 5);
+		_delay_ms(200);
+
+			
+	}
+}
+
+```
