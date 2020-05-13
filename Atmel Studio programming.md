@@ -171,3 +171,76 @@ int main(void)
 }
 
 ```
+
+## GPIO (pokročilejší header)
+
+### Main.c
+```sh
+#define F_CPU 16000000   
+#include <stdio.h>
+#include <avr/io.h>
+#include <avr/delay.h>
+
+#include "Header.h"
+
+int main(void)
+{
+    LED0DEF
+	LED1DEF
+	LED2DEF
+	
+	
+    while (1) 
+    {
+		LED0ON
+		_delay_ms(200);
+		LED1ON
+		_delay_ms(200);
+		LED2ON
+		_delay_ms(200);
+		
+		
+		LED0OFF
+		_delay_ms(200);
+		
+		LED1OFF
+		_delay_ms(200);
+		
+		LED2OFF
+		_delay_ms(200);
+    }
+}
+```
+### Header.c
+```sh
+#include <avr/io.h>
+
+#ifndef MAKRA_H_
+#define MAKRA_H_
+//Bitove operace
+
+#define sbi(var, mask)  ((var) |= (uint8_t)(1 << mask))     // Bitwise inclusive OR and assignment operator.   C |= 2 is same as C = C | 2
+#define cbi(var, mask)  ((var) &= (uint8_t)~(1 << mask))    // Bitwise AND assignment operator.	               C &= 2 is same as C = C & 2
+#define tbi(var,mask)	(var & (1 << mask) )
+#define xbi(var,mask)	((var)^=(uint8_t)(1 << mask))       // Bitwise exclusive OR and assignment operator.   C ^= 2 is same as C = C ^ 2
+
+//hardware
+//#define LED0_PIN G,5
+//#define LED1_PIN E,3
+//#define LED3_PIN E,4
+
+#define LED0DEF sbi(DDRG,5);
+#define LED1DEF sbi(DDRE,3);
+#define LED2DEF sbi(DDRE,4);
+
+
+#define LED0ON sbi(PORTG,5);
+#define LED1ON sbi(PORTE,3);
+#define LED2ON sbi(PORTE,4);
+
+#define LED0OFF xbi(PORTG,5);
+#define LED1OFF xbi(PORTE,3);
+#define LED2OFF xbi(PORTE,4);
+
+#endif
+```
