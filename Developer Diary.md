@@ -983,3 +983,56 @@ int power(int *num, int *power, int numpow)
 }
 ```
 
+## Modulo (own solution)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int vysledek, cislo, modulus;
+
+    printf("Zadej cislo:\n\r");
+    scanf("%d", &cislo);
+
+    printf("Zadej modulo:\n\r");
+    scanf("%d", &modulus);
+
+    vysledek = modulo(&cislo, &modulus);
+
+    printf("vysledek je: %d\n\r", vysledek);
+
+
+    return 0;
+}
+
+
+int modulo (int *num, int *mod, int tempNum)
+{
+
+
+    tempNum = *num;
+
+    if(tempNum > 0) // Je kladne
+    {
+        tempNum %= *mod;    // Vypocet modula
+
+        return tempNum;     // Navrat vypocitane hodnoty cyklu
+    }
+
+    else if(tempNum < 0)  // Je zaporne
+    {
+        tempNum *= (-1);  // uprava cisla zpet na kladne
+
+        tempNum %= *mod;  // Vypocet modula
+
+        tempNum = *mod - tempNum;  // Specialni uprava pro zaporne cislo
+
+                    return tempNum;    // Navrat vypocitane hodnoty cyklu
+    }
+
+}
+
+```
