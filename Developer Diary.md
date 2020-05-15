@@ -125,7 +125,7 @@ int test()   // Definice podpogramu
 }
 ```
 
-## Pomíněný překlad #ifdef
+## Podmíněný překlad #ifdef
 
 ```sh
 #include <stdio.h>
