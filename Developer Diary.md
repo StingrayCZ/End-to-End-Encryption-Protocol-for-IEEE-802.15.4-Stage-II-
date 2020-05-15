@@ -802,7 +802,7 @@ int main()
   <img src="/Pictures (general)/PrintfDeciamlNumber.PNG" width="450" />
 </p>
 
-## ATOI
+## ATOI (Array TO Integer)
 
 Změna  pole/řetězce na integer...
 
@@ -822,7 +822,7 @@ int main()
 }
 ```
 
-## ITOA (Integer To Array)
+## ITOA (Integer TO Array)
 
 Změna integeru na pole/řetězec...
 
