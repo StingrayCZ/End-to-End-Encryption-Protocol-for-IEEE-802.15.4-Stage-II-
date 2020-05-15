@@ -943,7 +943,7 @@ int main()
 }
 ```
 
-## Power (own solution)
+## Power - this solution is able to work with negative numbers
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
@@ -983,7 +983,7 @@ int power(int *num, int *power, int numpow)
 }
 ```
 
-## Modulo (own solution)
+## Modulo - this solution is able to work with negative numbers
 
 ```sh
 #include <stdio.h>
