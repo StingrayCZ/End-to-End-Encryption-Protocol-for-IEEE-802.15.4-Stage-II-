@@ -1036,3 +1036,51 @@ int modulo (int *num, int *mod, int tempNum)
 }
 
 ```
+
+## Different between While and DoWhile loops
+
+***While loop***
+
+This code does nothing, because the value of condition is under a input value.
+```sh
+#include <stdio.h>
+
+int main()
+{
+    
+    int i = 77;
+    
+    while(i <= 5){
+        
+        printf("Vytiskni index = %d\n\r", i);
+        i++;
+    }
+   
+    return 0;
+}
+```
+
+***Do While loop***
+
+This code goes throug at least once, due to the fact that value of condition is under a input value.
+
+```sh
+#include <stdio.h>
+
+int main()
+{
+    int i = 77;
+    
+    do{
+        
+        printf("Vytiskni index = %d\n\r", i);
+        i++;
+    
+    }while(i <= 5); 
+    
+    
+    
+    
+    return 0;
+}
+```
