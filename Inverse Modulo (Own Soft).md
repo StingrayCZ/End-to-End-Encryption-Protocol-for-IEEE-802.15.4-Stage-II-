@@ -1,4 +1,4 @@
-## This is the Masterpeice of my effort.
+## Inverse Modulo (prototype)
 
 ```sh
 #include <stdio.h>
