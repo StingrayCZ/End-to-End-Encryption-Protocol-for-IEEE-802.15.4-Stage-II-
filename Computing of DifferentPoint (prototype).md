@@ -1,4 +1,4 @@
-## Computing of DifferentPoint (prototype) - Work In Progress
+## Computing of DifferentPoint (prototype)
 
 ```sh
 #include <stdio.h>
@@ -10,11 +10,11 @@ int main()
     // Test Mode
     int Xi, Yi, Xj, Yj, a, MOD, Lambda, X_k, Y_k;
 
-    Xi = 1;
-    Yi = 1;
+    Xi = 4;
+    Yi = 5;
 
-    Xj = 2;
-    Yj = 3;
+    Xj = 1;
+    Yj = 1;
 
     a = 1;
     MOD = 7;
@@ -22,56 +22,57 @@ int main()
 
     Lambda = LamdaDiff(&MOD, &Xi, &Yi, &Xj, &Yj, &a);
 
-//    X_k = XSame(&MOD, &Lambda, &X);
-//
-//    Y_k = YSame(&MOD, &Lambda, &X, &Y, &X_k);
+    X_k = XDiff(&MOD, &Lambda, &Xi, &Xj);
+
+    Y_k = YDiff(&MOD, &Lambda, &Xi, &Yi, &X_k);
 
 
     printf("Lamba je %d\n\r", Lambda);
-//    printf("Bod X je %d\n\r", X_k);
-//    printf("Bod Y je %d\n\r", Y_k);
+    printf("Bod X je %d\n\r", X_k);
+    printf("Bod Y je %d\n\r", Y_k);
 
 
     return 0;
 }
 
-int XSame(int *MOD, int *Lambda, int *X){
+int XDiff(int *MOD, int *Lambda, int *Xi, int *Xj){
 
-    int modulus, lambda, x, mocnitel;
+    int modulus, lambda, cisloXi, cisloXj, mocnitel, x_result;
 
     modulus = *MOD;
     lambda = *Lambda;
-    x = *X;
+    cisloXi = *Xi;
+    cisloXj = *Xj;
     mocnitel = 2;   // According to Weierstrass equation
 
     lambda = power(&lambda, &mocnitel);
 
 
-    lambda -= (2 * x);
+    lambda = lambda - cisloXi - cisloXj;
 
-    x = modulo(&lambda, &modulus);
+    x_result = modulo(&lambda, &modulus);
 
-    return x;
+    return x_result;
 }
 
 
-//int YSame(int *MOD, int *Lambda, int *X, int *Y, int *X_k){
-//
-//    int modulus, lambda, x, y, x_k;
-//
-//    modulus = *MOD;
-//    lambda = *Lambda;
-//    x = *X;
-//    y = *Y;
-//    x_k = *X_k;
-//
-//    y = lambda * (x - x_k) - y;
-//
-//    y = modulo(&y, &modulus);
-//
-//    return y;
-//
-//}
+int YDiff(int *MOD, int *Lambda, int *X, int *Y, int *X_k){
+
+    int modulus, lambda, x, y, x_k;
+
+    modulus = *MOD;
+    lambda = *Lambda;
+    x = *X;
+    y = *Y;
+    x_k = *X_k;
+
+    y = lambda * (x - x_k) - y;
+
+    y = modulo(&y, &modulus);
+
+    return y;
+
+}
 
 
 
@@ -165,7 +166,7 @@ int InverseMod(int *Num, int *Mod)
         }
         while (result >= 2);
 
-        multiplier -= 1; // vyrušení přebytečného inkrementu
+        multiplier -= 1; // vyrušení pøebyteèného inkrementu
 
         return multiplier;
     }
@@ -181,13 +182,12 @@ int InverseMod(int *Num, int *Mod)
         }
         while (result >= 2);
 
-        multiplier -= 1; // vyrušení přebytečného inkrementu
+        multiplier -= 1; // vyrušení pøebyteèného inkrementu
 
         multiplier = *Mod - multiplier;  // Specialni uprava pro zaporne cislo
 
         return multiplier;
     }
 }
-
 
 ```
