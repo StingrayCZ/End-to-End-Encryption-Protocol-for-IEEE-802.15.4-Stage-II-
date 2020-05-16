@@ -1,4 +1,4 @@
-## Computing of DifferentPoint (prototype) - Wor kIn Progress
+## Computing of DifferentPoint (prototype) - Work In Progress
 
 ```sh
 #include <stdio.h>
