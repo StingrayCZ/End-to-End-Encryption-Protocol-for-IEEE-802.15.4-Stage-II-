@@ -62,7 +62,7 @@ int Recognizer(int *Xi, int *Yi, int *Xj, int *Yj)
     if(xa == xb) // Jsou-li body souradnice xa a xb stejne
     {
 
-        if(ya != yb)  // A zaroven sou ya a yb rozdilna, pouzije se fungkce diff, priznak 1
+        if(ya == yb)  // A zaroven sou ya a yb rozdilna, pouzije se fungkce diff, priznak 1
         {
             return 1;
         }
@@ -75,11 +75,9 @@ int Recognizer(int *Xi, int *Yi, int *Xj, int *Yj)
     else if(xa != xb)
     {
 
-        return 2;
+        return 2;   // pouzije se funkce different
     }
 }
-
-
 
 ```
 
