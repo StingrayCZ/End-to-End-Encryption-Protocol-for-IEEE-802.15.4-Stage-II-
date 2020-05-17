@@ -164,39 +164,61 @@ int main()
 #include <stdio.h>
 #include <stdlib.h>
 
-int
-main ()
+int main ()
 {
 
-  int modulus, result;
+    int modulus, result;
 
-  printf ("Napis modulus:\n\r");
-  scanf ("%d", &modulus);
+    printf ("Napis modulus:\n\r");
+    scanf ("%d", &modulus);
 
-  result = YPart (&modulus);
-
-  printf ("Vysledek je %d", result);
+    result = YPart (&modulus);
 
 
+    printf("Hodnota je %d\n\r", result[2]);
 
-  return 0;
+    return 0;
 }
 
 
 int YPart(int *modulus)
 {
 
-  int MOD, numberů
+    int MOD, MODu, mod, mocnitel, number;
 
-  MOD = *modulus;
+    // number je mezivypocet`
 
-  MOD = (MOD - 1) / 2;
-  
-  int nums[MOD];
+    MOD = *modulus;
+    mod = *modulus;
+
+    mocnitel = 2;   // Weierstrass method
+    MOD = ((MOD - 1) / 2);  // Iteraci
+    MODu = 4; // Upraveny pocet iteraci pro pole
+
+    printf("Hodnota MOD je %d\n", MOD);
+    printf("Hodnota MODu je %d\n", MODu);
 
 
-    return MOD;
+    int nums[MODu]; // deklarace pole
 
+
+    for(int i = 0; i <= (MOD); i++)
+    {
+
+            number = power(&i, &mocnitel);
+            nums[i] = modulo(&number, &mod);
+
+    }
+
+    nums[0] = 0;   // Oprava dle Weierstrass method
+
+    for(int i = 0; i <= (MOD); i++)
+    {
+
+        printf("Hodnota je %d\n\r", nums[i]);
+    }
+
+    return nums;
 }
 
 
@@ -236,9 +258,10 @@ int modulo (int *num, int *mod, int tempNum)
 
         tempNum = *mod - tempNum;  // Specialni uprava pro zaporne cislo
 
-                    return tempNum;    // Navrat vypocitane hodnoty cyklu
+        return tempNum;    // Navrat vypocitane hodnoty cyklu
     }
 
 }
+
 
 ```
