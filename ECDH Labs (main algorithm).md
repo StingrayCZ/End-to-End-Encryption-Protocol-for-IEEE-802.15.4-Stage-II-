@@ -156,3 +156,89 @@ int main()
 
 
 ```
+
+
+## BakcUP
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int
+main ()
+{
+
+  int modulus, result;
+
+  printf ("Napis modulus:\n\r");
+  scanf ("%d", &modulus);
+
+  result = YPart (&modulus);
+
+  printf ("Vysledek je %d", result);
+
+
+
+  return 0;
+}
+
+
+int YPart(int *modulus)
+{
+
+  int MOD, numberů
+
+  MOD = *modulus;
+
+  MOD = (MOD - 1) / 2;
+  
+  int nums[MOD];
+
+
+    return MOD;
+
+}
+
+
+int power(int *num, int *power, int numpow)
+{
+
+    numpow = *num;
+
+    for(int i = 1; i < *power; i++)
+    {
+
+        numpow *= *num;
+    }
+
+    return numpow;
+}
+
+
+int modulo (int *num, int *mod, int tempNum)
+{
+
+
+    tempNum = *num;
+
+    if(tempNum > 0) // Je kladne
+    {
+        tempNum %= *mod;    // Vypocet modula
+
+        return tempNum;     // Navrat vypocitane hodnoty cyklu
+    }
+
+    else if(tempNum < 0)  // Je zaporne
+    {
+        tempNum *= (-1);  // uprava cisla zpet na kladne
+
+        tempNum %= *mod;  // Vypocet modula
+
+        tempNum = *mod - tempNum;  // Specialni uprava pro zaporne cislo
+
+                    return tempNum;    // Navrat vypocitane hodnoty cyklu
+    }
+
+}
+
+```
