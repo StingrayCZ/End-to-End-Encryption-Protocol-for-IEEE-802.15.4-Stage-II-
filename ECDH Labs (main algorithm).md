@@ -104,3 +104,55 @@ int main()
     return 0; 
 } 
 ```
+
+## Computing order of EC (Stage I)
+
+```sh
+#include <stdio.h>
+
+int main()
+{
+    int p = 7;
+    
+    int modulus = 7;
+    
+    int number, mocnitel;
+    
+    mocnitel = 2;
+    
+    
+    int nums[p];
+    
+    //int c = 4;
+    
+    //nums[0] = 1988;
+    //nums[1] = 1992;
+    //nums[2] = 1993;
+    //nums[3] = 2004;
+    //nums[c] = 2033;
+    
+    for(int i = 0; i <= 3; i++){
+        
+        number = power(&i, &mocnitel);
+        
+        
+        nums[i] = modulo(&number, &modulus);
+    
+    }
+    
+    for(int i = 0; i <= 3; i++){
+        
+        printf("%d. poradi => Hodnota je %d\n\r", i, nums[i]);
+    
+    }
+
+    return 0;
+}
+
+
+/included modules
+// int modulo (int *num, int *mod, int tempNum)
+// int power(int *num, int *power, int numpow)
+
+
+```
