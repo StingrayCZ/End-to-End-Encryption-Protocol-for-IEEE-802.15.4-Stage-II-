@@ -105,7 +105,7 @@ int main()
 } 
 ```
 
-## Computing order of EC (Stage I)
+## Computing order of EC (Stage I - prototype)
 
 ```sh
 #include <stdio.h>
@@ -158,7 +158,7 @@ int main()
 ```
 
 
-## BakcUP
+## ## Computing order of EC (Stage I - Final)
 
 ```sh
 #include <stdio.h>
@@ -175,7 +175,7 @@ int main ()
     result = YPart (&modulus);
 
 
-    printf("Hodnota je %d\n\r", result[2]);
+    //printf("Hodnota je %d\n\r", result[2]);
 
     return 0;
 }
@@ -195,24 +195,21 @@ int YPart(int *modulus)
     MOD = ((MOD - 1) / 2);  // Iteraci
     MODu = 4; // Upraveny pocet iteraci pro pole
 
-    printf("Hodnota MOD je %d\n", MOD);
-    printf("Hodnota MODu je %d\n", MODu);
+//    int nums[] = {0}; // Incializace pole
 
+    int nums[MODu];  // Incializace pole
 
-    int nums[MODu]; // deklarace pole
-
-
-    for(int i = 0; i <= (MOD); i++)
+    for(int i = 0; i <= MOD; i++)
     {
 
-            number = power(&i, &mocnitel);
-            nums[i] = modulo(&number, &mod);
+        number = power(&i, &mocnitel);
+        nums[i] = modulo(&number, &mod);
 
     }
 
     nums[0] = 0;   // Oprava dle Weierstrass method
 
-    for(int i = 0; i <= (MOD); i++)
+    for(int i = 0; i <= MOD; i++)
     {
 
         printf("Hodnota je %d\n\r", nums[i]);
@@ -241,7 +238,7 @@ int modulo (int *num, int *mod, int tempNum)
 {
 
 
-    tempNum = *num;
+    //tempNum = *num;
 
     if(tempNum > 0) // Je kladne
     {
@@ -262,6 +259,5 @@ int modulo (int *num, int *mod, int tempNum)
     }
 
 }
-
 
 ```
