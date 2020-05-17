@@ -367,7 +367,7 @@ int modulo (int *num, int *mod, int tempNum)
 
 ```
 
-## Computingnof order EC (Stage III - comparsion of arrays )
+## Computingnof order EC (Stage III - comparsion of arrays) - prototyp
 
 ```sh
 #include <stdio.h>
@@ -417,6 +417,68 @@ int main()
 
 
     return 0;
+}
+
+```
+
+## Computingnof order EC (Stage III - comparsion of arrays) - advanced prototyp
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//    int key;
+
+    int order = 0;
+
+    int arrayA[] = {2, 5, 14, 1, 6, 1, 9, 2, 3, 1, 2, 12, 3, 15, 3, 7, 16};
+
+    int arrayB[] = {0, 4, 9, 16, 8, 2, 15, 13};
+
+
+//    printf("Napis %d", array[2]);
+
+//    while(1)
+//    {
+//        printf("Co chces hledat?\n\r");
+//        scanf("%d", &key);
+
+
+    for(int k = 0; k <= 8; k++)
+    {
+
+        for(int i = 0; i <= 16; i++)
+        {
+            if (arrayA[i] == arrayB[k])
+            {
+
+                printf("Yes, this number is in array\n\r");
+                printf("Jedna se o cisla %d a %d\n\r", arrayA[i], arrayB[k]);
+                printf("\n\r");
+
+                order++;
+
+            }
+
+//                else{
+//                    printf("Neni v rade\n\r");
+//                }
+
+        }
+    }
+//
+//    }
+
+    order *= 2;
+    order += 1;
+
+
+    printf("Rad grupy je %d", order);
+
+           return 0;
 }
 
 ```
