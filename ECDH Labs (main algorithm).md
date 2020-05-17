@@ -366,3 +366,57 @@ int modulo (int *num, int *mod, int tempNum)
 }
 
 ```
+
+## Computingnof order EC (Stage III - comparsion of arrays )
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//    int key;
+
+    int arrayA[] = {89, 12, 57, 44, 55, 22, 33, 54, 66, 99, 2, 44};
+
+    int arrayB[] = {12, 66, 2};
+
+
+//    printf("Napis %d", array[2]);
+
+//    while(1)
+//    {
+//        printf("Co chces hledat?\n\r");
+//        scanf("%d", &key);
+
+
+        for(int k = 0; k <= 2; k++)
+        {
+
+            for(int i = 0; i <= 11; i++)
+            {
+                if (arrayA[i] == arrayB[k])
+                {
+
+                    printf("Yes, this number is in array\n\r");
+                    printf("Jedna se o cisla %d a %d\n\r", arrayA[i], arrayB[k]);
+                    printf("\n\r");
+
+                }
+
+                else{
+                    printf("Neni v rade\n\r");
+                }
+
+            }
+        }
+//
+//    }
+
+
+
+    return 0;
+}
+
+```
