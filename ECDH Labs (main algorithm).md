@@ -158,7 +158,7 @@ int main()
 ```
 
 
-## ## Computing order of EC (Stage I - Final)
+## Computing order of EC (Stage I - Final)
 
 ```sh
 #include <stdio.h>
@@ -258,6 +258,111 @@ int modulo (int *num, int *mod, int tempNum)
         return tempNum;    // Navrat vypocitane hodnoty cyklu
     }
 
+}
+
+```
+
+## Computing of order EC (Satage II - final)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int p, a,b, result;
+
+//    printf("Zadej p (modulus)\n\r");
+//    scanf("%d", &p);
+//
+//    printf("Zadej a\n\r");
+//    scanf("%d", &a);
+//
+//    printf("Zadej b\n\r");
+//    scanf("%d", &b);
+
+    p = 17;
+    a = 2;
+    b = 2;
+
+    result = ObtainOrder(&p, &a, &b);
+
+    printf("Hodnota je: %d", result);
+
+
+    return 0;
+}
+
+
+ObtainOrder(int *P, int *A, int *B)
+{
+
+    int p, a,b, mocnina, compute, x, result;
+
+    p = *P;
+    a = *A;
+    b = *B;
+    mocnina = 3; // Weierstrass method
+
+    // Weierstrass equation y^2 = x^3 + ax + b
+
+    x = 0; // testovaci
+
+
+
+    for(int i = 1; i <= 17; i++)
+    {
+
+        compute = power(&x, &mocnina) + a * x + b;
+
+        result = modulo(&compute, &p);
+        printf("Vysledek pro x = %d je %d\n\r", x, result);
+
+        x++;
+    }
+
+    return 0;
+
+}
+
+
+int power(int *num, int *power, int numpow)
+{
+
+    numpow = *num;
+
+    for(int i = 1; i < *power; i++)
+    {
+
+        numpow *= *num;
+    }
+
+    return numpow;
+}
+
+int modulo (int *num, int *mod, int tempNum)
+{
+
+
+    tempNum = *num;
+
+    if(tempNum > 0) // Je kladne
+    {
+        tempNum %= *mod;    // Vypocet modula
+
+        return tempNum;     // Navrat vypocitane hodnoty cyklu
+    }
+
+    else if(tempNum < 0)  // Je zaporne
+    {
+        tempNum *= (-1);  // uprava cisla zpet na kladne
+
+        tempNum %= *mod;  // Vypocet modula
+
+        tempNum = *mod - tempNum;  // Specialni uprava pro zaporne cislo
+
+        return tempNum;    // Navrat vypocitane hodnoty cyklu
+    }
 }
 
 ```
