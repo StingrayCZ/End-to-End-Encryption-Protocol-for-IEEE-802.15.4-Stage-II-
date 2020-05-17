@@ -238,7 +238,7 @@ int modulo (int *num, int *mod, int tempNum)
 {
 
 
-    //tempNum = *num;
+    tempNum = *num;
 
     if(tempNum > 0) // Je kladne
     {
