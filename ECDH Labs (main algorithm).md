@@ -81,7 +81,7 @@ int Recognizer(int *Xi, int *Yi, int *Xj, int *Yj)
 
 ```
 
-## Return Array
+## Return Array (bad example)
 
 ```sh
 #include <stdio.h> 
