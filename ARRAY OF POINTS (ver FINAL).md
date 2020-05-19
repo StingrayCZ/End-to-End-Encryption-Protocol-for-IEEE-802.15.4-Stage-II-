@@ -5,8 +5,8 @@ This aplication is able to coumpte any point from knowledge of coordinates X, Y 
 ```sh
 // unput values
 Input values:
-     a, b   => asymptots
      Xi, Yi => coordinates of the first point
+     a      => asymptot
      MOD    => modulus
 
 // inicalization   
