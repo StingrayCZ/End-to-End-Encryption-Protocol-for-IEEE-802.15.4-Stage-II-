@@ -1,4 +1,24 @@
-# 
+# Application for computing points
+
+This aplication is able to coumpte any point from knowledge of coordinates X, Y and asymptote a and modulus. This application needs to know a value of order what we need.
+
+```sh
+// unput values
+Input values:
+     a, b   => asymptots
+     Xi, Yi => coordinates of the first point
+     MOD    => modulus
+
+// inicalization   
+PointComp(&Xi, &Yi, &a, &MOD, &poradi, container)
+
+Output values:
+container  
+
+// this variable contains array with two position for computed X and Y
+// This values will be used for computed 
+
+```
 
 ## Header (Function.h)
 ```sh
