@@ -49,7 +49,6 @@ int InverseMod();
 
 ## Main
 ```sh
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "functions.h"
@@ -89,7 +88,9 @@ int main()
 
     return 0;
 }
-
+```
+## Application for obtain point 
+```sh
 //////////////////////////////////
 //// PROVIDER OF POINT ///////////
 //////////////////////////////////
