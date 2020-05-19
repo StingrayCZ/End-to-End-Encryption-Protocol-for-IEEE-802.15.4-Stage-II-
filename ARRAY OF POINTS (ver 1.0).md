@@ -1,4 +1,7 @@
 ## Complete algorithm for computing points
+
+Tato verze je prototypem, ktery ma incialiazačni část v mainu.
+
 ```sh
 #include <stdio.h>
 #include <stdlib.h>
