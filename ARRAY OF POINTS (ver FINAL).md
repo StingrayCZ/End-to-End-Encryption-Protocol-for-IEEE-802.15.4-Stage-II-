@@ -86,8 +86,6 @@ int main()
     /// container returns two valies X and Y
 
     printf("Bod P%d = [%d, %d]\n\r", poradi, container[0], container[1]);
-    EMPTYLINE
-    printf("Bod P%d = [%d, %d]\n\r", poradi, container[0], container[1]);
 
     return 0;
 }
