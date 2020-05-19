@@ -343,7 +343,7 @@ int Recognizer(int *Xi, int *Yi, int *Xj, int *Yj)
         }
         else
         {
-            return 66; // End of program. It shouldn't happens
+            return 66; // End of program. It never happend, perhaps...
         }
     }
 
