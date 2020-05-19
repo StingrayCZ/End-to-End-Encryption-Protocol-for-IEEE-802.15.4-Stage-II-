@@ -1,4 +1,4 @@
-##  Array of Poiunts (version 2)
+##  Array of Points (version 2)
 
 Tato verze je resena jako samostatny blok, kteryy je inicializovan z radku.
 
