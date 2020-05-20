@@ -1,4 +1,4 @@
-## FIRST POINT algorithm (prototype)
+## THE FIRST POINT algorithm (prototype)
 
 ```sh
 #include <stdio.h>
