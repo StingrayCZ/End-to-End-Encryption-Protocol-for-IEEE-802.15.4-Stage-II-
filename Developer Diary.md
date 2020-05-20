@@ -1189,3 +1189,118 @@ int main()
 }
 
 ```
+
+## Primality test algorithm (Not Great, Not Terrible)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int cislo, result;
+
+    cislo = 1;
+
+//    printf("Zadej cislo\n");
+//    scanf("%d", &cislo);
+
+    for(int i = 1; i <= 100; i++)
+    {
+
+
+        result = PrimalityTest(&cislo);
+
+        if(result == 1)
+        {
+            printf("Number %d is Prime\n\r", cislo);
+        }
+
+        else
+        {
+            printf("Number %d is NOT Prime\n\r", cislo);
+        }
+
+        cislo++;
+
+    }
+
+
+    return 0;
+}
+
+
+void PrimalityTest(int *cislo)
+{
+
+
+    static int num, testnum, mocnitel, equation;
+
+    num = *cislo;
+
+    mocnitel = num - 1;
+    testnum = 2;
+
+
+    equation = power(&testnum,&mocnitel);
+
+    equation = modulo(&equation,&num);
+
+    if(equation == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+
+//////////////////////////////////
+//// POWER ///////////////////////
+//////////////////////////////////
+int power(int *num, int *power)
+{
+
+    int numpow = *num;
+
+    for(int i = 1; i < *power; i++)
+    {
+
+        numpow *= *num;
+    }
+
+    return numpow;
+}
+
+//////////////////////////////////
+//// MODULO //////////////////////
+//////////////////////////////////
+int modulo (int *num, int *mod, int tempNum)
+{
+
+    tempNum = *num;
+
+    if(tempNum > 0) // Je kladne
+    {
+        tempNum %= *mod;    // Vypocet modula
+
+        return tempNum;     // Navrat vypocitane hodnoty cyklu
+    }
+
+    else if(tempNum < 0)  // Je zaporne
+    {
+        tempNum *= (-1);  // uprava cisla zpet na kladne
+
+        tempNum %= *mod;  // Vypocet modula
+
+        tempNum = *mod - tempNum;  // Specialni uprava pro zaporne cislo
+
+        return tempNum;    // Navrat vypocitane hodnoty cyklu
+    }
+
+}
+
+```
