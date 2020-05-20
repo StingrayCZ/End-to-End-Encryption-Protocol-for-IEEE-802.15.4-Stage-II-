@@ -37,3 +37,43 @@ int main()
 }
 
 ```
+
+## Method for return multiple values (variables + array)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+
+// PROTOTYPE
+void ValReturn();
+
+int main()
+{
+
+    int x, y;
+    int pole[1000];
+
+    ValReturn(&x, &y, pole);
+
+    printf("Hodnota X je %d\n\r", x);
+    printf("Hodnota Y je %d\n\r", y);
+
+    printf("Hodnota pole je %d\n\r", pole[0]);
+    printf("Hodnota pole je %d\n\r", pole[1]);
+
+    return 0;
+}
+
+
+
+void ValReturn(int *A, int *B, int array[]){
+
+    *A = 10;
+    *B = 20;
+
+    array[0] = 40;
+    array[1] = 50;
+
+}
+```
