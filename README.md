@@ -1,5 +1,10 @@
 # End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-
-This repository contains everything what I do so far
+ 
+• Algoritmus na výměnu klíču je hotov. Ukázka zde.
+• Oproti algoritmu ze zimního semestru funguje s jakýmkoliv vstupem (nehodící vstupy jsou automaticky sortovány pomocí podmínek)
+• Je kompletně vytvořen softwaru CodeBlocks. Ale je koncipován modulárně, není problém jej přenést do stacku (mám již vyzkoušeno)
+• Do pondělí bych připravil nástřel kapitoly (v dokumentu bakalářky), která se bude věnovat řešení výměny klíčů s vysvětlením, jak celá  • soustava kódu pracuje
+• Na případně podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.
 
 
 <p float="left">
