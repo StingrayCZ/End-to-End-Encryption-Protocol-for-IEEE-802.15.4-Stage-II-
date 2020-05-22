@@ -3,8 +3,8 @@
 • Algoritmus na výměnu klíču je hotov. Ukázka <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Prototype%2022.5.2020.md">zde</a>.</p>
 • Spustitelná výměna klíčů v .exe formátu ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/KeyExchange%20app.exe">zde</a>.</p>
 • Oproti algoritmu ze zimního semestru funguje s jakýmkoliv vstupem (nehodící vstupy jsou automaticky sortovány pomocí podmínek)</p>
-• Je kompletně vytvořen softwaru CodeBlocks. Ale je koncipován modulárně, není problém jej přenést do stacku (mám již vyzkoušeno)</p>
-• Do pondělí bych připravil nástřel kapitoly (v dokumentu bakalářky), která se bude věnovat řešení výměny klíčů s vysvětlením, jak celá soustava kódu pracuje</p>
+• Je kompletně vytvořen softwaru CodeBlocks. Je ale koncipován modulárně, není problém jej snadno přenést do stacku (mám již vyzkoušeno), v pondělí budu prezentovat</p>
+• Dále do pondělí bych připravil nástřel kapitoly (v dokumentu bakalářky), která se bude věnovat řešení výměny klíčů s vysvětlením, jak celá soustava kódu pracuje</p>
 • Na případně podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.</p>
 
 
