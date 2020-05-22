@@ -1,4 +1,4 @@
-# End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-
+# End-to-End-Encryption-Protocol-for-IEEE-802.15.4
  
 • Algoritmus na výměnu klíču je hotov. Ukázka zde.</p>
 • Oproti algoritmu ze zimního semestru funguje s jakýmkoliv vstupem (nehodící vstupy jsou automaticky sortovány pomocí podmínek)</p>
