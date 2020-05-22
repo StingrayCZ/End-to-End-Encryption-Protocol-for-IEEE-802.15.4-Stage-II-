@@ -47,12 +47,7 @@
 <p float="left">
   <img src="/Pictures (general)/Presentation/ECHD algorithm_10.png" width="900" /> 
 <p float="left">
-  
-  
-<p float="left">
-  <img src="/Pictures (general)/Presentation/ECHD algorithm_12.png" width="900" /> 
-<p float="left">
-  
+    
 <p float="left">
   <img src="/Pictures (general)/Presentation/ECHD algorithm_11.png" width="900" /> 
 <p float="left">
