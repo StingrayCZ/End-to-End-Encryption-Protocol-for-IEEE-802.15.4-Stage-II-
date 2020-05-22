@@ -1343,3 +1343,65 @@ void ValReturn(int *A, int *B, int array[]){
 
 }
 ```
+
+## Primality test algorithm (Final)
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+void primeTester();
+
+int main()
+{
+    while(1)
+    {
+        static int cislo, value;
+
+        printf("Zadej cislo k testu:\n\r");
+        scanf("%d", &cislo);
+
+        primeTester(&cislo, &value);
+
+        if(value == 1)
+        {
+            printf("\n\rCislo %d je prvcislo", cislo);
+        }
+        else
+        {
+            printf("\n\rCislo %d NENI prvcislo", cislo);
+        }
+
+        printf("\n\r");
+    }
+
+}
+
+
+void primeTester(int *num, int *result)
+{
+
+    static int cislo, boolean;
+
+    cislo = *num;
+    boolean = true;
+
+    for(int i = cislo - 1; i > 1; i--)
+    {
+        if(cislo % i == 0)    // for example 4 mod3 = 1; 4 mod2 = 0 => there is no reminder
+        {
+            boolean = false;
+        }
+    }
+
+    if(boolean)
+    {
+        *result = 1; // Tested number is prime
+    }
+    else
+    {
+        *result = 0; // Tested number is NOT prime
+    }
+}
+```
