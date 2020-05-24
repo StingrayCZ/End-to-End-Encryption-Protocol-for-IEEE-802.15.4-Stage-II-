@@ -1490,3 +1490,25 @@ SEND_END:
 }
 
 ```
+
+## Uint8_t (0 ... 255)
+
+Prakticky se jedna o jakekoliv cislo, upravene pres *modulo 256*.
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+int main()
+{
+    int b = 4242356;
+
+    uint16_t a = b;
+
+    printf("napis cislo %d", a);
+
+
+    return 0;
+}
+```
