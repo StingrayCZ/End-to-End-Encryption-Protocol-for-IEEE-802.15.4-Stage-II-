@@ -1446,3 +1446,47 @@ white:
 
 ```
 
+## Labels (Návěští) - Example 2
+
+Možná podoba ve stacku...
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number = 5;
+
+
+    if (number > 10)
+    {
+        goto SEND_ACK;
+    }
+    if (number > 20)
+    {
+        goto SEND_MESSAGE;
+    }
+    else
+    {
+        goto SEND_END;
+    }
+
+
+SEND_ACK:
+
+    printf("\nCislo je vetsi nez 10, ale mensi nez 20");
+    return 0;
+
+SEND_MESSAGE:
+    printf("\nJe versi nez 20");
+    return 0;
+
+
+SEND_END:
+    printf("\nCislo je mensi nez 10");
+    return 0;
+
+}
+
+```
