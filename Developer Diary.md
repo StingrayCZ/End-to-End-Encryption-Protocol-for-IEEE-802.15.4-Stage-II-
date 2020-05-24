@@ -1493,7 +1493,7 @@ SEND_END:
 
 ## Uint8_t (0 ... 255)
 
-Prakticky se jedna o jakekoliv cislo, upravene pres *modulo 256*.
+Prakticky se jedna o jakekoliv cislo, upravene pres * modulo 256 *.
 
 ```sh
 #include <stdio.h>
