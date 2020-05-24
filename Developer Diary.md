@@ -1512,3 +1512,23 @@ int main()
     return 0;
 }
 ```
+
+## Random Number
+
+Example of code for generation a pseudorandom number with parameter from 0 to 100.
+
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    for(int  i = 0; i < 20; i++){
+
+        printf("%d \n", rand()%100);
+    }
+
+    return 0;
+}
+```
