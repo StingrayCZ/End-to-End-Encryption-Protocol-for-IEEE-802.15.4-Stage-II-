@@ -8,9 +8,23 @@
 • Na případné podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.</p>
 
 ## Generování bodů (na základě modula a parametrů a a b)
+Toto je starší verze s "manuálním" vstupem hodnot.
 <p float="left">
-  <img src="/Pictures (general)/ECHD.PNG" width="600" /> 
+  <img src="/Pictures (general)/ECHD.PNG" width="350" /> 
 <p float="left">
+ 
+ ## Psudonáhodné vstupy
+Generování pseudonáhodných vstupů na základě času (v další verzi zaměním za generátor přímo z LWM). Proměnná throttle má za úkol omezovat pseudonáhodná čísla v rozsahu 0 - 300. Algoritmus je testován i na 2000. Funguje, nicméně generování klíčů je pomalejší, resp. čas je více proměnlivý (záleží zde na náhodně zvoleném vstupu).
+
+```sh
+// Generator of random numbers
+    srand((unsigned int) time(NULL));
+    int Throttle = 300;                 // Throttle of power
+```
+```sh
+a = rand() % Throttle;
+b = rand() % Throttle;
+```
 
 ## Prezentace
 <p float="left">
