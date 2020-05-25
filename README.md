@@ -17,7 +17,7 @@ Pro prvotní výměnu vstpu, bude nutné zvolit **implicitní tajný klíč** pr
 <p float="left">
  
 <p float="left">
-  <img src="/Pictures (general)/ECDH Flowchart SUPER" width="600" /> 
+  <img src="/Pictures (general)/ECDH Flowchart SUPER.png" width="600" /> 
 <p float="left">
 
 ## Generování bodů (na základě modula a parametrů a a b)
