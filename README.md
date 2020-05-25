@@ -1,11 +1,19 @@
 # End-to-End-Encryption-Protocol-for-IEEE-802.15.4
  
-• Algoritmus na výměnu klíču je hotov. Ukázka <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Prototype%2025.5.2020.md">zde</a>.</p>
-• Spustitelná výměna klíčů v .exe formátu ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/KeyExchange%20app.exe">zde</a>.</p>
+• Algoritmus na výměnu klíču je hotov. Ukázka části pro generování (obsauje i zpětnou kontrolu vygenerované grupy) <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Prototype%2025.5.2020.md">zde</a>.</p>
+• Ukázka aplikace pro výpočet společného bodu (obsauje i zpětnou kontrolu vygenerované grupy) <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Prototype%2025.5.2020%20(mutual%20point).md">zde</a>.</p>
+• Spustitelná výměna klíčů (manuální vstup) v .exe formátu ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/KeyExchange%20app.exe">zde</a>.</p>
+• Spustitelná výměna klíčů (psaudorandom vstup) v .exe formátu ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Points%20Generator%20(AUTO).exe">zde</a>.</p>
 • Oproti algoritmu ze zimního semestru funguje s jakýmkoliv vstupem (nehodící vstupy jsou automaticky sortovány pomocí podmínek)</p>
 • Je kompletně vytvořen softwaru CodeBlocks. Je ale koncipován modulárně, není problém jej snadno přenést do stacku (mám již vyzkoušeno), v pondělí budu prezentovat</p>
 
 • Na případné podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.</p>
+
+## Flowchart Diagram výměny klíčů (zelen8 pole jsou hotova a odzkoušena)
+<p float="left">
+  <img src="/Pictures (general)/ECDH flowchart 2020_1.png" width="600" /> 
+<p float="left">
+ 
 
 ## Generování bodů (na základě modula a parametrů a a b)
 Toto je starší verze s "manuálním" vstupem hodnot.
@@ -24,6 +32,47 @@ Generování pseudonáhodných vstupů na základě času (v další verzi zamě
 ```sh
 a = rand() % Throttle;
 b = rand() % Throttle;
+```
+
+## Návěstí (dotaz na konzultaci)
+```sh
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number = 5;
+
+
+    if (number > 10)
+    {
+        goto SEND_ACK;
+    }
+    if (number > 20)
+    {
+        goto SEND_MESSAGE;
+    }
+    else
+    {
+        goto SEND_END;
+    }
+
+
+SEND_ACK:
+
+    printf("\nCislo je vetsi nez 10, ale mensi nez 20");
+    return 0;
+
+SEND_MESSAGE:
+    printf("\nJe versi nez 20");
+    return 0;
+
+
+SEND_END:
+    printf("\nCislo je mensi nez 10");
+    return 0;
+
+}
 ```
 
 ## Prezentace
