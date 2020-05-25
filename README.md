@@ -7,7 +7,12 @@
 
 • Na případné podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.</p>
 
+## Generování bodů (na základě modula a parametrů a a b)
+<p float="left">
+  <img src="/Pictures (general)/ECHD.PNG" width="600" /> 
+<p float="left">
 
+## Prezentace
 <p float="left">
   <img src="/Pictures (general)/Presentation/ECHD algorithm_01.png" width="900" /> 
 <p float="left">
