@@ -16,6 +16,9 @@ Pro prvotní výměnu vstpu, bude nutné zvolit **implicitní tajný klíč** pr
   <img src="/Pictures (general)/ECDH flowchart 2020_1.png" width="600" /> 
 <p float="left">
  
+<p float="left">
+  <img src="/Pictures (general)/ECDH Flowchart SUPER" width="600" /> 
+<p float="left">
 
 ## Generování bodů (na základě modula a parametrů a a b)
 Toto je starší verze s "manuálním" vstupem hodnot.
