@@ -9,7 +9,7 @@
 
 • Na případné podělní konzultaci bych rád pořešil komunikaci sítě 802.15.4 se sítí internet.</p>
 
-## Flowchart Diagram výměny klíčů (zelen8 pole jsou hotova a odzkoušena)
+## Flowchart Diagram výměny klíčů (zelená pole jsou hotova a odzkoušena)
 <p float="left">
   <img src="/Pictures (general)/ECDH flowchart 2020_1.png" width="600" /> 
 <p float="left">
