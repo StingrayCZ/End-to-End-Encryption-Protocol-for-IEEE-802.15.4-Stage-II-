@@ -8,3 +8,14 @@
 
 #endif // _SYS_CONFIG_H_
 ```
+
+### Testing ECDH modules (printing random number)
+
+```sh
+#ifdef USB_DEBUG
+TESTRAND = rand();
+printf("\r\nRandom cislo je %d",TESTRAND);
+#endif
+```
+
+### Testing ECDH modules (printing random number)
