@@ -36,5 +36,4 @@ result = modulo (&cislo, &modularo);
 
 printf("\r\nVysledek je %d", result);
 #endif
-
 ```
