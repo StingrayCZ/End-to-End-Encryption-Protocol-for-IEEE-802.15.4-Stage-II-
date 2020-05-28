@@ -1,4 +1,4 @@
-## STCK componets
+## STACK componets
 
 ### Security enable
 ```sh
