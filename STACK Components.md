@@ -19,3 +19,22 @@ printf("\r\nRandom cislo je %d",TESTRAND);
 ```
 
 ### Testing ECDH modules (printing random number)
+Změna *int* na *modulo*.
+```sh
+#ifdef USB_DEBUG
+printf("\r\nZadej cislo: ");
+
+scanf("%d", &cislo);
+
+
+printf("\r\nZadej modulus: ");
+
+scanf("%d", &modularo);
+
+result = modulo (&cislo, &modularo);
+
+
+printf("\r\nVysledek je %d", result);
+#endif
+
+```
