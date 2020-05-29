@@ -2,7 +2,7 @@
 
 ### 1.Issue - Migrace proměnných
 
-Aplikace na výměnu klíčů je rozdělena do blolu, které jsou typu **int nazev(){}** nebo **void nazev(){}**. V případě první se hodnoty vrací pomocí return. VV případě druhého typy se hodnoty vrací pomocí pointerů.
+Aplikace na výměnu klíčů je rozdělena do blok;, které jsou typu **int nazev(){}** nebo **void nazev(){}**. V případě první se hodnoty vrací pomocí return. VV případě druhého typy se hodnoty vrací pomocí pointerů.
 
 Pokud je podprogram je typu int a vrací hodnotu přes return, aplikace funguje správně. Jedná se zde o test generátoru pseudonáhodných čísel, který v další fází prochází "přiškrcením" přes funkci modulo, která jej omezí na rozsah 1-300. Níže je ukázka obou varianta. První dvě ukázky kódu ukazují, co je v APP_TaskHandleru.. Pod nimi jsou dvě varianty fukce modulo. Jedna vrací vysledek výpočtu přes return (proto v mainu je *TESTRAND = modulo(&TESTRAND, &mod);*), druhá vrací výsledek přes pointer (proto v mainu je *moduloVOID(&TESTRAND, &mod, &result);*, kde *&result* je proměnná, kam se uloží výsledek z podpogramu).
 
