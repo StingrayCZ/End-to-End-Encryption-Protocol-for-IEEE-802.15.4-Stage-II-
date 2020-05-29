@@ -139,7 +139,7 @@ white:
 
 Z důvodu, že jsem student oboru infomační bezpečnosti bych věnoval bych hlavní pozornost na můj algoritmus na výměnu klíčů.
 
-**Otázka:** Souhlasíte s níže obecným návrhem obsahu práce? Ten bych měl stihnout do pondělní konzultace vložit přímo do dokumentu práce. Aplikace pro výmněu klíče funguje skvěle (v codeBlocks), s jejím popisem nebude problém. **V pondělí bych chtěl řešit odesílání dat do sítě internet**.
+**Otázka:** Souhlasíte s níže vypsaným obecným návrhem obsahu práce? Ten bych měl stihnout do pondělní konzultace vložit přímo do dokumentu práce. Aplikace pro výmněu klíče funguje skvěle (v codeBlocks), s jejím popisem nebude problém. **V pondělí bych chtěl řešit odesílání dat do sítě internet**.
 
 * Obecný popis algoritmu (Vývojový diagram), koncept textu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/OverLeaf/KeyExchangeconcept.pdf">zde</a>
 * Detailní popis jeho částí a z důvodnění, proč jsem tu kterou část vytvořil zrovna tak
