@@ -139,7 +139,7 @@ white:
 
 Z důvodu, že jsem student oboru infomační bezpečnosti bych věnoval bych hlavní pozornost na můj algoritmus na výměnu klíčů.
 
-**Otázka:** Souhlasíte s níže obecným návrhem. To bych měl stihnout do pondělní konzultace. Aplikace pro výmněu klíče funguje skvělě (v codeBlocks), s jejím popisem nebude problém. **V pondělí bych chtěl řešit odesílání dat do sítě internet**.
+**Otázka:** Souhlasíte s níže obecným návrhem. To bych měl stihnout do pondělní konzultace. Aplikace pro výmněu klíče funguje skvěle (v codeBlocks), s jejím popisem nebude problém. **V pondělí bych chtěl řešit odesílání dat do sítě internet**.
 
 * Obecný algoritmu (Vývojový diagram)
 * Detailní popis jeho částí a z důvodnění, proč jsem tu kterou část vytvořil zrovna tak
