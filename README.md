@@ -1,6 +1,6 @@
 ## Konzultace 29.5.2020
 
-### 1.Issude - Migrace proměnných
+### 1.Issue - Migrace proměnných
 
 Aplikace na výměnu klíčů je rozdělena do blolu, které jsou typu **int nazev(){}** nebo **void nazev(){}**. V případě první se hodnoty vrací pomocí return. VV případě druhého typy se hodnoty vrací pomocí pointerů.
 
@@ -100,7 +100,7 @@ void moduloVOID (long *num, long *mod, long *result)
 }
 ```
 
-### 2.Issude - návěstí
+### 2.Issue - návěstí
 
 **Otázka:** Pokud chci docílit postupného zapínání odesílání jenotlivých payloadů v části kódu **static void APP_TaskHandler(void)**, je lepší použít návěstí (*viz idea níže*) než přepínání stavů pomocí **swtich**?
 
@@ -135,7 +135,7 @@ white:
 }
 ```
 
-### 3.Issude - obsah práce
+### 3.Issue - obsah práce
 
 Z důvodu, že jsem student oboru infomační bezpečnosti bych věnoval bych hlavní pozornost na můj algoritmus na výměnu klíčů.
 
