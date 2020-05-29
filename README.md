@@ -8,7 +8,7 @@ Pokud je podprogram je typu int a vrací hodnotu přes return, aplikace funguje 
 
 Všechny tuto funkce jsou zaneseny v knihovně, viz ukázka nejníže, k náhledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/ECDH%20inSTACK/ECDH_Functions.h">zde</a>.
 
-**Otázka: Je v AVR Studiu problém s návratem výsledku z podprogramu typu void. V CodeBlock ani v jiném editoru jsem se s podobným problémem nesetkal.
+**Otázka: Je v AVR Studiu problém s návratem výsledku z podprogramu typu void. V CodeBlock ani v jiném editoru jsem se s podobným problémem nesetkal.**
 ```c
 ///Varianta pro 
 static void APP_TaskHandler(void)
@@ -100,9 +100,9 @@ void moduloVOID (long *num, long *mod, long *result)
 }
 ```
 
-### 2.Issude - Migrace proměnných
+### 2.Issude - návěstí
 
-Pokud chci docílit postupného zapínání odesílání jenotlivých payloadů v části kódu **static void APP_TaskHandler(void)**, je lepší použít návěstí (*viz idea níže*) než přepínání stavů pomocí **swtich**?
+**Otázka:** Pokud chci docílit postupného zapínání odesílání jenotlivých payloadů v části kódu **static void APP_TaskHandler(void)**, je lepší použít návěstí (*viz idea níže*) než přepínání stavů pomocí **swtich**?
 
 ```c
  int number = 50;
