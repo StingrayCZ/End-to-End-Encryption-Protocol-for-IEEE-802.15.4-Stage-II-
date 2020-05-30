@@ -103,3 +103,12 @@ do
 #endif
 
 ```
+
+
+## Struct
+
+```c
+int i = 5;
+i->b = 42;  /* Write 42 into `int` at address 7 */
+100->a = 0; /* Write 0 into `int` at address 100 */
+```
