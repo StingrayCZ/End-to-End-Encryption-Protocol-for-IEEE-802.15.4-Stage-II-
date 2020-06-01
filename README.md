@@ -1,3 +1,106 @@
+## Konzultace 1.6.2020
+
+Stack v2020 k náhledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Protocol%20Stack%20v2020.zip">zde</a>.
+
+## Security
+```c
+NWK_SetSecurityKey((uint8_t *)"Security12345678");
+```
+## Endpoints
+```c
+static bool appDataInd(NWK_DataInd_t *ind) 
+{ 
+  // process the frame 
+  return true; 
+} 
+ 
+NWK_OpenEndpoint(1, appDataInd);  
+```
+
+## Payload
+```c
+static uint8_t message; 
+static NWK_DataReq_t nwkDataReq; 
+ 
+static void appDataConf(NWK_DataReq_t *req) 
+{ 
+  if (NWK_SUCCESS_STATUS == req->status) 
+    // frame was sent successfully 
+  else 
+    // some error happened 
+} 
+ 
+static void sendFrame(void) 
+{ 
+  nwkDataReq.dstAddr = 0; 
+  nwkDataReq.dstEndpoint = 1; 
+  nwkDataReq.srcEndpoint = 5; 
+  nwkDataReq.options = NWK_OPT_ACK_REQUEST | NWK_OPT_ENABLE_SECURITY; 
+  nwkDataReq.data = &message; 
+  nwkDataReq.size = sizeof(message); 
+  nwkDataReq.confirm = appDataConf; 
+  NWK_DataReq(&nwkDataReq); 
+} 
+```
+  
+## Receiving the Data
+
+```c
+static bool appDataInd(NWK_DataInd_t *ind) 
+{ 
+  if (!appReadyToReceive) 
+    return false; 
+  // process ind->size bytes of the data pointed by ind->data 
+  NWK_SetAckControl(APP_DO_NOT_SLEEP); 
+  return true; 
+} 
+```
+```c
+Table 5-4. Network Data Indication Structure Fields 
+Name Description 
+srcAddr Network address of the source
+dstEndpoint Destination endpoint number (
+srcEndpoint Source endpoint number (remote
+Options Data indication options. It may
+Table 5-5 (combined using bitwise
+Data Pointer to the payload data 
+Size Size of the payload data 
+Lqi LQI of the received frame 
+Rssi RSSI of the received frame 
+
+Table 5-5. Data Indication Options 
+Name Description 
+NWK_IND_OPT_ACK_REQUESTED       Acknowledgment was requested 
+NWK_IND_OPT_SECURED             Frame was encrypted 
+NWK_IND_OPT_BROADCAST           Frame was sent to a broadcast address (0xffff) 
+NWK_IND_OPT_LOCAL               Frame was received from a directly accessible node 
+NWK_IND_OPT_BROADCAST_PAN_ID    Frame was sent to a broadcast PAN ID (0xffff) 
+NWK_IND_OPT_LINK_LOCAL          Frame was sent with a Link Local field set to 1 
+NWK_IND_OPT_MULTICAST           Frame was sent to a group address 
+
+```
+
+## Timers
+```c
+static SYS_Timer_t appTimer; 
+ 
+static void appTimerHandler(SYS_Timer_t *timer) 
+{ 
+  // handle timer event 
+  If (timeToStop) 
+    SYS_TimerStop(timer); 
+} 
+ 
+static void startTimer(void) 
+{ 
+  appTimer.interval = 1000; 
+  appTimer.mode = SYS_TIMER_PERIODIC_MODE; 
+  appTimer.handler = appTimerHandler; 
+  SYS_TimerStart(&appTimer); 
+} 
+```
+
+
 ## Konzultace 29.5.2020
 
 ### 1.Issue - Migrace proměnných
