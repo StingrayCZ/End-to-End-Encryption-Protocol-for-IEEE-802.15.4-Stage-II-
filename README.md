@@ -208,8 +208,9 @@ void Padding(int *num, int *res)
     {
         printf("\n\rpole [%2d] = %d", t, array[t]);
     }
-
-
+    
+    //////////////////
+    // Skladani cisla
     for (int g = 0; g < 15; g++){
         result = 10 * result + array[g];
     }
