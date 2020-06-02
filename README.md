@@ -109,7 +109,7 @@ int TESTmodulo (uint8_t *num, uint8_t *mod)
 **Tato aplikace má za úkol provádět dorovnání čísla na 16 místné číslo, tzv. padding.** Postup je takový, že aplikace si spočítá délku vstupu, poté číslo rozdělí do polí po jednotlyvých číslicích a do prázdných míst doplní 1. Potud mi algortimus pracuje správně, ikdyž je tu opět problém pokud je vstup více jako 10 místný, opět to vrací špatná čísla. Což by navadolo. Vstup z algortimu ECDH nebude nikdy tak velký.
 
 <p float="left">
-  <img src="/Pictures (general)/Cons 2.6.2020/Wolf.PNG" width="500" /> 
+  <img src="/Pictures (general)/Cons 2.6.2020/padding.PNG" width="500" /> 
 <p float="left">
 
 
