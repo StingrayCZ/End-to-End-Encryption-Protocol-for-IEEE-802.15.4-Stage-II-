@@ -1,5 +1,8 @@
 # Historical Content of Consultations
 
+## jhghj
+
+---------------------------------------------------------------------------------------------------------------------------
 ## From 25.5.2020
  
 • Algoritmus na výměnu klíču je hotov. Ukázka části pro generování (obsauje i zpětnou kontrolu vygenerované grupy) <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Prototype%2025.5.2020.md">zde</a>.</p>
