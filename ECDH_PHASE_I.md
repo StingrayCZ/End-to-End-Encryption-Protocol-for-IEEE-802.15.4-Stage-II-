@@ -1,6 +1,13 @@
 ## ECDH_PHASE_I
 
 ```c
+int mod, a_parameter, b_parameter, X_first, Y_first, G_Order;
+	
+ECDH_PHASE_A(&mod, &a_parameter, &b_parameter, &X_first, &Y_first, &G_Order);
+	
+```
+
+```c
 void ECDH_PHASE_A(int *mod, int *a_parameter, int *b_parameter, int *X_first, int *Y_first, int *G_Order)
 {
 	// Generator of random numbers
