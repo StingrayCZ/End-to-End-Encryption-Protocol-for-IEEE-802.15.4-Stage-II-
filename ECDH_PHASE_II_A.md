@@ -1,4 +1,12 @@
-## ECDH PHASE BA
+## ECDH PHASE II A
+
+```c
+int order, Xf, Yf, a, mod;
+int container[3];
+
+ECDH_PHASE_BA(&order, &Xf, &Yf, &a, &mod, container);
+```
+
 
 ```c
 void ECDH_PHASE_BA(int *Order, int *Xf, int *Yf, int *a, int *mod, int array[])
