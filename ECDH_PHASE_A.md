@@ -1,4 +1,4 @@
-## ECDH_PHASE_A
+## ECDH_PHASE_I
 
 ```c
 void ECDH_PHASE_A(int *mod, int *a_parameter, int *b_parameter, int *X_first, int *Y_first, int *G_Order)
