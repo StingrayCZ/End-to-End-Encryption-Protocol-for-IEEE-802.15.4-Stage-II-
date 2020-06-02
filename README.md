@@ -8,7 +8,7 @@ Pro testování v AVR jsem si vytvořil stejnou aplikaci, která je přetypován
 
 Níže jsou je ukázka **APP_TaskHandleru**(jako main aplikace) a obou verzí aplikace pro počítání modulo.
 
-**Otázka: Jaký typ zvolit nebo jak kó ošetřit? Zkoušel jsem Long, ten sice funguje, ale jeho hodnota nepřechízí do jiných částí kódů (pravděpodobně potřeba přetypování všeho)** 
+**Otázka: Jaký typ zvolit nebo jak kó ošetřit? Zkoušel jsem Long, ten sice funguje, ale jeho hodnota nepřechází do jiných částí kódů (pravděpodobně potřeba přetypování všeho)** 
 
 <p float="left">
   <img src="/Pictures (general)/Cons 2.6.2020/Wolf.PNG" width="600" /> 
@@ -106,7 +106,7 @@ int TESTmodulo (uint8_t *num, uint8_t *mod)
 
 ### Issue 2 - Padding
 
-**Tato aplikace má za úkol provádět dorovnání čísla na 16 místné číslo, tzv. padding.** Postup je takový, že aplikace si spočítá délku vstupu, poté číslo rozdělí do polí po jednotlyvých číslicích a do prázdných míst doplní 1. Potud mi algortimus pracuje správně, ikdyž je tu opět problém pokud je vstup více jako 10 místný, opět to vrací špatná čísla. Což by navadolo. Vstup z algortimu ECDH nebude nikdy tak velký.
+**Tato aplikace má za úkol provádět dorovnání čísla na 16 místné číslo, tzv. padding.** Postup je takový, že aplikace si spočítá délku vstupu, poté číslo rozdělí do polí po jednotlyvých číslicích a do prázdných míst doplní 1. Potud mi algortimus pracuje správně, ikdyž je tu opět problém pokud je vstup více jako 9 místný. Opět to vrací špatná čísla. Což by navadilo. Vstup z algortimu ECDH nebude nikdy tak velký.
 
 **Hlavním problémem algoritmu je v poslední část algoritmu**, která má na za úkol z pole poskládat opět číslo typu **int**.
 
