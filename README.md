@@ -2,11 +2,11 @@
 
 ### Issue 1 - Funkce modulo
 
-Pro můj algoritmus jsem si vyřvořil aplikaci k počítání zbytku po dělení (modulo), který pracuje jak s kladnými, tak i zápornými čísly. Ovšem problém nastává tehdy pokud na vstupu je číslo, které je větší než 32,768. Aplikace sice proběhne, ale vrátí špatný výsledek.
+Pro můj algoritmus jsem vyřvořil aplikaci k počítání zbytku po dělení (modulo), který pracuje jak s kladnými, tak i zápornými čísly. Ovšem problém nastává tehdy pokud na vstupu je číslo, které je větší než 32,768. Aplikace sice proběhne, ale vrátí špatný výsledek.
 
 Pro testování v AVR jsem si vytvořil stejnou aplikaci, která je přetypována na **uint8_t**. Ta pracuje spolehlivě do hodnoty 255. Výpočet ověřen ve WolframAlpha.
 
-Níže jsou je ukázka **APP_TaskHandleru** a obou verzí aplikace pro počítání modulo.
+Níže jsou je ukázka **APP_TaskHandleru**(jako main aplikace) a obou verzí aplikace pro počítání modulo.
 
 **Otázka: Jaký typ zvolit nebo jak kó ošetřit? Zkoušel jsem Long, ten sice funguje, ale jeho hodnota nepřechízí do jiných částí kódů (pravděpodobně potřeba přetypování všeho)** 
 
