@@ -1,3 +1,17 @@
+## Konzultace 3.6.2020
+
+Prace k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Thesis.pdfp">zde</a>.
+
+
+Problém s proměnnými vyřešen. Už to ptacuje dobře.
+
+```c
+#include <inttypes.h>
+#define __STDC_FORMAT_MACROS 1
+        printf("\n\rcislo je %d", resultB);
+	printf("\n\r%" PRId32 "\n", resultB);
+```
+
 ## Konzultace 2.6.2020
 
 ### Issue 1 - Funkce modulo
