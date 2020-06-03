@@ -1,4 +1,4 @@
-## ECDH PHASE II B
+## ECDH PHASE III
 
 ```c
     static int mod, a, b;
