@@ -14,6 +14,7 @@ void ECDH_PHASE_BA(int *Order, int *Xf, int *Yf, int *a, int *mod, int array[])
 
     static int OrderG, SecKey;
     static int X, Y, a_asymptote, modulus, iterator;
+    static int voidValue;   // excess value
     int container[2];
 
     OrderG = *Order;
@@ -28,7 +29,7 @@ void ECDH_PHASE_BA(int *Order, int *Xf, int *Yf, int *a, int *mod, int array[])
     iterator += 1;
 
 
-	PointComp(&X, &Y, &a_asymptote, &modulus, &iterator, container);
+	PointComp(&X, &Y, &a_asymptote, &modulus, &iterator, container, &voidValue);
 
 
 	array[0] = container[0];
