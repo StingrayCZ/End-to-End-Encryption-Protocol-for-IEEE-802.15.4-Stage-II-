@@ -1,16 +1,36 @@
 ## ECDH PHASE III
 
 ```c
-    static int mod, a, b;
-    int container[3];
+    
+    static int SecKey;
+    static int XFirst, YFirst; // coordinates of the first point (My node)
+    static int mod, a, orderG;
+
+    static int XO, YO;         // coordinates of the obtain point (opposite node)
+
+    static MutKEY; // result
+
+    static int container[2]; // Mutual Point
+
+    SecKey = 6;
+    XFirst = 1,
+    YFirst = 1;
+
+    XO = 6;
+    YO = 5;
 
     mod = 7;
     a = 1;
-    b = 6;
+    orderG = 11;
+
+    // Input:  SecKey, XFirst, YFirst, XO, YO, mod, a
+    // Output: MutKEY, container(array)
+    ECDH_PHASE_C(&SecKey, &XFirst, &YFirst, &XO, &YO, &mod, &a, &orderG, &MutKEY, container);
 
 
-    ECDH_PHASE_BB(&mod, &a, &b, container);
-    
+    printf("\nMutual key is %d", MutKEY);
+    printf("\nMutual point is [%d, %d]",container[0], container[1]);
+   
 ```
 
 ```c
