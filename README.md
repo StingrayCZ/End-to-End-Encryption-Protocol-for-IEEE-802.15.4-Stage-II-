@@ -12,7 +12,7 @@ Je seskupena do čtyř bloků pro všechny tři fáze výměny klíče:
 * Generování tajného klíče a výpočet bodu pro sdílení s protistranou -> **Phase II A** a **Phase II B**
 * Výpočet společného klíče -> **Phase III**
 
-**Otázka:** Zítra bych na kozultaci pořešil, jak sprvně vytvořit vhodný klíč z bodu, který je výstupem z bloku **PHASE 3**. Mohl bych použít svoji padding aplikaci
+**Otázka:** Zítra bych na kozultaci pořešil, jak sprvně vytvořit vhodný klíč z bodu, který je výstupem z bloku **PHASE 3**. Mohl bych použít svoji padding aplikaci nebo nějakou metodu součtu (dle Vaší rady). To se poradíme na konzultaci.
 
 ### PHASE 1
 
