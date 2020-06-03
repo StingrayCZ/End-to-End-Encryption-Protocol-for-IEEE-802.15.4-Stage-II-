@@ -5,7 +5,7 @@
 ## Aplikace ECDH
 
 <p float="left">
-  <img src="/Pictures (general)/GeneralFlowchart.png" width="600" /> 
+  <img src="/Pictures (general)/GeneralFlowchart.png" width="800" /> 
 <p float="left"> </p> 
 
 Pro přetypování na typ **int64_t** funguje i s velkými čísly. Přpravena na implentaci do stacku. Zbývá jen sjednotit některé drobné odchylky ve společných proměnných, které budou obsaženy v **main.c**. Imho, tímto je aplikace na výměnu klíče hotova.
