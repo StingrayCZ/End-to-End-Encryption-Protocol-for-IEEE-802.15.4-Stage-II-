@@ -1,6 +1,6 @@
 ## Konzultace 3.6.2020
 
-Prace k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Thesis.pdfp">zde</a>.
+PDF práce k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Thesis.pdfp">zde</a>.
 
 
 Problém s proměnnými vyřešen. Už to ptacuje dobře.
