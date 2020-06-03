@@ -119,7 +119,7 @@ void RecognizerSecKey(int *XF, int *YF, int *XO, int *YO, int *modulus, int *a_p
 	counter = 1;
 	int pole[1];
 
-	// Coordinates of the obtain point from other side
+	// Coordinates of the obtained point from other side
 	Xo = *XO;
 	Yo = *YO;
 
