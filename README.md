@@ -61,7 +61,7 @@ int64_t container[3];
 ECDH_PHASE_BB(&mod, &a, &b, container);
 ```
 
-## PHASE 3
+### PHASE 3
 
 **Input:** MySecretKey, XFirst, YFirst, modulus, a parameter, order </p>
 **Output:**  MutualKey, MutualPoint *(in array)* </p>
