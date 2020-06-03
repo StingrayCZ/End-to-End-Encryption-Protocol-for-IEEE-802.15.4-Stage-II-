@@ -9,8 +9,11 @@
 *Output:**  MutualKey, MutualPoint *(in array)* 
 
 ```c
+// PROTOTYPE
+void ECDH_PHASE_C();
+```
+```c
 int64_t MSKey, XF, YF, XO, YO, mod, a, order, MutKEY, container;
 
 void ECDH_PHASE_C(&MSKey, &XF, &YF, &XO, &YO, &mod, &a, &order, &MutKEY, container);
-
 ```
