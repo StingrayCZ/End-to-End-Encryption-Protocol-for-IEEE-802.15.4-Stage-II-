@@ -4,7 +4,7 @@
 
 ## Aplikace ECDH
 
-Pro přetypování na typ **int64_t** funguje i s velkými čísly. Přpravena na implentaci do stacku. Imho, tímto je aplikace na výměnu klíče hotova.
+Pro přetypování na typ **int64_t** funguje i s velkými čísly. Přpravena na implentaci do stacku. Zbývá jen sjednotit některé drobné odchylky ve společných proměnných, které budou obsaženy v **main.c**. Imho, tímto je aplikace na výměnu klíče hotova.
 
 Je seskupena do čtyř bloků pro všechny tři fáze výměny klíče:
 
