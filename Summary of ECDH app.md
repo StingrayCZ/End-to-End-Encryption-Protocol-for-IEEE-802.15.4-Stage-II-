@@ -5,8 +5,8 @@
 
 ## PHASE C
 
-**Input:** MySecretKey, XFirst, YFirst, modulus, a parameter, order;
-*Output:**  MutualKey, MutualPoint *(in array)* 
+**Input:** MySecretKey, XFirst, YFirst, modulus, a parameter, order
+**Output:**  MutualKey, MutualPoint *(in array)* 
 
 ```c
 // PROTOTYPE
