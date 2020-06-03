@@ -28,8 +28,7 @@ void ECDH_PHASE_C(int *MSKey, int *XF, int *YF, int *XO, int *YO, int *mod, int 
 
 	static int container[2]; // Mutual Point
 	static int iterator; // number of iteration
-  
-  static voidValue;    // excess value
+	static voidValue;    // excess value
 
 
 	MySecKey = *MSKey;
