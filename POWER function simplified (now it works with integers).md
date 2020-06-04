@@ -25,3 +25,41 @@ int main()
 }
 
 ```
+# Ready for immpemented
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+int64_t Power();
+
+int main()
+{
+    int64_t a, b, c;
+
+    a = -2;
+    b = 9;
+
+    c = Power(&a, &b);
+
+    printf("Result is %d", c);
+
+}
+
+
+
+
+int64_t Power(int64_t *Num, int64_t *PowerNum)
+{
+    int64_t num, powernum, result;
+
+    num = *Num;
+    powernum = *PowerNum;
+
+    result = (int64_t)(round(pow(num, powernum)));
+
+    return result;
+
+}
+
+```
