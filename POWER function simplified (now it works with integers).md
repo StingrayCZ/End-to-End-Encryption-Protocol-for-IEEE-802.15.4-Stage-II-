@@ -25,7 +25,7 @@ int main()
 }
 
 ```
-# Ready for immpemented
+# Ready for implementation
 ```c
 #include <stdio.h>
 #include <stdlib.h>
