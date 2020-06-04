@@ -2,7 +2,7 @@
 
 ## Text práce
 
-PDF práce k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Thesis%204_6_2020.pdfp">zde</a>.
+PDF práce k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Thesis%204_6_2020.pdf">zde</a>. </a>
 
 ## Aplikace ECDH
 
