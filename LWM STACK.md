@@ -65,7 +65,7 @@ appSendDataRSSI();
 }
 ```
 
-##  
+## Receive data
 ```c
 static bool appAnchorData(NWK_DataInd_t *ind)
 {
