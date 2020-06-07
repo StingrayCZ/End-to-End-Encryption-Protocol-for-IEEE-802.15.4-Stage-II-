@@ -8,13 +8,13 @@ appDataReqBusy = false;
 ```
 
 ```sh
-NWK_SUCCESS_STATUS Operation completed successfully 
-NWK_ERROR_STATUS Unknown error 
-NWK_OUT_OF_MEMORY_STATUS Buffer allocation failed 
-NWK_NO_ACK_STATUS Network level acknowledgment was not received 
-NWK_NO_ROUTE_STATUS Route to the destination address was not found 
-NWK_PHY_CHANNEL_ACCESS_FAILURE_STATUS Radio failed to gain access to the channel 
-NWK_PHY_NO_ACK_STATUS Physical level acknowledgment was not received 
+NWK_SUCCESS_STATUS                        Operation completed successfully 
+NWK_ERROR_STATUS                          Unknown error 
+NWK_OUT_OF_MEMORY_STATUS                  Buffer allocation failed 
+NWK_NO_ACK_STATUS                         Network level acknowledgment was not received 
+NWK_NO_ROUTE_STATUS                       Route to the destination address was not found 
+NWK_PHY_CHANNEL_ACCESS_FAILURE_STATUS     Radio failed to gain access to the channel 
+NWK_PHY_NO_ACK_STATUS                     Physical level acknowledgment was not received 
 ```
 
 ## Definition of payload
