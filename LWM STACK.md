@@ -166,3 +166,15 @@ break;
 }
 }
 ```
+## States
+```c
+static AppState_t appState = APP_STATE_INITIAL;
+```
+
+```c
+typedef enum AppState_t
+{
+	APP_STATE_INITIAL,
+	APP_STATE_IDLE,
+} AppState_t;
+```
