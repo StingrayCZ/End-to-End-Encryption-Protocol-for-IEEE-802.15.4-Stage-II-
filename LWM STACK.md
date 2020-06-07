@@ -51,3 +51,16 @@ printf("Data sent \n\r");
 LED0SW;
 }
 ```
+## Timers set
+```c
+static void RSSI_TimerHandler(SYS_Timer_t *timer)
+{
+appSendDataRSSI();
+//(void)timer;
+}
+
+static void RSSI_a_TimerHandler(SYS_Timer_t *timer)
+{
+appSendDataRSSI();
+}
+```
