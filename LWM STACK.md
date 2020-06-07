@@ -191,3 +191,6 @@ NWK_SetSecurityKey((uint8_t *)"Security12345678");
 
 NWK_SetSecurityKey((uint8_t *key); 
 ```
+```c
+PHY_EncryptReq
+```
