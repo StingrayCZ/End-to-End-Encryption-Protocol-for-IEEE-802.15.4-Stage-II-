@@ -186,3 +186,8 @@ void NWK_SetSecurityKey(uint8_t *key)
   memcpy((uint8_t *)nwkIb.key, key, NWK_SECURITY_KEY_SIZE);
 }
 ```
+```c
+NWK_SetSecurityKey((uint8_t *)"Security12345678"); 
+
+NWK_SetSecurityKey((uint8_t *key); 
+```
