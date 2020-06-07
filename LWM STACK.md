@@ -1,8 +1,19 @@
 ## Variables
 ```c
+static AppState_t appState = APP_STATE_INITIAL;
+static SYS_Timer_t appTimer;
+static SYS_Timer_t RSSI_Timer;
+static SYS_Timer_t RSSI_a_Timer;
 static NWK_DataReq_t appDataReq;
 static bool appDataReqBusy = false;
 static uint8_t appDataReqBuffer[APP_BUFFER_SIZE];
+static uint8_t appUartBuffer[APP_BUFFER_SIZE];
+static uint8_t appUartBufferPtr = 0;
+static int anchorTable[2][3];
+static int matrix[7][7];
+static float matrix_distance[7][7];
+static int64_t SuperKEY = 384865782;
+
 ```
 
 ## Definition of Status
