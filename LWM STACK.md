@@ -178,3 +178,11 @@ typedef enum AppState_t
 	APP_STATE_IDLE,
 } AppState_t;
 ```
+
+## Security
+```
+void NWK_SetSecurityKey(uint8_t *key)
+{
+  memcpy((uint8_t *)nwkIb.key, key, NWK_SECURITY_KEY_SIZE);
+}
+```
