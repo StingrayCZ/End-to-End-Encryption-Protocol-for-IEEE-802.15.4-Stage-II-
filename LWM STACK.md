@@ -1,3 +1,10 @@
+## Variables
+```c
+static NWK_DataReq_t appDataReq;
+static bool appDataReqBusy = false;
+static uint8_t appDataReqBuffer[APP_BUFFER_SIZE];
+```
+
 ## Definition of Status
 ```c
 static void appDataConf(NWK_DataReq_t *req)
