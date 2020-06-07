@@ -64,3 +64,72 @@ static void RSSI_a_TimerHandler(SYS_Timer_t *timer)
 appSendDataRSSI();
 }
 ```
+
+##  
+```c
+static bool appAnchorData(NWK_DataInd_t *ind)
+{
+
+uint16_t address = ind->srcAddr;
+volatile uint16_t NodeAddress;
+volatile uint16_t NodeAddressa;
+volatile uint16_t NodeAddressb;
+NodeAddressa= ind->data[0]<<8;
+NodeAddressb= ind->data[1];
+
+NodeAddress= NodeAddressa + NodeAddressb;
+
+int8_t rssiX=ind->data[2];
+#ifdef USB_DEBUG
+printf("We got data from anchor %d: Node: %d, RSSI: %d\n\r", address,NodeAddress,rssiX);
+#endif
+
+LED0SW;
+//other lines
+matrix[address-0x401][NodeAddress-1] = rssiX;
+return true;
+
+}
+```
+
+## appInit
+```c
+static void appInit(void)
+{
+NWK_SetAddr(APP_ADDR);
+NWK_SetPanId(APP_PANID);
+PHY_SetChannel(APP_CHANNEL);
+#ifdef PHY_AT86RF212
+PHY_SetBand(APP_BAND);
+PHY_SetModulation(APP_MODULATION);
+#endif
+PHY_SetRxState(true);
+
+if(APP_ADDR > 0x400){
+NWK_OpenEndpoint(APP_ENDPOINT, appDataInd);
+}
+
+if(APP_ADDR == 0x401){
+NWK_OpenEndpoint(2, appAnchorData);
+}
+
+if(APP_ADDR < 0x400){
+NWK_OpenEndpoint(APP_ENDPOINT, appAnchorData);
+}
+
+HAL_BoardInit();
+BoardInit();
+
+appTimer.interval = APP_FLUSH_TIMER_INTERVAL;
+appTimer.mode = SYS_TIMER_PERIODIC_MODE;
+appTimer.handler = appTimerHandler;
+
+RSSI_Timer.interval = 1000;
+RSSI_Timer.mode = SYS_TIMER_PERIODIC_MODE;
+RSSI_Timer.handler = RSSI_TimerHandler;
+
+RSSI_a_Timer.interval = 60000;
+RSSI_a_Timer.mode = SYS_TIMER_PERIODIC_MODE;
+RSSI_a_Timer.handler = RSSI_a_TimerHandler;
+}
+```
