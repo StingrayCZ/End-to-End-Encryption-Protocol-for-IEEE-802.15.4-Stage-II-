@@ -133,3 +133,36 @@ RSSI_a_Timer.mode = SYS_TIMER_PERIODIC_MODE;
 RSSI_a_Timer.handler = RSSI_a_TimerHandler;
 }
 ```
+
+## App_TaskHandler(void)
+```c
+static void APP_TaskHandler(void)
+{
+switch (appState)
+{
+case APP_STATE_INITIAL:
+{
+appInit();
+appState = APP_STATE_IDLE;
+
+if(APP_ADDR < 0x401){
+SYS_TimerStart(&RSSI_Timer);
+}
+else if (APP_ADDR == 0x401){
+SYS_TimerStart(&appTimer);
+}
+else if(APP_ADDR > 0x401){
+SYS_TimerStart(&RSSI_a_Timer);
+}
+
+break;
+
+case APP_STATE_IDLE:
+break;
+
+default:
+break;
+}
+}
+}
+```
