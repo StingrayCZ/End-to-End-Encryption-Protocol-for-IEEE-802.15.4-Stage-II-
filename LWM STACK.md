@@ -23,8 +23,39 @@ static void appDataConf(NWK_DataReq_t *req)
 appDataReqBusy = false;
 (void)req;
 }
+
+```
+```c
+static AppState_t appState = APP_STATE_INITIAL;
+
 ```
 
+```c
+typedef enum {
+	APP_STATE_LAUNCH,
+	APP_STATE_WAIT,
+	APP_STATE_NEXTSTEPACK,
+	APP_STATE_WAITACK,
+	APP_STATE_ACK,
+	APP_STATE_IDLE,
+} APP_STATES;
+
+APP_STATES state;
+//static AppState_t state = APP_STATE_INIT;
+
+static AppState_t appState = APP_STATE_INITIAL;
+
+
+// APPSTATES
+
+typedef enum AppState_t
+{
+	APP_STATE_INITIAL,
+	APP_STATE_IDLE,
+} AppState_t;
+```
+
+## Status of Payload
 ```sh
 NWK_SUCCESS_STATUS                        Operation completed successfully 
 NWK_ERROR_STATUS                          Unknown error 
