@@ -8,6 +8,15 @@ Souhrn všech spuštěcích bloků, <a href="https://github.com/StingrayCZ/End-t
 
 Stack ke stažení v ZIP, <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Protocol%20Stack%20v2020%2086.zip">zde</a>. </a>
 
+## Securitty
+```c
+void NWK_SetSecurityKey(uint8_t *key)
+{
+  memcpy((uint8_t *)nwkIb.key, key, NWK_SECURITY_KEY_SIZE);
+}
+
+
+```
 
 
 ## App_task Handler
