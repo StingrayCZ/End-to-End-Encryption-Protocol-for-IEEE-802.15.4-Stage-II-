@@ -6,6 +6,9 @@ PDF práce k nahledu <a href="https://github.com/StingrayCZ/End-to-End-Encryptio
 
 Souhrn všech spuštěcích bloků, <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Summary%20of%20ECDH%20app.md">zde</a>. </a>
 
+Stack ke stažení v ZIP, <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Protocol%20Stack%20v2020%2086.zip">zde</a>. </a>
+
+
 
 ## App_task Handler
 ```c
