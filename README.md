@@ -10,5 +10,5 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
 * Prezentace je logicky členěná dle toho, jak jednotlivé fáze přicházejí ke slovu. </p>
 * První část prezentace je zaměřena na vysvětlení samotné výměny (bez komunikace mezi deskami). </p>
 * Druá část je věnována impmentaci v rámci LWM. </p>
-* Je zde pomocí vývojového digramu popsáno fungování ** TaskHandkeru ** a přepínání mezi jednotlivýmy případy ** case ** </p>
+* Je zde pomocí vývojového digramu popsáno fungování **TaskHandleru** a přepínání mezi jednotlivýmy případy **case** </p>
 
