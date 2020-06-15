@@ -98,7 +98,7 @@ Zde bude postupně popsána Fáze A, včetně komponent. Tuto část bych ovšem
 
 
 ### Fáze B (slide 19 - 21)
-Úvodní stránka Fáze B, ke které řeknu, že má za úkol volbu tajného klíče a výpočet sdíleného klíče. Pro odesilatele a příjemce se liší, protože příjemce si musí z obdržených hodnot *p*, *a* a *b* spočítat generátor a řád. V dalším **20** slidu bych jen řekl, že aplikace je vytvořena jako samostatný blok, který umožňuje snadnou implementaci. Ke slidu **21** bych jen dodat, že aplikace je osahuje funkci (nebo spíše vnořenou aplikaci), která pseudonáhodně vybírá tajný klíč a je zde ošetření proti nulovému výsledků.
+Úvodní stránka Fáze B, ke které řeknu, že má za úkol volbu tajného klíče a výpočet sdíleného klíče. Pro odesilatele a příjemce se liší, protože příjemce si musí z obdržených hodnot *p*, *a* a *b* spočítat generátor a řád. V dalším **20** slidu bych jen řekl, že aplikace je vytvořena jako samostatný blok, který umožňuje snadnou implementaci do algoritmu. Ke slidu **21** bych jen dodal, že aplikace je osahuje funkci (nebo spíše vnořenou aplikaci), která pseudonáhodně vybírá tajný klíč a je zde ošetření proti nulovému výsledku.
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/19.png" width="700" /> 
 <p float="left"> </p> 
