@@ -32,7 +32,7 @@ Zde bych jen řekl, že výměnu klíčů je realizována ve třech fázích a j
 <p float="left"> </p> 
 
 ### Fáze A (slide 4 - 18)
-Zde bude postupně popsána Fáze A, včetně komponent. Tuto část bych ovšem zestručnil. K podprogramům **TheFirstPoint**, **PointComp**, **VerifyOfPoint** bych věnoval jen jeden slide s popisem (ačkoliv u aplikace  **TheFirstPoint** je pro ukázku popsána detailně), co ta funkce umí a dál bych to nerozebíral. Ačkoliv to může být zajímavé, spotřebujeto nějaký čas, který bude chybět jinde. Na **slidu 18** je ukázka, jak pracuje fáze A, tj. výpočet grupy bodů na jednoduchém příkladu. Ten bych tam nechal. Je to důkaz, že ta spleť kódů funguje a generuje nějaké hodnoty.
+Zde bude postupně popsána Fáze A, včetně komponent. Tuto část bych ovšem zestručnil. K podprogramům **TheFirstPoint**, **PointComp**, **VerifyOfPoint** bych věnoval jen jeden slide s popisem (ačkoliv aplikace  **TheFirstPoint** je pro ukázku popsána detailně), co ta funkce umí a dál bych to nerozebíral. Ačkoliv to může být zajímavé, spotřebujeto nějaký čas, který bude chybět jinde. Na **slidu 18** je ukázka, jak pracuje fáze A, tj. výpočet grupy bodů na jednoduchém příkladu. Ten bych tam nechal. Je to důkaz, že ta spleť kódů funguje a generuje nějaké hodnoty.
 
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/04.png" width="700" /> 
