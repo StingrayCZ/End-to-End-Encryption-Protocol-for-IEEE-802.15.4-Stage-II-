@@ -112,7 +112,7 @@ Zde bude postupně popsána Fáze A, včetně komponent. Tuto část bych ovšem
 <p float="left"> </p> 
 
 ### Fáze C (slide 22 - 24)
-Opět prezentace dle schématu Fáze B. Říct jen, že tato fáze slouží k výpočtu společného bodů. Obsahuje podaplikakci (další slide), která rozpozná z obdrženého bodu od protistrant tajný klíč (na základš pořadí v grupě).
+Opět prezentace dle schématu Fáze B. Říct jen, že tato fáze slouží k výpočtu společného bodů. Obsahuje podaplikakci (další slide), která rozpozná z obdrženého bodu od protistrany její tajný klíč (na základě znalosti pořadí v grupě).
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/22.png" width="700" /> 
 <p float="left"> </p> 
