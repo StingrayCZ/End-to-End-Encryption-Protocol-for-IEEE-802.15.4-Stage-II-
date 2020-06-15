@@ -19,7 +19,7 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
 <p float="left"> </p> 
 
 ### Cíle práce
-Tunto slide se mi zdá přebytečný. Komi se bude vědět, co je tématem.
+Tunto slide se mi zdá přebytečný. Komise bude určitě vědět, co je tématem.
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/02.png" width="700" /> 
 <p float="left"> </p> 
