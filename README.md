@@ -14,5 +14,5 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver 1.01/101.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.01 FRAME/01.png" width="700" /> 
 <p float="left"> </p> 
