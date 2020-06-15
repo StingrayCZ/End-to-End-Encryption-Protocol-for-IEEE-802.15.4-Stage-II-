@@ -12,6 +12,7 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
 * Druhá část je věnována impmentaci v rámci LWM. </p>
 * Je zde pomocí vývojových digramu popsáno fungování **TaskHandleru** a přepínání mezi jednotlivýmy případy **case** </p>
 
+## Prezentace
 
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/01.png" width="700" /> 
