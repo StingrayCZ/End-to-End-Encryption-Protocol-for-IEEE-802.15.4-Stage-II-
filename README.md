@@ -25,8 +25,8 @@ Tunto slide se mi zdá přebytečný. Komi se bude vědět, co je tématem.
 <p float="left"> </p> 
 
 ### Obecné schéma výměny klíčů
-Zde bych řekl, že výměnu klíčů je realizována ve třech fázích.
-* Sestavení parametrů eliptické křivky (sortování modula, parametrů křivky, výpočet generátoru a řádu grupy) </p>
+Zde bych řekl, že výměnu klíčů je realizována ve třech fázích a hnedka přepl na další slide.
+</p>
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/03.png" width="700" /> 
 <p float="left"> </p> 
