@@ -25,7 +25,7 @@ Tunto slide se mi zdá přebytečný. Komise bude určitě vědět, co je témat
 <p float="left"> </p> 
 
 ### Obecné schéma výměny klíčů
-Zde bych jen řekl, že výměnu klíčů je realizována ve třech fázích a je založena na eliptických křivkách. A hnedka přepl na další slide.
+Zde bych jen řekl, že výměnu klíčů je realizována ve třech fázích a je založena na eliptických křivkách. A hnedka přepnul na další slide.
 </p>
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/03.png" width="700" /> 
