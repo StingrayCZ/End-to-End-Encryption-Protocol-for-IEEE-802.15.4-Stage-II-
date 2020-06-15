@@ -14,136 +14,124 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/01.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/01.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/02.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/02.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/03.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/03.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/04.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/04.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/05.png" width="700" /> 
-<p float="left"> </p> 
-
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/06.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/07.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/08.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/09.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/10.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/11.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/12.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/13.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/14.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/15.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/16.png" width="700" /> 
-<p float="left"> </p> 
-
-<p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/17.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/05.png" width="700" /> 
 <p float="left"> </p> 
 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/18.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/06.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/19.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/07.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/20.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/08.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/21.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/09.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/22.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/10.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/22.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/11.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/23.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/12.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/24.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/13.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/25.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/14.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/26.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/15.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/27.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/16.png" width="700" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/28.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/17.png" width="700" /> 
 <p float="left"> </p> 
 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver1.01 FRAME/29.png" width="700" /> 
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/18.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/19.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/20.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/21.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/22.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/22.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/23.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/24.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/25.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/26.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/27.png" width="700" /> 
+<p float="left"> </p> 
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/28.png" width="700" /> 
 <p float="left"> </p> 
 
 
-
-
-
-
-
-
-
-
-
-
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver1.02 FRAME/29.png" width="700" /> 
+<p float="left"> </p> 
