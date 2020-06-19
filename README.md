@@ -1,4 +1,4 @@
-# Konzultace 15.6.2020
+# Konzultace 19.6.2020
 
 ## Ukázka prezentace
 
