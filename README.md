@@ -144,6 +144,10 @@ Tady jsem umístil vývojové diagramy, které popisují zapínání jednotlivý
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/28.png" width="700" /> 
 <p float="left"> </p> 
 
+<p float="left">
+  <img src="/Pictures (general)/Questions.png" width="700" /> 
+<p float="left"> </p> 
+
 
 <p float="left">
   <img src="/Pictures (general)/Presentation ver1.03 FRAME/29.png" width="700" /> 
