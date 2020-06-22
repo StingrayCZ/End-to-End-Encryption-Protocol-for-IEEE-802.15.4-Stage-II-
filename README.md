@@ -1,6 +1,7 @@
 # Konzultace 22.6.2020
 
 * Prezentace zredukována na 20 slidů (včetně úvodu a konce) </p>
+* Některé slidy jsou jako jen úvodní pro orientaci co je prezentováno </p>
 * otázky oponenta přemístěny za konec </p>
 * nejsem si jist s odpovědima, hlavně na první a poslední </p>
 * Poslední otázku jsem dal 25vteřin, tak dlouho trvá otestování čísla níže, který by mělo být délky 512b. Ale test jsem provedl na ATmega328P (Arduino), dle toho <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/PrimeNum.md">kódu</a> (upravená samostatná aplikace použitá ve Stacku). </a>  </p>
