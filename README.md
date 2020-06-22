@@ -12,11 +12,11 @@
 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver2.00 FRAME/22.png" width="500" /> 
+  <img src="/Pictures (general)/Presentation ver2.00 FRAME/22.png" width="800" /> 
 <p float="left"> </p> 
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation ver2.00 FRAME/23.png" width="500" /> 
+  <img src="/Pictures (general)/Presentation ver2.00 FRAME/23.png" width="800" /> 
 <p float="left"> </p> 
 
 
