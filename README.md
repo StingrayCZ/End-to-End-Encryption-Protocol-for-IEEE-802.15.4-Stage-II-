@@ -21,7 +21,7 @@ Prezentace ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryp
   <img src="/Pictures (general)/Presentation ver2.00 FRAME/01.png" width="700" /> 
 <p float="left"> </p> 
 
-Zde jen prezentace myšlenky rozčlenění výměny na tři fáze.
+**Zde jen prezentace myšlenky rozčlenění výměny na tři fáze.**
 
 <p float="left">
   <img src="/Pictures (general)/Presentation ver2.00 FRAME/02.png" width="700" /> 
@@ -46,7 +46,7 @@ Zde jen prezentace myšlenky rozčlenění výměny na tři fáze.
 <p float="left">
   <img src="/Pictures (general)/Presentation ver2.00 FRAME/07.png" width="700" /> 
 <p float="left"> </p> 
-
+**Zde jen prezentace myšlenky rozčlenění výměny na tři fáze.**
 <p float="left">
   <img src="/Pictures (general)/Presentation ver2.00 FRAME/08.png" width="700" /> 
 <p float="left"> </p> 
