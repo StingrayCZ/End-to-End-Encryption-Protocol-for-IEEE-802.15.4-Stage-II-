@@ -1,8 +1,8 @@
 # Konzultace 22.6.2020
 
 
-* storage classes
-> auto, register, static and extern
+***storage classes**
+auto, register, static and extern
 
 * advanced datay types
 - typedef, varibale length arrays, flexible array numbers, complex number types
