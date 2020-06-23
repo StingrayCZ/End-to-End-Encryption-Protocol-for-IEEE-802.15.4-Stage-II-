@@ -1,6 +1,6 @@
 # Konzultace 22.6.2020
 
-* **storage classes**
+* **storage classes**</p>
 auto, register, static and extern
 
 * advanced datay types
