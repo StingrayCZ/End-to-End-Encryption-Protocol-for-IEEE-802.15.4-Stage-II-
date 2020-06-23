@@ -2,7 +2,7 @@
 
 
 * storage classes
- * auto, register, static and extern
+> auto, register, static and extern
 
 * advanced datay types
 - typedef, varibale length arrays, flexible array numbers, complex number types
