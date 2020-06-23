@@ -1,15 +1,15 @@
 # Konzultace 22.6.2020
 
-* **storage classes**</p>
+* **Storage classes**</p>
 auto, register, static and extern
 
-* advanced datay types
+* **Advanced datay types**</p>
 - typedef, varibale length arrays, flexible array numbers, complex number types
 
-* type qualifiers
+* **Type qualifiers**</p>
 - const, volatile, and restrict
 
-* bit manipulation
-- binary number and bits
-- binary operators (logical and shifting)
-- bitmask and bitfields
+* **Bit manipulation** </p>
+binary number and bits
+binary operators (logical and shifting)
+bitmask and bitfields
