@@ -20,10 +20,15 @@ bitmask and bitfields
 ## Neostatky ve výměně klíčů
 
 <p float="left">
-  <img src="/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/Pictures (general)/PostApplication/1.png" width="800" /> 
+  <img src="/Pictures (general)/PostApplication/1.png" width="800" /> 
 <p float="left"> </p> 
 
 
 <p float="left">
-  <img src="/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/Pictures (general)/PostApplication/Post Prime" width="800" /> 
+  <img src="/Pictures (general)/PostApplication/Post Prime" width="800" /> 
+<p float="left"> </p> 
+
+
+<p float="left">
+  <img src="/Pictures (general)/Presentation ver2.00 FRAME/23.png" width="800" /> 
 <p float="left"> </p> 
