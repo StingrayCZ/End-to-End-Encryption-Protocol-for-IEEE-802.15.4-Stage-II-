@@ -16,3 +16,9 @@ auto, register, static and extern
 binary number and bits
 binary operators (logical and shifting)
 bitmask and bitfields
+
+## Neostatky ve výměně klíčů
+
+<p float="left">
+  <img src="/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/Pictures (general)/PostApplication/1.png" width="800" /> 
+<p float="left"> </p> 
