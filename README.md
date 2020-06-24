@@ -17,15 +17,20 @@ binary number and bits
 binary operators (logical and shifting)
 bitmask and bitfields
 
-## Neostatky ve výměně klíčů
+## Nedostatky ve výměně klíčů
 
 <p float="left">
   <img src="/Pictures (general)/PostApplication/1.png" width="800" /> 
 <p float="left"> </p> 
 
+## Metoda "hrubou silou"
 
 <p float="left">
   <img src="/Pictures (general)/PostApplication/Post Prime.png" width="800" /> 
 <p float="left"> </p> 
 
+## Metoda "hrubou silou"
 
+<p float="left">
+  <img src="/Pictures (general)/PostApplication/Post Sec.png" width="800" /> 
+<p float="left"> </p> 
