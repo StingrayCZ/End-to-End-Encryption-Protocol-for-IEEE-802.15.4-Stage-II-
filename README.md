@@ -1,5 +1,8 @@
 # Konzultace 22.6.2020
 
+Doplnění znalostí slédnutím <a href="https://www.udemy.com/course/advanced-c-programming-course/">kódu</a> online kurzu. </a>  </p>
+
+
 * **Storage classes**</p>
 auto, register, static and extern
 
