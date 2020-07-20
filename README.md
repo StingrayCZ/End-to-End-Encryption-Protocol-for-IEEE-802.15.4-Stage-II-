@@ -1,3 +1,5 @@
+# Konzultace 20.7.2020
+
 ## Fáze generování 32 bitového čísla - dosazeni vetsiho cisla nez nabizi rand()
 
 ```c
