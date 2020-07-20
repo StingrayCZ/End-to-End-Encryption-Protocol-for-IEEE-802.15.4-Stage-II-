@@ -45,7 +45,7 @@ int main()
 }
 ```
 
-## Spojení jednotlivých 32bit stringu do 512 stringu
+## Spojení jednotlivých 32bit stringu do 512 stringu - metodika
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -67,6 +67,49 @@ int main()
     length = strlen(pp);
 
     printf("Result is %d", length);
+
+
+    return 0;
+}
+```
+
+## Metodika spojovani (jde to  jinak než pomocí for?)
+```c
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define EMPTY_LINE printf("\n");
+
+int main()
+{
+
+
+    uint8_t randNUM, SUM;
+    char buffer[10];
+    char BigN[] = "0";
+
+    srand((unsigned int) time(NULL));
+
+    for(int i = 0; i < 12; i ++)
+    {
+
+        SUM = rand() % 16;
+        printf("DEC = %d\n\r",SUM);
+
+        itoa(SUM,buffer,2);
+
+        printf("BIN = %s\n", buffer);
+
+        strcat(BigN, buffer);
+
+        EMPTY_LINE
+
+
+    }
+
+    printf("TOTAL = %s\n", BigN);
 
 
     return 0;
