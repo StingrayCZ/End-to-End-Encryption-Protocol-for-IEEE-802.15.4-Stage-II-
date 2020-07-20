@@ -92,24 +92,24 @@ int main()
 
     srand((unsigned int) time(NULL));
 
-    for(int i = 0; i < 12; i ++)
+    for(int i = 0; i < 8; i ++)                // 8 X 4 bit cislo = 32 bitove cislo
     {
 
-        SUM = rand() % 16;
-        printf("DEC = %d\n\r",SUM);
+        SUM = rand() % 16;                     // pseudorandomni cislo o 4 bitove delce
+        printf("DEC = %d\n\r",SUM);            // ukazka pseudorandomniho cisla o 4 bitove delce
 
-        itoa(SUM,buffer,2);
+        itoa(SUM,buffer,2);                    // prevedeni do binarni soustavy
 
-        printf("BIN = %s\n", buffer);
+        printf("BIN = %s\n", buffer);          // ukazka cisla jako stringu
 
-        strcat(BigN, buffer);
+        strcat(BigN, buffer);                  // spojeni aktualniho vysledku s predchozim - postupne nabalovani
 
         EMPTY_LINE
 
 
     }
 
-    printf("TOTAL = %s\n", BigN);
+    printf("TOTAL = %s\n", BigN);             // vypis 32 bitoveho cisla
 
 
     return 0;
