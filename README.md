@@ -1,6 +1,7 @@
 # Konzultace 23.7.2020
 ## Test prvočíselnosti
 
+### Utility function to do modular exponentiation. 
 ```C
 #include <stdio.h>
 #include <stdlib.h>
