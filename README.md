@@ -2,7 +2,7 @@
 ## Test prvočíselnosti
 
 <p float="left">
-  <img src="/Pictures (general)/Miller-Rabin.PNG" width="800" /> 
+  <img src="/Pictures (general)/Miller-Rabin.PNG" width="1000" /> 
 <p float="left"> </p> 
 
 
