@@ -6,7 +6,7 @@
 <p float="left"> </p> 
 
 
-### Utility function to do modular exponentiation (x^y) % p 
+### Modularni pocitani exponentu (x^y) % p 
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,9 +29,9 @@ int main()
 
 int power(int x, unsigned int y, int p)
 {
-    int res = 1;      // Initialize result
-    x = x % p;  // Update x if it is more than or
-                // equal to p
+    int res = 1;      // Pocatecni hodnota
+    x = x % p;  
+       
     while (y > 0)
     {
         // If y is odd, multiply x with result
