@@ -1,6 +1,11 @@
 # Konzultace 23.7.2020
 ## Test prvočíselnosti
 
+<p float="left">
+  <img src="/Pictures (general)/Miller-Rabin.PNG" width="800" /> 
+<p float="left"> </p> 
+
+
 ### Utility function to do modular exponentiation (x^y) % p 
 ```C
 #include <stdio.h>
