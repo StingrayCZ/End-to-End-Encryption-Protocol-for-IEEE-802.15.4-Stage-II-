@@ -1,6 +1,6 @@
 ## Post 27th July
 
-### Analog
+### Ver A
 
 ```c
 #include <stdio.h>
@@ -25,6 +25,33 @@ int main()
     return 0;
 }
 
+```
+
+### Ver B
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, d, e, f, g, h, res;
+
+    a = 2;
+    b = 7;
+    c = 0;
+    d = 0;
+    e = 0;
+    f = 7;
+    g = 0;
+    h = 0;
+
+    res = (a << 28) + (b << 24) + (c << 20) + (d << 16) + (e << 12) + (f << 8) + (g << 4) + h;
+
+    printf("Cislo je %d", res);   // vysledek je 654313216
+
+    return 0;
+}
 ```
 
 
