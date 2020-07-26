@@ -1,3 +1,35 @@
+## Post 27th July
+
+### Analog
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, c, d, e, f, g, res;
+
+    a = 3;
+    b = 14;
+    c = 6;
+    d = 2;
+    e = 0;
+    f = 6;
+    g = 0;
+
+    res = (a << 24) + (b << 20) + (c << 16) + (d << 12) + (e << 8) + (f << 4) + g;    
+
+    printf("Cislo je %d", res);   // vysledek je 654313216
+
+    return 0;
+}
+
+```
+
+
+
+
 # new code
 
 ```c
