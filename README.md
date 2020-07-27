@@ -7,7 +7,7 @@ Jedná se u ukázkový prototyp algoritmu, kde jednotlivé iterace jsou vytvoře
 <p float="left"> </p> 
 
 
-**Otázka:** Je tato myšlenka správná? Lze takto navýšením počtu iterací na 128, tj. 2^(4·128) => 2^(512) dosáhnout čísla o velikosti 512 bitů?
+**Otázka: Je tato myšlenka správná? Lze takto navýšením počtu iterací na 128, tj. 2^(4·128) => 2^(512) dosáhnout čísla o velikosti 512 bitů? **
 
 Na zaslaný link jsem díval, zatím jsem jej nezkoušel kompilovat.
 
