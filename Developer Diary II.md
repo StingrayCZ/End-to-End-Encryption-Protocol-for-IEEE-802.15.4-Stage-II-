@@ -1,5 +1,55 @@
 ## Post 27th July
 
+### Ver B
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define EMPTYLINE printf("\n");
+
+int main()
+{
+    srand((unsigned int) time(NULL));
+
+    int RandNUM;
+    int res;
+    int num = 4;
+    char buffer [4];
+    char bufferTOTAL [4];
+
+
+    for(int i = 0; i < 2; i++)
+    {
+
+        printf("Davka %d\n", num);
+
+        RandNUM = rand() % 16;
+        printf("Rand DEC %d\n", RandNUM);
+
+        itoa (RandNUM,buffer,2);
+        printf ("Rand BIN: %s\n",buffer);
+
+        res += (RandNUM << num);
+
+        num -= 4;
+
+        EMPTYLINE
+
+
+    }
+
+
+    printf("Total %d\n", res);
+
+    itoa (res,bufferTOTAL,2);
+
+    printf("Total %s\n", bufferTOTAL);
+
+
+    return 0;
+}
+```
+
 ### Ver A
 
 ```c
