@@ -1,6 +1,8 @@
 # Konzultace 27.7.2020
 
-Jedná se u ukázkový prototyp, kde jednotlivé namísto **for cyklu** jsou jednotlivé iterace vytvořeny přímo v kódu. Tento kód pseudonáhodně generuje 2^12 číslo. Výstup je zobrazen na obrázku níže.
+Jedná se u ukázkový prototyp algoritmu, kde jednotlivé iterace jsou vytvořeny přímo v kódu (namísto **for cyklu**). Tento kód pseudonáhodně generuje 2^12 číslo, které je složeno ze tří 2^4 čísel. Výstup je zobrazen na obrázku níže.
+
+**Otázka:** Je tato myšlenka správná? Lze takto navýšením počtu iterací na 128, tj. 2^(4·128) => 2^(512) dosáhnout čísla o velikosti 512 bitů?
 
 Na zaslaný link jsem díval, zatím jsem jej nezkoušel kompilovat.
 
