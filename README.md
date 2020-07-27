@@ -1,44 +1,64 @@
-# Konzultace 23.7.2020
-## Test prvočíselnosti
 
-### Utility function to do modular exponentiation (x^y) % p 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
+#define EMPTYLINE printf("\n");
+
 
 int main()
 {
 
-    int x, y, p;
-    x = 174;
-    y = 110;
-    p = 221;
+    srand((unsigned int) time(NULL));
+
+    int RandNUM;
+    int resA, resB, resC, TOTAL;
+    int num;
+    char buffer [4];
+    char bufferTOTAL [4];
 
 
-    int result = power(x, y, p);
 
-    printf("%d", result);
+    num = 0;
 
-}
+    printf("Davka %d\n", num);
+    RandNUM = rand()%16;
+    printf("Rand DEC %d\n", RandNUM);
+    itoa (RandNUM,buffer,2);
+    printf ("Rand BIN: %s\n",buffer);
+    resA = RandNUM << num;
 
 
-int power(int x, unsigned int y, int p)
-{
-    int res = 1;      // Initialize result
-    x = x % p;  // Update x if it is more than or
-                // equal to p
-    while (y > 0)
-    {
-        // If y is odd, multiply x with result
-        if (y & 1)
-            res = (res*x) % p;
+    EMPTYLINE
 
-        // y must be even now
-        y = y>>1; // y = y/2
-        x = (x*x) % p;
-    }
-    return res;
+    num = 4;
+
+    printf("Davka %d\n", num);
+    RandNUM = rand()%16;
+    printf("Rand DEC %d\n", RandNUM);
+    itoa (RandNUM,buffer,2);
+    printf ("Rand BIN: %s\n",buffer);
+    resB = RandNUM << num;
+
+    EMPTYLINE
+
+    num = 8;
+
+    printf("Davka %d\n", num);
+    RandNUM = rand()%16;
+    printf("Rand DEC %d\n", RandNUM);
+    itoa (RandNUM,buffer,2);
+    printf ("Rand BIN: %s\n",buffer);
+    resC = RandNUM << num;
+
+
+    EMPTYLINE
+
+    TOTAL = resA + resB + resC;
+
+    printf("TOTAL DEC %d\n", TOTAL);
+    itoa (TOTAL,buffer,2);
+    printf ("TOTAL BIN %s\n",buffer);
+
 }
 
 ```
-
