@@ -1,3 +1,8 @@
+# Konzultace 27.7.2020
+
+Jedná se u ukázkový prototyp, kde jednotlivé namísto **for cyklu** jsou jednotlivé iterace vytvořeny přímo v kódu. Tento kód pseudonáhodně generuje 2^12 číslo. Výstup je zobrazen na obrázku níže.
+
+Na zaslaný link jsem díval, zatím jsem jej nezkoušel kompilovat.
 
 ```c
 #include <stdio.h>
@@ -62,3 +67,9 @@ int main()
 }
 
 ```
+
+<p float="left">
+  <img src="/Pictures (general)/CommandLine.PNG" width="800" /> 
+<p float="left"> </p> 
+
+
