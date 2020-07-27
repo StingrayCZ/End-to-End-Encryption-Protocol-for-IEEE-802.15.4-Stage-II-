@@ -3,7 +3,7 @@
 Jedná se u ukázkový prototyp algoritmu, kde jednotlivé iterace jsou vytvořeny přímo v kódu (namísto **for cyklu**). Tento kód pseudonáhodně generuje 2^12 číslo, které je složeno ze tří 2^4 čísel (viz obrázek níže). Výstup je zobrazen na obrázku pod kódem.
 
 <p float="left">
-  <img src="/Pictures (general)/MyThink.PNG" width="800" /> 
+  <img src="/Pictures (general)/MyThinkAdvance.PNG" width="800" /> 
 <p float="left"> </p> 
 
 
