@@ -1,7 +1,6 @@
 # Historical Content of Consultations
 
 
-
 # Konzultace 23.7.2020
 ## Test prvočíselnosti
 
