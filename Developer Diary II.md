@@ -7,6 +7,59 @@
 **16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
 **32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
 
+### For generetor
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#define EMPTYLINE printf("\n");
+
+
+int main()
+{
+
+    srand((unsigned int) time(NULL));
+
+    int RandNUM;
+    int resA, resB, resC, TOTAL;
+    int num;
+    char buffer [4];
+    char bufferTOTAL [4];
+
+    num = 0;
+
+    for(int i = 0; i < 2; i++)
+    {
+
+        printf("Davka %d\n", num);
+        RandNUM = rand()%16;
+        printf("Rand DEC %d\n", RandNUM);
+        itoa (RandNUM,buffer,2);
+        printf ("Rand BIN: %s\n",buffer);
+        resA = RandNUM << num;
+
+        EMPTYLINE
+
+        num += 4;
+
+        TOTAL += resA;
+
+
+    }
+
+
+
+    EMPTYLINE
+
+//    TOTAL = resA + resB + resC;
+//
+    printf("TOTAL DEC %d\n", TOTAL);
+    itoa (TOTAL,buffer,2);
+    printf ("TOTAL BIN %s\n",buffer);
+
+}
+```
+
 ### Vyprintovani velkeho cisla
 ```C
 #include <stdio.h>
