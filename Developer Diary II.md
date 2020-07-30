@@ -1,7 +1,19 @@
 ## 31rd July
-
+### Vyprintovani velkeho cisla
 ```C
-Иллюминация - Улетаем
+#include <stdio.h>
+#include <stdlib.h>
+#include <inttypes.h>
+
+int main()
+{
+    long long a = 489675628213660;
+
+    printf("%llu\n",a);
+
+    return 0;
+}
+
 ```
 
 ## Post 27th July
