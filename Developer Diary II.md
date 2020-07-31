@@ -13,6 +13,56 @@
   <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
 <p float="left"> </p> 
 
+### Generator pseudo-random number
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define EMPTYLINE printf("\n");
+
+int main()
+{
+    
+    srand((unsigned int) time(NULL));
+
+    int Array[513];
+    int sum;
+    int batch = 4;
+    int BitLen;
+
+
+    printf("Enter Bit Lenght:\n");
+    scanf("%d", &BitLen);
+
+    BitLen -= 1;
+
+
+//    Array[0] = 15;
+    Array[0] = rand() % 16;
+
+    for(int j = 1; j <= BitLen; j++)
+    {
+
+//        Array[j] = Array[(j-1)] + (15 << batch);
+        Array[j] = Array[(j-1)] + ((rand() % 16) << batch);
+
+        batch += 4;
+    }
+
+//    for(int i = 0; i < BitLen; i ++)
+//    {
+//        sum = Array[i];
+//    }
+
+    EMPTYLINE
+    printf("Number is %d\n", Array[BitLen]);
+//    printf("Number is %d\n", sum);
+
+    return 0;
+}
+```
+
+
 ### Srovnani << >>
 ```c
 #include <stdio.h>
