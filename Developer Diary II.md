@@ -7,6 +7,13 @@
 **16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
 **32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
 
+### Velikosti jednolivých typů
+
+<p float="left">
+  <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
+<p float="left"> </p> 
+
+
 ### Verze s for součtem
 ```c
 #include <stdio.h>
