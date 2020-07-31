@@ -7,6 +7,46 @@
 **16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
 **32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
 
+### Verze s for součtem
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#define EMPTYLINE printf("\n");
+
+
+int main()
+{
+
+    int TOTAL[3];
+    int SUM = 0;
+//    int SUM;
+    char buffer [4];
+    int davka = 0;
+
+    TOTAL[0] = 3;
+    TOTAL[1] = 7 << 4;
+    TOTAL[2] = 11 << 8;
+    TOTAL[3] = 14 << 12;
+
+
+//    SUM =  TOTAL[0] + TOTAL[1];
+
+
+
+    for(int i = 0; i <= 3; i++)
+    {
+
+        SUM = SUM + TOTAL[i];
+
+    }
+
+    printf("TOTAL DEC %d\n", SUM);
+    itoa (SUM,buffer,2);
+    printf ("TOTAL BIN %s\n",buffer);
+
+}
+```
+
 ### For generetor
 
 ```C
