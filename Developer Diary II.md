@@ -13,6 +13,32 @@
   <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
 <p float="left"> </p> 
 
+### Srovnani << >>
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+//    int a = 6 >> 12;
+//    int b = 14 >> 8;
+//    int c = 5 >> 4;
+//    int d = 3 >> 0;
+
+
+    int a = 6 << 0;
+    int b = 14 << 4;
+    int c = 5 << 8;
+    int d = 3 << 12;
+
+    int sum = a + b + c + d;
+
+
+    printf("Number is %d", sum);
+
+    return 0;
+}
+```
 
 ### Verze s for součtem
 ```c
