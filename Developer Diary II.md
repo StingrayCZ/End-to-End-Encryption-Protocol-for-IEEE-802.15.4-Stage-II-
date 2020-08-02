@@ -13,7 +13,14 @@
   <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
 <p float="left"> </p> 
 
-###
+### Funkce <stlib.h>
+**calloc** - alokace dynamické paměti pro pole objektů </br>
+**malloc** - alokace bloku dynamické paměti </br>
+**realloc** - změna velikosti bloku dynamické paměti </br>
+**free** - uvolnění dynamické paměti </br>
+**sizeof** - velikost datoveho typu </br>
+
+### Ukazatel může být v jazyce C přetypován na specifický typ
 ```C
 #include <stdio.h>
 #include <stdlib.h>
