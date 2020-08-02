@@ -47,6 +47,39 @@ int main()
 }
 ```
 
+### Spojeni stringu
+```C
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+   char src[15], dest[513];
+
+
+   int a = 2;
+   int b = 5 << 4;
+
+   itoa (a,src,2);
+   itoa (b,dest,2);
+
+   printf ("Rand BIN: %s\n",src);
+   printf ("Rand BIN: %s\n",dest);
+
+//
+//   strcpy(src,  "0010");
+//   strcpy(dest, "1111");
+//   strcpy(partb, "1010");
+//
+   strcat(dest, src);
+//   strcat(dest, partb);
+//
+   printf("|%s|", dest);
+
+   return(0);
+}
+
+```
+
 ### Generator pseudo-random number
 ```c
 #include <stdio.h>
