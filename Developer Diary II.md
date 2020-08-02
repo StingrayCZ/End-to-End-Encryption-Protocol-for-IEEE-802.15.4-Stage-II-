@@ -22,7 +22,7 @@ int main()
 {
 
 //    int * pole = malloc(10 * sizeof(int));            // bez přetypování v jazyce C
-    int * pole = (int *) malloc(10 * sizeof(int));      // bez přetypování v jazyce C
+    int * pole = (int *) malloc(10 * sizeof(int));      // s přetypování v jazyce C
 
     pole[0] = 12;
     pole[1] = 5;
