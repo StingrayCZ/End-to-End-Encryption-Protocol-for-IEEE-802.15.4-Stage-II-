@@ -6,6 +6,52 @@ Pokus o kompilaci BigN ke stažení <a href="https://github.com/StingrayCZ/End-t
   <img src="/Pictures (general)/Errata.PNG" width="800" /> 
 <p float="left"> </p> 
 
+### Maxima
+
+**4 bit**  => 0-15   1111 (4x) </br>
+**8 bit**  => 0-255  1111 1111 (8x) </br>
+**16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
+**32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
+
+### Velikosti jednolivých typů
+
+<p float="left">
+  <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
+<p float="left"> </p> 
+
+### Funkce <stlib.h>
+**calloc** - alokace dynamické paměti pro pole objektů </br>
+**malloc** - alokace bloku dynamické paměti </br>
+**realloc** - změna velikosti bloku dynamické paměti </br>
+**free** - uvolnění dynamické paměti </br>
+**sizeof** - velikost datoveho typu </br>
+
+### Ukazatel může být v jazyce C přetypován na specifický typ
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//    int * pole = malloc(10 * sizeof(int));            // bez přetypování v jazyce C
+    int * pole = (int *) malloc(10 * sizeof(int));      // s přetypování v jazyce C
+
+    pole[0] = 12;
+    pole[1] = 5;
+    pole[2] = 2;
+
+    for(int i = 0; i < 3; i++)
+    {
+
+        printf("Cislo je %d\n", pole[i]);
+    }
+
+    free(pole);  
+
+    return 0;
+}
+```
 
 
 # Konzultace 27.7.2020
