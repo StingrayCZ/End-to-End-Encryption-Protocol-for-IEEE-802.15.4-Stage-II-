@@ -1,4 +1,4 @@
-## 31rd July
+## 3rd August
 
 ### Maxima
 
@@ -12,6 +12,33 @@
 <p float="left">
   <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
 <p float="left"> </p> 
+
+###
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+//    int * pole = malloc(10 * sizeof(int));            // bez přetypování v jazyce C
+    int * pole = (int *) malloc(10 * sizeof(int));      // bez přetypování v jazyce C
+
+    pole[0] = 12;
+    pole[1] = 5;
+    pole[2] = 2;
+
+    for(int i = 0; i < 3; i++)
+    {
+
+        printf("Cislo je %d\n", pole[i]);
+    }
+
+    free(pole);  
+
+    return 0;
+}
+```
 
 ### Generator pseudo-random number
 ```c
