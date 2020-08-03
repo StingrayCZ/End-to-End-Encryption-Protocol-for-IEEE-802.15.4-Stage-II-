@@ -2,6 +2,14 @@
 
 ## Definice Payloadu
 ```C
+static void appDataConf(NWK_DataReq_t *req)
+{
+	appDataReqBusy = false;
+	(void)req;
+}
+```
+
+```C
 static void appECDH_Payload_parameters(void)
 {
 if (appDataReqBusy)
