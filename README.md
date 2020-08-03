@@ -26,6 +26,78 @@ Pokus o kompilaci BigN ke stažení <a href="https://github.com/StingrayCZ/End-t
 **free** - uvolnění dynamické paměti </br>
 **sizeof** - velikost datoveho typu </br>
 
+### Alg. pro spojovani bitů
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define EMPTYLINE printf("\n");
+
+int main()
+{
+
+    srand((unsigned int) time(NULL));
+
+    int Array[513];
+
+    int round = 4;
+    int BitLen;
+    char buffer [513];
+
+
+    printf("Enter Bit Lenght (1 = 1111):\n");
+    scanf("%d", &BitLen);
+    EMPTYLINE
+
+
+    BitLen -= 1;
+
+
+    Array[0] = 15;                   // Testovaci hodnota 15 MAX
+//    Array[0] = rand() % 16;
+
+    itoa (Array[0],buffer,2);
+
+    printf("Round: 2^%d\n", round);
+    printf("DEC rand: %d\n", Array[0]);
+    printf("BIN rand: %s\n", buffer);
+    EMPTYLINE
+    for(int j = 1; j <= BitLen; j++)
+    {
+
+        Array[j] = Array[(j-1)] + (15 << round);                   // Testovaci hodnota 15 MAX
+//        Array[j] = Array[(j-1)] + ((rand() % 16) << round);
+
+        itoa (Array[j],buffer,2);
+
+
+        round += 4;
+
+        printf("Round: 2^%d\n", round);
+        printf("DEC rand: %d\n", Array[j]);
+        printf("BIN rand: %s\n", buffer);
+        EMPTYLINE
+
+
+    }
+
+
+
+    EMPTYLINE
+    printf("TOTAL DEC: %d\n", Array[BitLen]);
+    itoa (Array[BitLen],buffer,2);
+    printf ("TOTAL BIN: %s\n",buffer);
+
+    return 0;
+}
+```
+
+<p float="left">
+  <img src="/Pictures (general)/OknoBits.PNG" width="800" /> 
+<p float="left"> </p> 
+
+
 ### Ukazatel může být v jazyce C přetypován na specifický typ
 ```C
 #include <stdio.h>
