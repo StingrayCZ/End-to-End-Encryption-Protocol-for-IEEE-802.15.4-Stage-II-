@@ -6,25 +6,6 @@ Pokus o kompilaci BigN ke stažení <a href="https://github.com/StingrayCZ/End-t
   <img src="/Pictures (general)/Errata.PNG" width="800" /> 
 <p float="left"> </p> 
 
-### Maxima
-
-**4 bit**  => 0-15   1111 (4x) </br>
-**8 bit**  => 0-255  1111 1111 (8x) </br>
-**16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
-**32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
-
-### Velikosti jednolivých typů
-
-<p float="left">
-  <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
-<p float="left"> </p> 
-
-### Funkce <stlib.h>
-**calloc** - alokace dynamické paměti pro pole objektů </br>
-**malloc** - alokace bloku dynamické paměti </br>
-**realloc** - změna velikosti bloku dynamické paměti </br>
-**free** - uvolnění dynamické paměti </br>
-**sizeof** - velikost datoveho typu </br>
 
 ### Alg. pro spojovani bitů
 ```c
@@ -124,6 +105,26 @@ int main()
     return 0;
 }
 ```
+### Maxima
+
+**4 bit**  => 0-15   1111 (4x) </br>
+**8 bit**  => 0-255  1111 1111 (8x) </br>
+**16 bit** => 0-65535  1111 1111 1111 1111 (16x)  </br>
+**32 bit** => 0-4294967295 1111 1111 1111 1111 1111 1111 1111 1111 (32x) </br>
+
+### Velikosti jednolivých typů
+
+<p float="left">
+  <img src="/Pictures (general)/Typerange.PNG" width="800" /> 
+<p float="left"> </p> 
+
+### Funkce <stlib.h>
+**calloc** - alokace dynamické paměti pro pole objektů </br>
+**malloc** - alokace bloku dynamické paměti </br>
+**realloc** - změna velikosti bloku dynamické paměti </br>
+**free** - uvolnění dynamické paměti </br>
+**sizeof** - velikost datoveho typu </br>
+
 
 
 # Konzultace 27.7.2020
