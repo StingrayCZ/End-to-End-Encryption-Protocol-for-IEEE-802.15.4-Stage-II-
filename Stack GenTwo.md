@@ -38,6 +38,47 @@ appDataReqBusy = true;
 #ifdef PRINT_ON
 printf("Data sent \n\r");
 #endif
+}
+```
+
+## appInit
+```C
+static void appInit(void)
+{
+
+// comunication
+NWK_SetAddr(APP_ADDR);
+NWK_SetPanId(APP_PANID);
+PHY_SetChannel(APP_CHANNEL);
+#ifdef PHY_AT86RF212
+PHY_SetBand(APP_BAND);
+PHY_SetModulation(APP_MODULATION);
+#endif
+PHY_SetRxState(true);
+
+// endpoint
+
+
+NWK_OpenEndpoint(2, appECDHDataReceiver);
+
+
+
+//HAL_BoardInit();
+//BoardInit();
+
+
+
+
+DataSendTimer.interval = 600;
+DataSendTimer.mode = SYS_TIMER_PERIODIC_MODE;
+DataSendTimer.handler = DataSendTimerHandlerParameters;
+
+
+DataSendTimerSharedKey.interval = 600;
+DataSendTimerSharedKey.mode = SYS_TIMER_PERIODIC_MODE;
+DataSendTimerSharedKey.handler = DataSendTimerHandlerSharedKey;
+
 
 }
+
 ```
