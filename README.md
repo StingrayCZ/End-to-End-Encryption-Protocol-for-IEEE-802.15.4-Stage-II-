@@ -1,3 +1,48 @@
+# Konzultace 4.7.2020
+
+## Test flashnutí desek
+U jedné desky blikají ledky pomaleji. I přesto, že jsem paměti pročistil (Erase) a nahrál stejný program na obě desky. **Může to ovlivnit nějak běh aplikace?**
+
+```C
+#define F_CPU 16000000
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main(void)
+{
+	DDRE |= (1<<PE3);   // operace bitovy OR  |=
+	DDRE |= (1<<PE4);   // operace bitovy OR  |=
+	DDRG |= (1<<PG5);   // operace bitovy OR  |=
+	
+	
+
+	while (1)
+	{
+		PORTG |= (1<<PG5);
+		_delay_ms(100);
+		
+		PORTE |= (1<<PB3);       // operace bitovy OR  |=
+		_delay_ms(100);
+
+		
+		PORTE |= (1<<PB4);
+		_delay_ms(100);
+		
+			
+		PORTG &= ~(1<<PG5);
+		_delay_ms(100);
+		
+		PORTE &= ~(1<<PB3);     // operace bitovy AND  &=  ~ negace jednicky
+		_delay_ms(100);
+		
+		PORTE &= ~(1<<PB4);
+		_delay_ms(100);
+		
+	}
+}
+
+```
+
 # Konzultace 3.7.2020
 
 Pokus o kompilaci BigN ke stažení <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/BigN%20lib.zip">zde</a>. </a>  </p>
