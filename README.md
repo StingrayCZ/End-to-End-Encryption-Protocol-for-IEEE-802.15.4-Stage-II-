@@ -1,4 +1,4 @@
-# Konzultace 4.7.2020
+# Konzultace 5.8.2020
 
 ## bdModSquare (bigd.c)
 ```C
