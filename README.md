@@ -10,6 +10,11 @@
 	}
 ```
 
+<p float="left">
+  <img src="/Pictures (general)/Putty0508.PNG" width="800" /> 
+<p float="left"> </p> 
+
+
 ## Test flashnutí desek
 U jedné desky blikají ledky pomaleji. I přesto, že jsem paměti pročistil (Erase) a nahrál stejný program na obě desky. **Může to ovlivnit nějak běh aplikace?**
 
