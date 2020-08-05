@@ -1,5 +1,44 @@
 # Konzultace 4.7.2020
 
+## bdModSquare (bigd.c)
+```C
+	 //int bdModSquare(BIGD a, BIGD x, BIGD m)
+	 //Computes a = x^2 mod m
+	 
+	 int NumA, NumB, NumC;
+	 
+	 NumB = 36;
+	 NumC = 5;
+	 
+	 bdModSquare(NumA, NumB, NumC);
+	 
+	 printf("Vysledek je %d", NumA);
+```
+
+```C
+/** Computes a = x^2 mod m */
+int bdModSquare(BIGD a, BIGD x, BIGD m)
+{
+	size_t n;
+	int status;
+
+	assert(a && x && m);
+	/* Make sure all variables are the same size */
+	n = max(x->ndigits, m->ndigits);
+
+	bd_resize(a, n);
+	bd_resize(x, n);
+	bd_resize(m, n);
+
+	/* Do the business */
+	status = mpModSquare(a->digits, x->digits, m->digits, n);
+
+	a->ndigits = mpSizeof(a->digits, n);
+
+	return status;
+}
+```
+
 ## Test prvočísla
 ```C
 	int TESTNUM = 2;
