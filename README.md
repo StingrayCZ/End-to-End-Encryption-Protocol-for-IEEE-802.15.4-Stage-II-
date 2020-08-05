@@ -1,5 +1,15 @@
 # Konzultace 4.7.2020
 
+## Test prvočísla
+```C
+	int TESTNUM = 2;
+	printf("testovaci cislo je %d\n\r", TESTNUM);
+	for(int iss = 0; iss < 10; iss++){
+	int vysledek = fermat_test(&TESTNUM);
+	printf("Vysledek testu je %d\n\r", vysledek);
+	}
+```
+
 ## Test flashnutí desek
 U jedné desky blikají ledky pomaleji. I přesto, že jsem paměti pročistil (Erase) a nahrál stejný program na obě desky. **Může to ovlivnit nějak běh aplikace?**
 
