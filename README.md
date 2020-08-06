@@ -1,8 +1,12 @@
 # Konzultace &.8.2020
 
+## Problém s oknem wiev
 <p float="left">
-  <img src="/Pictures (general)/Optimization.PNG" width="300" /> 
+  <img src="/Pictures (general)/Optimization.PNG" width="600" /> 
 <p float="left"> </p>
+
+## Jak v práci citovat stránky s BIG N?
+BigDigits multiple-precision arithmetic source code [online]. 2020 [cit. 2020-08-07]. Dostupné z: https://www.di-mgt.com.au/bigdigits.html
 
 
 # Konzultace 6.8.2020
