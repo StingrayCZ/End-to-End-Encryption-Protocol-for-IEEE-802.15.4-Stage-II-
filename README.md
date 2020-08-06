@@ -1,8 +1,12 @@
 # Konzultace 6.8.2020
 ## Původní kód
 ```C
+// int TheFirstPoint(BIGD MOD, BIGD A, BIGD B, BIGD Xfirst, BIGD Yfirst, BIGD OrderG)
 void TheFirstPoint(int *MOD, int *A, int *B, int *Xfirst, int *Yfirst, int *OrderG)
-{
+{  
+
+
+
 	int modulus, a, b;
 	int poleA[1000];
 	int poleB[1000];
