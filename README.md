@@ -50,6 +50,30 @@ BIGD TESTNUM, vysledek;
 	bdFree(&vysledek);	
 ```
 
+## bdPower
+```C
+BIGD CisloA, CisloB, CisloC;
+		
+		CisloA = bdNew();
+		CisloB = bdNew();
+		CisloC = bdNew();		
+		
+			
+		bdSetShort(CisloB, 25);
+		bdSetShort(CisloC, 5);
+		
+		//bdPower(CisloA, CisloB, CisloC);          //  y = g^n (up to available memory!) 
+		bdMultiply(CisloA, CisloB, CisloC);     //  w = u * v. 
+		
+		bdPrintHex("Test Modulo HEX je 0x ", CisloA, "\n\r");
+		bdPrintDecimal("Test Modulo DEC je ", CisloA, "\n\r");
+		
+		
+		bdFree(&CisloA);
+		bdFree(&CisloB);
+		bdFree(&CisloC);	
+```
+
 ## Původní kód
 ```C
 // int TheFirstPoint(BIGD MOD, BIGD A, BIGD B, BIGD Xfirst, BIGD Yfirst, BIGD OrderG)
