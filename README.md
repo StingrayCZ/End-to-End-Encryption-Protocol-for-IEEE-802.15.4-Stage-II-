@@ -2,6 +2,12 @@
 
 <p float="left">
   <img src="/Pictures (general)/FlowCH Phase A.png" width="200" /> 
+<p float="left"> </p>
+
+## Rand funkce
+
+<p float="left">
+  <img src="/Pictures (general)/RandPic.PNG" width="200" /> 
 <p float="left"> </p> 
 
 ## Původní kód
