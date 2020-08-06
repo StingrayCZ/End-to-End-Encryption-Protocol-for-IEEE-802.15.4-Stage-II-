@@ -1,3 +1,10 @@
+# Konzultace &.8.2020
+
+<p float="left">
+  <img src="/Pictures (general)/Optimization.PNG" width="300" /> 
+<p float="left"> </p>
+
+
 # Konzultace 6.8.2020
 
 <p float="left">
