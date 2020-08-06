@@ -7,8 +7,31 @@
 ## Rand funkce
 
 <p float="left">
-  <img src="/Pictures (general)/RandPic.PNG" width="200" /> 
+  <img src="/Pictures (general)/RandPic.PNG" width="400" /> 
 <p float="left"> </p> 
+
+## Fermat
+```C
+BIGD TESTNUM, vysledek;
+	
+	TESTNUM = bdNew();
+	vysledek = bdNew();
+	
+	bdSetShort(TESTNUM, 17);
+	//bdConvFromHex(TESTNUM, "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004b");
+	
+	//printf("testovaci cislo je %d\n\r", TESTNUM);
+	bdPrintDecimal("testovaci cislo je ", TESTNUM, "\n\r");
+
+
+	bdSetShort(vysledek, fermat_test(TESTNUM));
+	
+	bdPrintDecimal("Vysledek Fermat testu ", vysledek, "\n\r");
+		
+	
+	bdFree(&TESTNUM);
+	bdFree(&vysledek);	
+```
 
 ## Původní kód
 ```C
