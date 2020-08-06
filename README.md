@@ -55,6 +55,7 @@ BIGD TESTNUM, vysledek;
 <p float="left">
   <img src="/Pictures (general)/dbPower.PNG" width="400" /> 
 <p float="left"> </p> 
+
 ```C
 BIGD CisloA, CisloB, CisloC;
 		
