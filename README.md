@@ -29,6 +29,7 @@ BIGD  a, n;
 
 ## Fermat
 ```C
+
 BIGD TESTNUM, vysledek;
 	
 	TESTNUM = bdNew();
