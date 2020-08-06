@@ -1,4 +1,4 @@
-# Konzultace &.8.2020
+# Konzultace 7.8.2020
 
 ## Problém s oknem wiev
 <p float="left">
