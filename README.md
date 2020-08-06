@@ -2,15 +2,15 @@
 
 ## Problém s oknem wiev
 <p float="left">
-  <img src="/Pictures (general)/Optimization.PNG" width="600" /> 
+  <img src="/Pictures (general)/Optimization.PNG" width="800" /> 
 <p float="left"> </p>
 
 <p float="left">
-  <img src="/Pictures (general)/Breakpoint.PNG" width="600" /> 
+  <img src="/Pictures (general)/Breakpoint.PNG" width="800" /> 
 <p float="left"> </p>
 
 <p float="left">
-  <img src="/Pictures (general)/ViewError.PNG" width="600" /> 
+  <img src="/Pictures (general)/ViewError.PNG" width="800" /> 
 <p float="left"> </p>
 
 ## Citace stránky s BIG N... Může to být takhle?
