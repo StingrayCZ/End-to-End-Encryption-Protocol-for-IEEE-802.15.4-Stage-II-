@@ -1,6 +1,6 @@
 # Konzultace 7.8.2020
 
-## Problém s oknem wiev
+## Problém s oknem Watch
 <p float="left">
   <img src="/Pictures (general)/Optimization.PNG" width="800" /> 
 <p float="left"> </p>
