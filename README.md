@@ -10,6 +10,23 @@
   <img src="/Pictures (general)/RandPic.PNG" width="400" /> 
 <p float="left"> </p> 
 
+```C
+BIGD  a, n;
+	
+	a = bdNew();
+	n = bdNew();
+	
+	bdSetShort(n, 25);
+	
+	size_t bdRandomNumber (a, n);
+	
+	bdPrintHex("RAND HEX je 0x ", a, "\n\r");
+	bdPrintDecimal("RAND DEC je ", a, "\n\r");
+	
+	bdFree(&a);
+	bdFree(&n);
+```
+
 ## Fermat
 ```C
 BIGD TESTNUM, vysledek;
