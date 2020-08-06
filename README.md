@@ -2,6 +2,8 @@
 
 ## Problém s oknem Watch
 
+V okně watch mi to nezpbrazuje hodnotu... V jiném příkladě jsem to vyřešil vypnutím **Optimizace**
+
 <p float="left">
   <img src="/Pictures (general)/Optimization.PNG" width="800" /> 
 <p float="left"> </p>
