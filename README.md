@@ -1,3 +1,73 @@
+# Konzultace 6.8.2020
+## Původní kód
+```C
+void TheFirstPoint(int *MOD, int *A, int *B, int *Xfirst, int *Yfirst, int *OrderG)
+{
+	int modulus, a, b;
+	int poleA[1000];
+	int poleB[1000];
+
+	modulus = *MOD;
+	a = *A;
+	b = *B;
+
+	// Application XPart
+	YPart (&modulus, poleA);
+	
+	// Application YPart
+	XPart(&modulus, &a, &b, poleB);
+
+	// Iterations
+	int X_iter = modulus - 1;
+	int Y_iter = ((modulus - 1) / 2) + 1;
+	
+	// Computing order
+	int order = 0;
+	
+	#ifdef PRINT_ON
+	// Point64_ts
+	int x, y, y_neg;
+	#endif // PRINT_ON
+
+	for(int k = 0; k <= X_iter; k++)  // Give X's
+	{
+		for(int i = 0; i <= Y_iter; i++)  // Give Y's
+		{
+			if (poleA[i] == poleB[k])
+			{
+				if(order == 0)
+				{
+
+					*Xfirst = k;
+					*Yfirst = i;
+				}
+				
+				#ifdef PRINT_ON
+				x = k;
+				y = i;
+				y_neg = modulus - i;
+				
+				
+				printf("Yes, this number is in array\n\r");
+				printf("Jedna se o cisla %d a %d\n\r", poleA[i], poleB[k]);
+				EMPTYLINE
+				printf("Coordinates are [%4d,%4d] [%4d,%4d] \n\r", x, y, x, y_neg);
+				#endif // PRINT_ON
+
+				order++;
+
+			}
+		}
+
+	}
+
+	order *= 2;
+	order += 1;
+
+	*OrderG = order;
+}
+```
+
 # Konzultace 5.8.2020
 
 ## bdModSquare (bigd.c)
