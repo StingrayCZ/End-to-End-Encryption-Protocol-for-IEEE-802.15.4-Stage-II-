@@ -1,7 +1,7 @@
 # Konzultace 6.8.2020
 
 <p float="left">
-  <img src="/Pictures (general)/FlowCH Phase A.png" width="400" /> 
+  <img src="/Pictures (general)/FlowCH Phase A.png" width="200" /> 
 <p float="left"> </p> 
 
 ## Původní kód
