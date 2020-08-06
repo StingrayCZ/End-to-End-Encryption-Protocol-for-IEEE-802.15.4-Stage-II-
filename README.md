@@ -121,6 +121,50 @@ void TheFirstPoint(int *MOD, int *A, int *B, int *Xfirst, int *Yfirst, int *Orde
 }
 ```
 
+```C
+void checkValAB(int64_t *mod, int64_t *A, int64_t *B, int64_t *TESTvalue)
+{
+	int64_t a, b, compute, mocnitelA, mocnitelB, MOD;
+
+	MOD = *mod;
+	a = *A;
+	b = *B;
+
+	if(a == MOD)
+	{
+
+		*TESTvalue = 2;
+	}
+
+	else if(b == MOD)
+	{
+
+		*TESTvalue = 2;
+	}
+
+	else
+	{
+		mocnitelA = 3;
+		mocnitelB = 2;
+
+		compute =  4 * (power(&a, &mocnitelA)) + 27 * (power(&b, &mocnitelB));
+		compute = modulo(&a, &MOD);
+		
+		if (compute > 0)
+		{
+			*TESTvalue = 1;
+			
+		}
+		else
+		{
+			*TESTvalue = 2;
+		}
+		
+
+	}
+}
+```
+
 # Konzultace 5.8.2020
 
 ## bdModSquare (bigd.c)
