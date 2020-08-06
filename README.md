@@ -5,6 +5,14 @@
   <img src="/Pictures (general)/Optimization.PNG" width="600" /> 
 <p float="left"> </p>
 
+<p float="left">
+  <img src="/Pictures (general)/Breakpoint.PNG" width="600" /> 
+<p float="left"> </p>
+
+<p float="left">
+  <img src="/Pictures (general)/ViewError.PNG" width="600" /> 
+<p float="left"> </p>
+
 ## Citace stránky s BIG N... Může to být takhle?
 BigDigits multiple-precision arithmetic source code [online]. 2020 [cit. 2020-08-07]. Dostupné z: https://www.di-mgt.com.au/bigdigits.html
 
