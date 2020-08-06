@@ -42,8 +42,8 @@ appDataReq.dstAddr = 0x401;
 appDataReq.dstEndpoint = 2;
 appDataReq.srcEndpoint = 2;
 appDataReq.options = NWK_OPT_ENABLE_SECURITY;
-appDataReq.data = data;
-appDataReq.size = 3; //maybe more with Timestamp - will add later
+appDataReq.data = data;                                                  // Toto mam na mysli
+appDataReq.size = 3; //maybe more with Timestamp - will add later         // delka bude 512?
 appDataReq.confirm = appDataConf;
 NWK_DataReq(&appDataReq);
 
