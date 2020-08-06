@@ -10,7 +10,7 @@
 <p float="left"> </p>
 
 <p float="left">
-  <img src="/Pictures (general)/ViewError.PNG" width="800" /> 
+  <img src="/Pictures (general)/ViewError.PNG" width="1200" /> 
 <p float="left"> </p>
 
 ## Citace stránky s BIG N... Může to být takhle?
