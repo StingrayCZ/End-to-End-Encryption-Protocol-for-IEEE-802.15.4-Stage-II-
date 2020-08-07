@@ -30,7 +30,7 @@ BIGD AA, BB, CC;
 	bdPrintDecimal("Napis hodnotu ", AA, "\n\r");
 ```
 
-## Comparsion of two numbers
+## Comparsion of two numbers (wrong numbers)
 ```C
 	printf("Srovnani dvou velkych cisel\n\r %d \n\r");
 	
