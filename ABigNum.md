@@ -29,3 +29,36 @@ BIGD AA, BB, CC;
 	
 	bdPrintDecimal("Napis hodnotu ", AA, "\n\r");
 ```
+
+## Comparsion of two numbers
+```C
+	printf("Srovnani dvou velkych cisel\n\r %d \n\r");
+	
+	BIGD SuperA, SuperB;
+	
+	SuperA = bdNew();
+	SuperB = bdNew();
+	
+	bdSetShort(SuperA, 50);
+	bdSetShort(SuperB, 50);	
+	
+	if(SuperA > SuperB){
+		
+		bdPrintDecimal("SuperA s hodnotou ", SuperA, " je vetsi nez SuperB s hodnotou ");
+		bdPrintDecimal("", SuperB, " \n\r");
+	}
+	
+	else if(SuperA < SuperB){
+		
+		bdPrintDecimal("SuperB s hodnotou ", SuperB, " je vetsi nez SuperA s hodnotou ");
+		bdPrintDecimal("", SuperA, " \n\r");
+		
+	}
+	
+	else if(SuperA == SuperB){
+		
+		bdPrintDecimal("SuperA s hodnotou ", SuperA, " se rovna s hodnotou SuperB ");
+		bdPrintDecimal("", SuperB, " \n\r");
+		
+	}
+```
