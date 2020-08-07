@@ -62,3 +62,47 @@ BIGD AA, BB, CC;
 		
 	}
 ```
+
+## Comparsion of two numbers (correct solution)
+```C
+	BIGD SuperA, SuperB;
+	
+	int testCOMP;
+	
+	SuperA = bdNew();
+	SuperB = bdNew();
+	
+	bdSetShort(SuperA, 6800700000);
+	bdSetShort(SuperB, 700680070000000);	
+	
+	
+	testCOMP = bdCompare(SuperA, SuperB);
+	
+	printf("Cislo rozdilu je %d\n\r", testCOMP);	
+		
+	if(testCOMP == 0){
+		
+		printf("Cisla jsou stejna \n\r");
+	}
+	
+	else if(testCOMP == 1){
+		
+		printf("Cislo A je vetsi \n\r");
+	}
+	
+	else if(testCOMP == -1){
+		
+		printf("Cislo B je vetsi \n\r");
+	}
+	
+	free(SuperA);
+	free(SuperB);	
+	
+	
+	while(1)
+	{
+		SYS_TaskHandler();
+		SYS_TimerStart(&appTimer);
+		APP_TaskHandler();
+	}
+```
