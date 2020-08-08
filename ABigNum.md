@@ -240,7 +240,11 @@ int TestD(){
 	bdConvToOctets(pole[5], array, delka);
 	
 	
-	bdMultiply(result, pole[0], pole[5]);
+	/// MULTIPLY
+	//bdMultiply(result, pole[0], pole[5]);
+	
+	/// Add
+	bdAdd(result, pole[0], pole[5]);
 
 
 
