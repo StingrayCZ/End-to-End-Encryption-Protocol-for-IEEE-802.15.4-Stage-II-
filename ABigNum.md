@@ -156,3 +156,25 @@ bdConvToOctets(v, pole2, delka);
 return 0;
 }
 ```
+
+
+## BIG Array
+
+```C
+BIGD u, v, w;
+	volatile BIGD pole[10];
+	
+	
+
+	/* Display the BigDigits version number */
+	printf("BigDigits version=%d\n\r", bdVersion());
+
+	/* Create new BIGD objects */
+	u = bdNew();
+	v = bdNew();
+	w = bdNew();
+	pole[0]= bdNew();
+	pole[5]= bdNew();
+	bdSetShort(pole[0], 25);
+	bdConvFromHex(pole[5], "deadbeeffacedeadbeeffaceaaadeadbeeffaceaaa");
+```
