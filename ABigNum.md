@@ -276,3 +276,71 @@ int TestD(){
 
 }
 ```
+
+## Big Array [10], for, 
+
+```C
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+#define EMPTYLINE printf("\n\r");
+
+int TestE(){
+	
+	EMPTYLINE
+
+	volatile BIGD pole[10];
+
+	for(int i = 0; i < 10; i++){
+		
+		//printf("Test %d\n\r", i);
+		pole[i]= bdNew();
+	}
+	
+	for(int i = 0; i < 10; i++){
+		bdConvFromHex(pole[i], "dd");
+	}
+	
+	int delka;
+	uint8_t *array;
+	
+		for(int i = 0; i < 10; i++){
+			// prevod Big Numberu
+			delka = bdConvToOctets(pole[i], NULL, 0);
+			array = malloc(delka);
+			bdConvToOctets(pole[i], array, delka);
+		}
+		
+		for(int i = 0; i < 10; i++){
+			
+			EMPTYLINE
+			printf("Cislo poradi %d =>\n\r", i);
+			bdPrintDecimal("DEC ", pole[i], "\n\r");
+			bdPrintHex("HEX ", pole[i], "\n\r");
+		}
+				
+		EMPTYLINE
+		for(int i = 0; i < 10; i++){
+	
+			printf("Mazu %d \n\r", i);
+			bdFree (&pole[i]);
+		}
+		
+		EMPTYLINE		
+		for(int i = 0; i < 10; i++){
+			
+			EMPTYLINE
+			printf("Cislo poradi %d =>\n\r", i);
+			bdPrintDecimal("DEC ", pole[i], "\n\r");
+			bdPrintHex("HEX ", pole[i], "\n\r");
+		}
+		
+		
+	return 0;
+}
+```
