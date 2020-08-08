@@ -7,7 +7,7 @@ pole[5]= bdNew();
 bdSetShort(pole[0], 25)
 ```
 
-## obnoveni hodnoty po vyprazdneni
+## Obnoveni bloku po vyprazdneni
 	free(Test);
 	
 	Test = bdNew();	
