@@ -178,3 +178,97 @@ BIGD u, v, w;
 	bdSetShort(pole[0], 25);
 	bdConvFromHex(pole[5], "deadbeeffacedeadbeeffaceaaadeadbeeffaceaaa");
 ```
+## Appka (Fermat, bdMultiply, bdCompare)
+
+```C
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+#define EMPTYLINE printf("\n\r");
+
+int TestD(){
+	
+	EMPTYLINE
+	EMPTYLINE
+	printf("Tototo je test bloku TestD\n\r");
+
+
+	volatile BIGD pole[10];
+	BIGD result;
+
+	/* Create new BIGD objects */
+	pole[0]= bdNew();
+	pole[5]= bdNew();
+	result= bdNew();
+
+	/* Naplneni DEC hodnotami */
+	//bdSetShort(pole[0], 25);
+	//bdSetShort(pole[5], 35);
+	
+	/* Naplneni HEX hodnotami */
+	bdConvFromHex(pole[0], "dd");
+	bdConvFromHex(pole[5], "aa");
+	
+	EMPTYLINE
+	//vypis DEC hodnoty
+	bdPrintDecimal("Pole DEC[5]", pole[0], "\n\r");
+	bdPrintDecimal("Pole DEC[5]", pole[5], "\n\r");
+	
+	EMPTYLINE
+	// vypis HEX hodnoty
+	bdPrintHex("Pole HEX[0]", pole[0], "\n\r");
+	bdPrintHex("Pole HEX[5]", pole[5], "\n\r");
+
+
+	int delka;
+	uint8_t *array;
+
+	// prevod Big Numberu
+	delka = bdConvToOctets(pole[0], NULL, 0);
+	array = malloc(delka);
+	bdConvToOctets(pole[0], array, delka);
+
+
+	// prevod Big Numberu
+	delka = bdConvToOctets(pole[5], NULL, 0);
+	array = malloc(delka);
+	bdConvToOctets(pole[5], array, delka);
+	
+	
+	bdMultiply(result, pole[0], pole[5]);
+
+
+
+	/* Display the result */
+	bdPrintHex("0x", pole[0], " * ");
+	bdPrintHex("0x", pole[5], " = ");
+	bdPrintHex("0x", result, "\n\r");
+	
+	EMPTYLINE
+	/* and again in decimal format */
+	bdPrintDecimal("", pole[0], " * ");
+	bdPrintDecimal("", pole[5], " = ");
+	bdPrintDecimal("", result, "\n\r");
+
+
+	// Comparsion two arrays
+
+	int testCOMP = bdCompare(pole[0], pole[5]);
+
+	printf("\n\rCislo rozdilu je %d\n\r", testCOMP);
+	
+	
+	
+	bdFree (&pole[0]);
+	bdFree (&pole[5]);
+	bdFree (&result);
+	
+	return 0;
+
+}
+```
