@@ -99,3 +99,60 @@ BIGD AA, BB, CC;
 	free(SuperB);	
 	
 ```
+
+## Big Numbers (ConvToHex, ConvToOctets)
+
+```C
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+
+int TestB(void){
+BB u, v, w;
+
+printf("\n\r");
+printf("\n\r");
+printf("Tototo je test bloku TestB\n\r");
+
+
+/* Create new BIGD objects */
+u = bdNew();
+v = bdNew();
+w = bdNew();
+
+bdSetShort(u, 2);
+bdConvFromHex(v, "dddaaedfcbbecadadadadadadadadadadedaddaeededadadadaeadad");
+
+//bdConvFromHex(v, "deadbeeffacedead");
+
+bdMultiply(w, u, v);
+bdPrintDecimal("Napis Cislo jako DEC ", w, " \n\r");   // Tisk cisla w
+
+
+int delka = bdConvToOctets(v, NULL, 0);
+uint8_t *pole2;
+pole2 = malloc(delka);
+
+bdConvToOctets(v, pole2, delka);
+
+/* Display the result */
+	bdPrintHex("", u, " * ");
+	bdPrintHex("0x", v, " = ");
+	bdPrintHex("0x", w, "\n\r");
+	/* and again in decimal format */
+	bdPrintDecimal("", u, " * ");
+	bdPrintDecimal("", v, " = ");
+	bdPrintDecimal("", w, "\n\r");
+	
+	bdFree(&u);
+	bdFree(&v);
+	bdFree(&w);
+
+return 0;
+}
+```
