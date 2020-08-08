@@ -98,11 +98,4 @@ BIGD AA, BB, CC;
 	free(SuperA);
 	free(SuperB);	
 	
-	
-	while(1)
-	{
-		SYS_TaskHandler();
-		SYS_TimerStart(&appTimer);
-		APP_TaskHandler();
-	}
 ```
