@@ -346,7 +346,7 @@ int TestE(){
 }
 ```
 
-## Kombinance vice funkci
+## Kombinance více funkcí (NELZE)
 ```C
 int TestG(){
 	
