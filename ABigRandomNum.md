@@ -30,3 +30,15 @@ int my_rand(unsigned char *bytes, size_t nbytes, const unsigned char *seed, size
 	return 0;
 }
 ```
+
+## Funkce bdRandomSeed()
+
+```C
+BIGD u, v, w;
+
+v = bdNew();
+
+bdRandomSeeded(v, 508, (const unsigned char*)"", 0, my_rand);  // 508 bitovy klic
+bdPrintHex("random=\n", v,"\n\r");
+
+```
