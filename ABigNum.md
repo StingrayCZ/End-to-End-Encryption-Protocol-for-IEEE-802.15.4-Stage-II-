@@ -344,3 +344,37 @@ int TestE(){
 	return 0;
 }
 ```
+
+## Kombinance vice funkci
+```C
+int TestG(){
+	
+	BB a, b, c, resA, resB;
+	
+	
+	a = bdNew();
+	b = bdNew();
+	c = bdNew();
+	resA = bdNew();
+	resB = bdNew();
+	
+	
+	bdSetShort(a, 2);
+	bdSetShort(b, 4);
+	bdSetShort(c, 6);
+	
+	
+	bdMultiply(resA, bdAdd(resB, a, b), c);
+	
+	bdPrintDecimal("Vysledek Testu LambdaSAME ", resA, " \n\r");
+	
+	
+	
+	bdFree(&a);
+	bdFree(&b);
+	bdFree(&c);
+	bdFree(&resA);
+	bdFree(&resB);
+
+}
+```
