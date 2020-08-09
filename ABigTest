@@ -1,0 +1,28 @@
+## Test LambdaSameBig
+```C
+printf("Boca Chica \r\n");
+	
+	BIGD result, MOD, X, Y, a;
+	
+	result = bdNew();
+	MOD = bdNew();
+	X = bdNew();
+	Y = bdNew();
+	a = bdNew();
+	
+	
+	bdSetShort(MOD, 7);
+	bdConvFromHex(X, "2");
+	bdSetShort(Y, 4);
+	bdSetShort(a, 1);
+		
+	LamdaSame(result, MOD, X, Y, a);
+	
+	bdPrintDecimal("Vysledek Testu LambdaSAME ", result, " \n\r");   // Tisk cisla w
+	
+	bdFree(&result);
+	bdFree(&MOD);
+	bdFree(&X);
+	bdFree(&Y);
+	bdFree(&a);
+```
