@@ -64,6 +64,7 @@ BIGD AA, BB, CC;
 ```
 
 ## Comparsion of two numbers (correct solution)
+
 ```C
 	BIGD SuperA, SuperB;
 	
