@@ -41,4 +41,10 @@ v = bdNew();
 bdRandomSeeded(v, 508, (const unsigned char*)"", 0, my_rand);  // 508 bitovy klic
 bdPrintHex("random=\n", v,"\n\r");
 
+bdPrintDecimal("nahodne cislo =", v, "\n\r");
+
+bdRandomBits(w, 10);
+bdPrintBits("nahodne bity = ", w, "\n\r");
+
+
 ```
