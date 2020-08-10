@@ -2,11 +2,28 @@
 
 ## Test prvociselnosti
 
-Funkce, kde mohu zadat i pocet testu. Ovsem problem mam se zadanim hodnoty **size_t ntests**.
+Funkce, kde mohu zadat i pocet testu. Ovsem mam problem se zadanim hodnoty **size_t ntests**, zkousel jsem to zadat pomoci cisla/
 
 <p float="left">
   <img src="/Pictures (general)/Miller.PNG" width="1500" /> 
 <p float="left"> </p>
+
+```
+BB a;
+
+a = bdNew();
+
+bdConvFromHex(a, "d");   //13
+
+int bdRabinMiller  ( BIGD  b,  size_t  ntests);   
+```
+
+## Problem s podtecenim
+<p float="left">
+  <img src="/Pictures (general)/Miller.PNG" width="1500" /> 
+<p float="left"> </p>
+
+Alikace jsem sice predelal, ale problem je s mezivypocty, kterou mohou byt zaponrne. Navrhoval bych implementovat blok s random vyberem klice pomoci BIGN knihovny, s overenim pomoci MillerRabin testu, zbytek by byl stejny (aby to nejak rozumne fungovalo).
 
 # Konzultace 7.8.2020
 
