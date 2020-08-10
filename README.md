@@ -2,7 +2,7 @@
 
 ## Test prvociselnosti
 
-Funkce, kde mohu zadat i pocet testu. Ovsem mam problem se zadanim hodnoty **size_t ntests**, zkousel jsem to zadat pomoci cisla/
+Funkce, kde mohu zadat i pocet testů. Ovsem mam problem se zadanim hodnoty **size_t ntests**, zkousel jsem to zadat pomoci cisla (viz nize).
 
 <p float="left">
   <img src="/Pictures (general)/Miller.PNG" width="1500" /> 
@@ -15,7 +15,8 @@ a = bdNew();
 
 bdConvFromHex(a, "d");   //13
 
-int bdRabinMiller  ( BIGD  b,  size_t  ntests);   
+int bdRabinMiller  ( BIGD  b,  10);   
+
 ```
 
 ## Problem s podtecenim
