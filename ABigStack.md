@@ -103,12 +103,5 @@ appTimer.interval = APP_FLUSH_TIMER_INTERVAL;
 appTimer.mode = SYS_TIMER_PERIODIC_MODE;
 appTimer.handler = appTimerHandler;
 
-RSSI_Timer.interval = 1000;
-RSSI_Timer.mode = SYS_TIMER_PERIODIC_MODE;
-RSSI_Timer.handler = RSSI_TimerHandler;
-
-RSSI_a_Timer.interval = 60000;
-RSSI_a_Timer.mode = SYS_TIMER_PERIODIC_MODE;
-RSSI_a_Timer.handler = RSSI_a_TimerHandler;
 }
 ```
