@@ -1,3 +1,62 @@
+# Konzultace 10.8.2020 - Part II
+```C
+
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+#define EMPTYLINE printf("\n\r");
+
+
+int TestH(){
+	
+	
+	BB a, b, c, res;
+	
+	
+	a = bdNew();
+	b = bdNew();
+	res = bdNew();
+	
+	
+	bdConvFromHex(a, "ddddddddddddddddddddddddd");
+	bdConvFromHex(b, "ddddddddddddddddddd");
+	
+	
+	//bdSetShort(a, 4);
+	//bdSetShort(b, 5);
+	
+	int delka;
+	uint8_t *array;
+	
+	delka = bdConvToOctets(a, NULL, 0);
+	array = malloc(delka);
+	bdConvToOctets(a, array, delka);
+	
+	delka = bdConvToOctets(b, NULL, 0);
+	array = malloc(delka);
+	bdConvToOctets(b, array, delka);
+
+		
+	bdSubtract(res, b, a);
+	
+	
+	
+	bdPrintDecimal("Vysledek Testu LambdaSAME ", res, " \n\r");
+	
+	mpPrintDecimalSigned("Vysledek Testu LambdaSAME ", res, " \n\r");
+	
+	return 0;
+	
+}
+
+```
+
+
 # Konzultace 10.8.2020
 
 ## Test prvociselnosti
