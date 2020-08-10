@@ -1,3 +1,11 @@
+# Konzultace 10.8.2020
+
+## Test prvociselnosti
+
+<p float="left">
+  <img src="/Pictures (general)/Miller.PNG" width="800" /> 
+<p float="left"> </p>
+
 # Konzultace 7.8.2020
 
 ## Problém s oknem Watch
