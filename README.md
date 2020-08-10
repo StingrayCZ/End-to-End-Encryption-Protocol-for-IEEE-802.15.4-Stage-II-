@@ -99,7 +99,35 @@ bdPrintDecimal("", a, "\n\r");
 
 ```
 
-## LWM Stack
+## Data z payloadu
+
+```C
+static bool appAnchorData(NWK_DataInd_t *ind)
+{
+
+uint16_t address = ind->srcAddr;
+volatile uint16_t NodeAddress;
+volatile uint16_t NodeAddressa;
+volatile uint16_t NodeAddressb;
+NodeAddressa= ind->data[0]<<8;
+NodeAddressb= ind->data[1];
+
+NodeAddress= NodeAddressa + NodeAddressb;
+
+int8_t rssiX=ind->data[2];
+#ifdef USB_DEBUG
+printf("We got data from anchor %d: Node: %d, RSSI: %d\n\r", address,NodeAddress,rssiX);
+#endif
+
+LED0SW;
+//other lines
+matrix[address-0x401][NodeAddress-1] = rssiX;
+return true;
+
+}
+```
+
+## LWM Stack 
 
 ```C
 Možný nástřel TaskHandleru:
