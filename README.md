@@ -1,4 +1,6 @@
 # Konzultace 10.8.2020 - Part II
+
+## Problem s podtecenim
 ```C
 
 #include <stdio.h>
@@ -51,11 +53,55 @@ int TestH(){
 	mpPrintDecimalSigned("Vysledek Testu LambdaSAME ", res, " \n\r");
 	
 	return 0;
-	
 }
-
 ```
 
+## LWM Stack
+
+```C
+Možný nástřel TaskHandleru:
+
+static void APP_TaskHandler(void)
+{
+switch (appState)
+{
+case APP_STATE_INITIAL:
+{
+appInit();
+appState = APP_STATE_PHASE_A;
+} break;
+
+case APP_STATE_PHASE_A:
+{
+VYPOCTY V PHASE A;
+ODESLANI modulu p, a, b; Odeslat klidne ted, nebo stavovym priznakem ve specialni funkci
+appState = APP_STATE_PHASE_B;
+} break;
+case APP_STATE_PHASE_B:
+{
+VYPOCTY V PHASE B;
+Odeslani x, y;
+appState = APP_STATE_PHASE_C;
+} break;
+case APP_STATE_PHASE_C:
+{
+if(pokud uz prisly data od protejsku){
+Vypocty v C;
+NWK_SetSecurityKey(NOVY KLIC); pole 128b, idealne;
+appState = APP_STATE_IDLE;
+}
+
+} break;
+
+
+case APP_STATE_IDLE:
+break;
+
+default:
+break;
+}
+}
+```
 
 # Konzultace 10.8.2020
 
