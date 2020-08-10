@@ -1,32 +1,48 @@
 # Stack
 
+## Variables
+```C
+static NWK_DataReq_t appDataReq;     // appDataReq.dstAddr = 1-APP_ADDR;  payload...
+static bool appDataReqBusy = false;   //  
+static uint8_t appDataReqBuffer[APP_BUFFER_SIZE];
+```
+
+## Payload busy
 ```C
 static void appDataConf(NWK_DataReq_t *req)
 {
 appDataReqBusy = false;
 (void)req;
 }
+````
 
+## Payload busy
+
+```C
 /*************************************************************************//**
 *****************************************************************************/
-static void appSendData(void)
+static void appSendDataRSSI(void)
 {
-if (appDataReqBusy || 0 == appUartBufferPtr)
+if (appDataReqBusy)
 return;
 
-memcpy(appDataReqBuffer, appUartBuffer, appUartBufferPtr);
+//memcpy(appDataReqBuffer, appUartBuffer, appUartBufferPtr);
 
-appDataReq.dstAddr = 1-APP_ADDR;
+appDataReq.dstAddr = 0xFFFF;
 appDataReq.dstEndpoint = APP_ENDPOINT;
 appDataReq.srcEndpoint = APP_ENDPOINT;
 appDataReq.options = NWK_OPT_ENABLE_SECURITY;
-appDataReq.data = appDataReqBuffer;
-appDataReq.size = appUartBufferPtr;
+appDataReq.data = 65;
+appDataReq.size = 1;
 appDataReq.confirm = appDataConf;
 NWK_DataReq(&appDataReq);
 
 appUartBufferPtr = 0;
 appDataReqBusy = true;
+#ifdef USB_DEBUG
+printf("Data sent \n\r");
+#endif
+LED0SW;
 }
 ```
 
