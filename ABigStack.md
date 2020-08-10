@@ -39,3 +39,30 @@ printTable();
 (void)timer;
 }
 ```
+## Receive data
+static bool appDataInd(NWK_DataInd_t *ind)
+{
+
+//for (uint8_t i = 0; i < ind->size; i++)
+//HAL_UartWriteByte(ind->data[i]);
+
+uint16_t address = ind->srcAddr;
+int8_t rssi_i = ind->rssi;
+
+#ifdef USB_DEBUG
+printf("We got data from node %d, RSSI is %d\n\r", address,rssi_i);
+#endif
+
+if(APP_ADDR != 0x401){
+appSendDataRSSItoA401(address, rssi_i);
+}
+if(APP_ADDR == 0x401){
+//check if the address is under 0x401 or over - data to anchorTable
+if(address > 0x401){
+	anchorTable[0][address-0x402] = rssi_i;
+}
+else if(address < 0x401){
+	matrix[0][address-1] = rssi_i;
+}
+//matrix_distance[0][address-1] = calculateDistances();	??????????????????????????????????????????????????
+}
