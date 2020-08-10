@@ -29,3 +29,13 @@ appUartBufferPtr = 0;
 appDataReqBusy = true;
 }
 ```
+
+## Timer
+
+```C
+static void appTimerHandler(SYS_Timer_t *timer)
+{
+printTable();
+(void)timer;
+}
+```
