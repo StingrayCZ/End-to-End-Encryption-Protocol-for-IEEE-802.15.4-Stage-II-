@@ -35,10 +35,12 @@ int TestH(){
 	int delka;
 	uint8_t *array;
 	
+	// Prevod na oktety
 	delka = bdConvToOctets(a, NULL, 0);
 	array = malloc(delka);
 	bdConvToOctets(a, array, delka);
 	
+	// Prevod na oktety
 	delka = bdConvToOctets(b, NULL, 0);
 	array = malloc(delka);
 	bdConvToOctets(b, array, delka);
