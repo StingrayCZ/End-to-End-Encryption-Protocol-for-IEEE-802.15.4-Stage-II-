@@ -56,6 +56,47 @@ int TestH(){
 }
 ```
 
+## Data do payloadu
+
+```C
+static void appSendData(void)
+{
+if (appDataReqBusy || 0 == appUartBufferPtr)
+return;
+
+memcpy(appDataReqBuffer, appUartBuffer, appUartBufferPtr);
+
+appDataReq.dstAddr = 1-APP_ADDR;
+appDataReq.dstEndpoint = APP_ENDPOINT;
+appDataReq.srcEndpoint = APP_ENDPOINT;
+appDataReq.options = NWK_OPT_ENABLE_SECURITY;
+appDataReq.data = appDataReqBuffer;
+appDataReq.size = appUartBufferPtr;
+appDataReq.confirm = appDataConf;
+NWK_DataReq(&appDataReq);
+
+appUartBufferPtr = 0;
+appDataReqBusy = true;
+}
+```
+
+```C
+volatile BIGD a;
+a = bdNew();
+bdConvFromHex(a, "dd");
+
+delka = bdConvToOctets(a, NULL, 0);
+array = malloc(delka);
+bdConvToOctets(a, array, delka);
+
+/* Display the result */
+bdPrintHex("0x", a, "\n\r");
+
+/* and again in decimal format */
+bdPrintDecimal("", a, "\n\r");
+
+```
+
 ## LWM Stack
 
 ```C
