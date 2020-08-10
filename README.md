@@ -23,9 +23,9 @@ int TestH(){
 	res = bdNew();
 	
 	
-	bdConvFromHex(a, "ddddddddddddddddddddddddd");
-	bdConvFromHex(b, "ddddddddddddddddddd");
-	
+	bdConvFromHex(a, "ddddddddddddddddddddddddd");   // 1098630520197798814630476111325
+	bdConvFromHex(b, "ddddddddddddddddddd");         // 65483481895792413629917
+	 
 	
 	//bdSetShort(a, 4);
 	//bdSetShort(b, 5);
@@ -42,7 +42,7 @@ int TestH(){
 	bdConvToOctets(b, array, delka);
 
 		
-	bdSubtract(res, b, a);
+	bdSubtract(res, b, a);    // 1098630520197798814630476111325 - 65483481895792413629917 = 1098630454714316918838062481408
 	
 	
 	
