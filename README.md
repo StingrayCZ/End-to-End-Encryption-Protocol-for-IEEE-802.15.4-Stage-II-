@@ -3,7 +3,7 @@
 ## Test prvociselnosti
 
 <p float="left">
-  <img src="/Pictures (general)/Miller.PNG" width="1200" /> 
+  <img src="/Pictures (general)/Miller.PNG" width="1500" /> 
 <p float="left"> </p>
 
 # Konzultace 7.8.2020
