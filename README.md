@@ -2,6 +2,8 @@
 
 ## Test prvociselnosti
 
+Funkce, kde mohu zadat i pocet testu. Ovsem problem mam se zadanim hodnoty **size_t**
+
 <p float="left">
   <img src="/Pictures (general)/Miller.PNG" width="1500" /> 
 <p float="left"> </p>
