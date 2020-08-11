@@ -415,3 +415,25 @@ int TestK(){
 	
 }
 ```
+
+## CutOff
+
+```C
+/** Compute w = u - v using cutoff subtraction so `w >= 0` always. 
+ *  @return 1 if subtraction underflowed or 0 for normal result
+ */
+int cutoff_subtraction(BIGD w, BIGD u, BIGD v)
+{
+	int carry = 0;
+	if (bdCompare(u, v) < 0) {
+		bdSetZero(w);
+		carry = 1;
+	}
+	else {
+		bdSubtract(w, u, v);
+	}
+	return carry;
+}
+
+
+```
