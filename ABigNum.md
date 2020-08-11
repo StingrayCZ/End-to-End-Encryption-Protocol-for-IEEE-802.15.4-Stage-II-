@@ -379,3 +379,39 @@ int TestG(){
 
 }
 ```
+
+## Naliti hodnoty do BigD
+```C
+
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+#define EMPTYLINE printf("\n\r");
+
+
+int TestK(){
+	
+	
+	BB a;
+	
+	
+	a = bdNew();
+	
+	int s = 26360;
+	
+	bdSetShort(a, s);
+
+
+
+	bdPrintDecimal("Vysledek TestuK LambdaSAME ", a, " \n\r");
+	
+	
+	return 0;
+	
+}
+```
