@@ -1,6 +1,6 @@
 # Konzultace 13.8.2020
 
-Appka na odecitani, ktera resi problem se zapornym cislem. Pokud je vstup např. **360 - 5** provede se porovnani (**compare = bdCompare(a, b**), zda prvni hodnota je vetsi/mensi. Pokud je vetsi, probehne funkce na odecitani **bdSubstract(a, b);**, pokud je ovšem příklad **5 - 360**, provede se **bdSubstract(b, a);**.
+Appka na odecitani, ktera resi problem zaporneho cisla. Pokud je vstup např. **360 - 5** provede se porovnani (**compare = bdCompare(a, b**), zda prvni hodnota je vetsi/mensi. Pokud je vetsi, probehne funkce na odecitani **bdSubstract(a, b);**, pokud je ovšem příklad **5 - 360**, provede se **bdSubstract(b, a);**.
 
 Zaporné číslo zaniká v operaci **Modulo**. Zde v případě záporného vstupu je přidána další operace **bdSubstract**, která číslo invertuje (mod - vysledekMOD = konecny vysledek).
 
