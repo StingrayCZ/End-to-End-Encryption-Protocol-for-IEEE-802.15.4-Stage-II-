@@ -82,10 +82,10 @@ int TestK(){
 ```
 
 
-# Vlozeni klice do funkce
+# Vlozeni klice do funkce NWK_SetSecurityKey
 
 <p float="left">
-  <img src="/Pictures (general)/SecureA.PNG" width="1500" /> 
+  <img src="/Pictures (general)/SecurityA.PNG" width="1500" /> 
 <p float="left"> </p>
 
 ```C
