@@ -68,3 +68,41 @@ int LamdaDiffBIGD(BB RESULT, BB MOD, BB Xi, BB Yi, BB Xj, BB Yj)
 }
 
 ```
+
+## LamdaDiffBig (hader)
+
+```C
+printf("Test Lambda Diff\n\r");
+	
+	BB RESULT, MOD, Xi, Yi, Xj, Yj;
+	
+	RESULT = bdNew();
+	MOD = bdNew();
+	Xi = bdNew();
+	Yi = bdNew();
+	Xj = bdNew();
+	Yj = bdNew();
+	
+	
+	bdConvFromHex(MOD, "7");
+	bdConvFromHex(Xi, "6");
+	bdConvFromHex(Yi, "5");
+	bdConvFromHex(Xj, "4");
+	bdConvFromHex(Yj, "5");
+	
+	
+	
+		
+	LamdaDiffBIGD(RESULT, MOD, Xi, Yi, Xj, Yj);
+	
+	
+	bdPrintDecimal("Lambda", RESULT, " \n\r");
+	
+	
+	bdFree(&MOD);
+	bdFree(&Xi);
+	bdFree(&Yi);
+	bdFree(&Xj);
+	bdFree(&Yj);
+
+```
