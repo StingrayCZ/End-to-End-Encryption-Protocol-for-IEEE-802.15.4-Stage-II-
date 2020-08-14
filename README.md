@@ -1,3 +1,137 @@
+# Konzultace 14.8.2020
+
+```C
+#include <stdio.h>
+#include <assert.h>
+
+/////BIG N libs///////
+#include "BigN/bigd.h"
+#include "BigN/bigdRand.h"
+#define BB BIGD
+#define EMPTYLINE printf("\n\r");
+
+//PointCompBIGD(X, Y, a, mod, &iteration, &STOPval);
+//int PointCompBIGD(BB X, BB Y, BB a_asymptote, BB modulus, uint32_t *iteration, int *STOPval)		
+
+
+int PointCompBIGD(BB X, BB Y, BB a_asymptote, BB modulus, BB ResultX, BB ResultY, uint32_t *iteration, int *STOPval)
+{
+	
+	BB Xi, Yi, Xj, Yj;
+	BB mod, a, lambda;
+	
+	BB resultBigA, resultBigB, resultBigC;
+	
+	uint32_t repeat, result; 
+	
+	assert(X && Y && a_asymptote && modulus && ResultX && ResultY);
+
+	
+	Xi = bdNew();
+	Yi = bdNew();
+	Xj = bdNew();
+	Yj = bdNew();
+	
+	mod = bdNew();
+	a = bdNew();
+	lambda = bdNew();	
+	
+		
+	resultBigA = bdNew();	
+	resultBigB = bdNew();
+	resultBigC = bdNew();
+	
+	
+	bdSetEqual(Xi, X);
+	bdSetEqual(Yi, Y);
+	
+	bdSetEqual(Xj, Xi);
+	bdSetEqual(Yj, Yi);
+
+	
+	bdSetEqual(a, a_asymptote);
+	bdSetEqual(mod, modulus);
+	
+	
+	// Value for number of iteration
+	repeat = *iteration;	
+	
+
+	for(uint32_t i = 1; i <= repeat - 2; i++)
+	{
+		RecogniserBIGD(&result, Xi, Yi, Xj, Yj);
+		
+		printf("Napis  rozpoznan %d ", result);
+
+		if(result == 1)
+		{
+			LamdaSameBIGD(resultBigA, mod, Xi, Yi, a);
+			
+			bdPrintDecimal("Lambda SAME = ", resultBigA, " \n\r");	
+			
+			XSameBIGD(resultBigB, mod, resultBigA, Xi);
+			
+			YUniBIGD(resultBigC, mod, resultBigA, Xi, Yi, resultBigB);
+			
+			
+			*STOPval = 1;
+			
+
+		}
+
+		else if(result == 2)
+		{
+			LamdaDiffBIGD(resultBigA, mod, Xi, Yi, Xj, Yj);
+			
+			bdPrintDecimal("Lmbda Diff = ", resultBigA, " \n\r");	
+
+			
+			XDiffBIGD(resultBigB, mod, resultBigA, Xi, Xj);
+			
+			YUniBIGD(resultBigC, mod, resultBigA, Xi, Yi, resultBigB);
+			
+			bdPrintDecimal("Xin", resultBigB, " \n\r");
+			bdPrintDecimal("Yin", resultBigC, " \n\r");
+
+			*STOPval = 1;
+			
+
+		}
+
+		else if(result == 66)
+		{
+			
+			*STOPval = 66;
+		}
+		
+		
+		
+		bdSetEqual(Xj, resultBigB);	
+		bdSetEqual(Yj, resultBigC);	
+
+	}
+	
+	
+	bdPrintDecimal("Xin", resultBigB, " \n\r");
+	bdPrintDecimal("Yin", resultBigC, " \n\r");	
+
+
+	bdSetEqual(ResultX, resultBigB);	
+	bdSetEqual(ResultY, resultBigC);	
+	
+	
+	bdFree(&Xi);
+	bdFree(&Yi);
+	bdFree(&Xj);
+	bdFree(&Yj);
+	
+	bdFree(&mod);
+	bdFree(&a);
+	bdFree(&lambda);
+	
+}
+```
+
 # Konzultace 13.8.2020
 
 Appka na odecitani, ktera resi problem zaporneho cisla. Pokud je vstup např. **360 - 5** provede se porovnani (**compare = bdCompare(a, b**), zda prvni hodnota je vetsi/mensi. Pokud je vetsi, probehne funkce na odecitani **bdSubstract(a, b);**, pokud je ovšem příklad **5 - 360**, provede se **bdSubstract(b, a);**.
