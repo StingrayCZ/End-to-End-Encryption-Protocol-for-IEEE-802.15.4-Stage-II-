@@ -3,7 +3,7 @@
 ## 1 # Otazka
 Mam problem s funkci preudonahodneho cisla. Jednak mi nefunguje původní funkce ***my_rand***, která má ovšem tu nevýhodu, že pořád dokola dává stejnou hodnotu. K manualu je primo napsane, ze je mozne k funlci primo napojit vlastni **random** funkci. <br/>
 
-Níže je pokus, jak implementovat funkci **PHY_RandomReq()**.
+Níže je pokus, jak implementovat funkci **PHY_RandomReq()**, ktery ovsem nefunguje.
 
 ```C
 BIGD a;
@@ -51,6 +51,9 @@ void randomize(void)
   {
      srand(PHY_RandomizeReq());
  }
+
+
+bdRandomSeeded(mod, 128, (const unsigned char*)"", 0, randomize);
 ```
 
 
