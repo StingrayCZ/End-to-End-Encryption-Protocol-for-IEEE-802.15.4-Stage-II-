@@ -5,10 +5,14 @@ Mam problem s funkci preudonahodneho cisla. Jednak mi nefunguje původní funkce
 
 Níže je pokus, jak implementovat funkci **PHY_RandomReq()**.
 
-
-
 ```C
-bdRandomSeeded(a, 128, (const unsigned char*)"", 0, my_rand);  // 512 bits key
+BIGD a;
+
+mod = bdNew();
+
+bdRandomSeeded(mod, 128, (const unsigned char*)"", 0, my_rand);  // 518 bits key
+
+bdPrintDecimal("mod = ", a, " \n\r");
 
 ```
 
@@ -49,3 +53,18 @@ void randomize(void)
  }
 ```
 
+
+## 2 # Otazka
+Pomoci prikazu **for** aplikace porovnava hodnoty Xove a Yove tabulky a tak urci prvni bod. Ovsem je zde problem pokud bude modulo velke, tim vzroste i pocet moznych bodu / iteraci, coz je pro cyklus **for** neunosne.
+
+Z toho vychazi, ze grupa lze vytvorit s velkymi hodnotami pro asymptory **a** a **b**, ale s mayl ciselm modulo, tak do hodnoty 1000. Je to i z dovodu rychlosti aplikace. **Je to tak mozne nechat?**
+
+```C
+for(uint32_t  k = 0; k <= X_iter; k++)  // Give X's
+	{
+		for(uint32_t  i = 0; i <= Y_iter; i++)  // Give Y's
+		{
+			
+			compareA = bdCompare(poleA[i], poleB[i]);
+			
+```
