@@ -1,6 +1,6 @@
 # Konzultace 18.8.2020
 
-
+Stack ke stazeni <a href="https://github.com/StingrayCZ/End-to-End-Encryption-Protocol-for-IEEE-802.15.4-Stage-II-/blob/master/Stack%2018%208%202020.zip">zde</a>.
 
 # 1# Otazka - my_rand
 
