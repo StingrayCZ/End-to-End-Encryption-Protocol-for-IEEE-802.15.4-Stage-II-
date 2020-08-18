@@ -78,8 +78,11 @@ static bool PHASE_A(NWK_DataInd_t *ind)
 
 }
 ```
+# 3# Otazka - prijimani dat... 
 
-Faze prijmuti dat (deska B) z faze A
+Toto asi bude fungovat. Ovsem je zde problem s mazanim objektu. Pokud je smazu pomoci, treba bdFree(&Mod), tak ulozena hodnota se ztrati. 
+
+
 ```C
 static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
 {
@@ -96,9 +99,29 @@ static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
 	
 	ECDH_PHASE_BB_BIGD(MOD, a_parameter, b_parameter, resultsBB);
 	
+	// odeslat data??
+	
+	// proces mazani
+	bdFree(&MOD)
 	
 	
 }
+
+static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
+{
+	MOD = bdNew();
+	resultsBB[0] = bdNew();  // souradnice X
+	resultsBB[1] = bdNew();  // souradnice Y
+
+	MOD = ind->data[0];
+	a_parameter = ind->data[1];
+	a_parameter = ind->data[2];
+	
+	ECDH_PHASE_BB_BIGD(MOD, a_parameter, b_parameter, resultsBB);
+	
+	
+}
+
 ```
 
 ## ECDH Componets
