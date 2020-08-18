@@ -11,7 +11,7 @@ V aplikacich **ECDH_Phase_A_Big** a **SecretKey_Big** je naimplentovana aplikace
 </p>
 
 
-# 3# Otazka - posilani dat mezi deskami
+# 2# Otazka - posilani dat mezi deskami
 
 Jak spravne odeslat pole velkych cisel? Je potreba prevest na oktety (blok nize)?
 
@@ -76,6 +76,27 @@ static bool PHASE_A(NWK_DataInd_t *ind)
  
  
 
+}
+```
+
+Faze prijmuti dat (deska B) z faze A
+```C
+static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
+{
+	MOD = bdNew();
+	a_parameter = bdNew();
+	b_parameter = bdNew();
+	resultsBB[0] = bdNew();
+	resultsBB[1] = bdNew();
+
+	MOD = ind->data[0];
+	a_parameter = ind->data[1];
+	a_parameter = ind->data[2];
+	
+	ECDH_PHASE_BB_BIGD(MOD, a_parameter, b_parameter, resultsBB);
+	
+	
+	
 }
 ```
 
