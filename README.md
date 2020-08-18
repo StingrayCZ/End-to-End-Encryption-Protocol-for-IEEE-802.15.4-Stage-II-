@@ -134,6 +134,42 @@ case APP_STATE_FazeA
 Odeslani dat z Faze
 
 ```C
+static void SendDataBA(void)
+{
+	BB data[3];
+	
+	data[0] = bdNew();
+	data[1] = bdNew();
+	data[2] = bdNew();
+	
+	
+	data[0] = MOD;
+	data[1] = a_parameter;
+	data[2] = b_parameter;
+	
+
+	appDataReq.dstAddr = 0xFFFF;
+	appDataReq.dstEndpoint = 3;
+	appDataReq.srcEndpoint = 2;
+	//appDataReq.options = NWK_OPT_ENABLE_SECURITY;
+	appDataReq.data = data;
+	appDataReq.size = 7;
+	appDataReq.confirm = appDataConf;
+	NWK_DataReq(&appDataReq);
+
+
+	appDataReqBusy = true;
+	
+	
+	// Posilam data data
+	printf("Odeslana data: ", appDataReq.data);
+	
+}
+
+```
+
+
+```C
 static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
 {
         // aktivace bloku
