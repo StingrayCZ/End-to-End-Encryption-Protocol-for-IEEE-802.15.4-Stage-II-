@@ -40,12 +40,17 @@ KEY = bdNew();
 
 ```C
 // Faze A
-ECDH_PHASE_A_BIGD(MOD, a_parameter, b_parameter, resultsA)
-
+ECDH_PHASE_A_BIGD(MOD, a_parameter, b_parameter, resultsA);
+// Aplikace voli 
+// Generuje pole: resultsA[0]->xf
+                  resultsA[1]->yf
+		  resultsA[2]->Order
 
 
 // Faze B (deska A)
 ECDH_PHASE_BA_BIGD(Order, Xf, Yf, a_parameter, MOD, BB resultsBA);
+Vstup: Order, Xf, Yf, a_parameter
+Vystup: 
 
 
 
@@ -57,76 +62,49 @@ ECDH_PHASE_BB_BIGD(MOD, a_parameter, b_parameter, resultsBB);
 ECDH_PHASE_C_BIGD(Xm, Ym, Xo, Yo, MOD, a_parameter, BB KEY);
 ```
 
-# Konzultace 17.8.2020
 
-## 1 # Otazka
-Mam problem s funkci preudonahodneho cisla. Jednak mi nefunguje původní funkce ***my_rand***, která má ovšem tu nevýhodu, že pořád dokola dává stejnou hodnotu. K manualu je primo napsane, ze je mozne k funlci primo napojit vlastni **random** funkci. <br/>
+# 1# Otazka - 
 
-Níže je pokus, jak implementovat funkci **PHY_RandomReq()**, ktery ovsem nefunguje.
-
-```C
-BIGD a;
-
-mod = bdNew();
-
-bdRandomSeeded(mod, 128, (const unsigned char*)"", 0, my_rand);  // 518 bits key
-
-bdPrintDecimal("mod = ", a, " \n\r");
-
-```
+<p float="left">
+  <img src="/Pictures (general)/PicError.PNG" width="800" /> 
+</p>
 
 ```C
-int my_rand(unsigned char *bytes, size_t nbytes, const unsigned char *seed, size_t seedlen)
-	/* Our own (very insecure) random generator call-back function using good old rand()
-	This demonstrates the required format for BD_RANDFUNC
-	-- replace this in practice with your own cryptographically-secure function.
-	*/
-	{
-		unsigned int myseed;
-		size_t i;
-		int offset;
+static void SendDataA(void)
+{
+	adata[0]=address>>8; //first 8 bits from the left
+	data[1]=address & 0xff; //last 8 bits
+	data[2]=rssi_i;
 
-		/* Use time - then blend in seed, if any */
-		myseed = (unsigned)time(NULL);
-		if (seed)
-		{
-			for (offset = 0, i = 0; i < seedlen; i++, offset = (offset + 1) % sizeof(unsigned))
-			myseed ^= ((unsigned int)seed[i] << (offset * 8));
-		}
-		
+
+	appDataReq.dstAddr = 0xFFFF;
+	appDataReq.dstEndpoint = 2;
+	appDataReq.srcEndpoint = 1;
+	//appDataReq.options = NWK_OPT_ENABLE_SECURITY;
+	appDataReq.data = data;
+	appDataReq.size = 3;
+	appDataReq.confirm = appDataConf;
+	NWK_DataReq(&appDataReq);                           // odeslani dat
+
+
+	appDataReqBusy = true;
 	
-		srand(myseed);
-		while (nbytes--)
-		{
-			*bytes++ = rand() & 0xFF;
-		}
+	
+	// Posilam data data
+	printf("Odeslana data: ", appDataReq.data);
+	
+}
 
-		return 0;
-	}
+
+
+static bool PHASE_A(NWK_DataInd_t *ind)
+{ 
+
+ ECDH_PHASE_A_BIGD(MOD, a_parameter, b_parameter, resultsA);
+ 
+ 
+
+}
 ```
 
-```C
-void randomize(void)
-  {
-     srand(PHY_RandomizeReq());
- }
 
-
-bdRandomSeeded(mod, 128, (const unsigned char*)"", 0, randomize);
-```
-
-
-## 2 # Otazka
-Pomoci prikazu **for** aplikace porovnava hodnoty Xove a Yove tabulky a tak urci prvni bod. Ovsem je zde problem pokud bude modulo velke, tim vzroste i pocet moznych bodu (iteraci), coz je pro cyklus **for** neunosne.
-
-Z toho vychazi, ze grupa lze vytvorit s velkymi hodnotami pro asymptory **a** a **b**, ale s mayl ciselm modulo, tak do hodnoty 1000. Je to i z dovodu rychlosti aplikace. **Je to tak mozne nechat?**
-
-```C
-for(uint32_t  k = 0; k <= X_iter; k++)  // Give X's
-	{
-		for(uint32_t  i = 0; i <= Y_iter; i++)  // Give Y's
-		{
-			
-			compareA = bdCompare(poleA[i], poleB[i]);
-			
-```
