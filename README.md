@@ -83,6 +83,7 @@ Faze prijmuti dat (deska B) z faze A
 ```C
 static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
 {
+        // aktivace bloku
 	MOD = bdNew();
 	a_parameter = bdNew();
 	b_parameter = bdNew();
