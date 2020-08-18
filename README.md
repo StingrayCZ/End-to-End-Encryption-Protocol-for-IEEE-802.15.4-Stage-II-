@@ -167,8 +167,10 @@ static void SendDataBA(void)
 }
 
 ```
+
 </br>
 Prijem dat z Faze A
+
 ```C
 static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
 {
