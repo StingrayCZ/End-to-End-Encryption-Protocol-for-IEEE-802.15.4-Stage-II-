@@ -1,7 +1,7 @@
 # Konzultace 18.8.2020
 
 ```C
-// Faze A
+// Variables
 BB MOD, a_parameter, b_parameter;
 volatile BB resultsA[2];
 
@@ -36,25 +36,23 @@ Ym = bdNew();
 Xo = bdNew();
 Yo = bdNew();
 KEY = bdNew();
+```
 
+```C
+// Faze A
 ECDH_PHASE_A_BIGD(MOD, a_parameter, b_parameter, resultsA)
-```
 
-```C
-BB Oder, 
 
-// Face B (deska A)
+
+// Faze B (deska A)
 ECDH_PHASE_BA_BIGD(Order, Xf, Yf, a_parameter, MOD, BB resultsBA);
-```
 
 
 
-```C
 // Face B (deska B)
 ECDH_PHASE_BB_BIGD(MOD, a_parameter, b_parameter, resultsBB);
-```
 
-```C
+
 // Face C
 ECDH_PHASE_C_BIGD(Xm, Ym, Xo, Yo, MOD, a_parameter, BB KEY);
 ```
