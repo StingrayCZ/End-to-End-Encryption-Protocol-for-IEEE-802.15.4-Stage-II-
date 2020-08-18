@@ -80,8 +80,58 @@ static bool PHASE_A(NWK_DataInd_t *ind)
 ```
 # 3# Otazka - prijimani dat... 
 
-Toto asi bude fungovat. Ovsem je zde problem s mazanim objektu. Pokud je smazu pomoci, treba bdFree(&Mod), tak ulozena hodnota se ztrati. 
+Toto asi bude fungovat. Ovsem je zde problem s mazanim objektu. Pokud je smazu pomoci, treba bdFree(&Mod), tak ulozena hodnota se ztrati. </br>
 
+Spusteni Faze A
+```C
+static void APP_TaskHandler(void)
+{
+	
+
+	MOD = bdNew();
+	a_parameter = bdNew();
+	b_parameter = bdNew();
+	resultsA[0] = bdNew();
+	resultsA[1] = bdNew();
+	resultsA[2] = bdNew();
+	Order = bdNew();
+	Xf = bdNew();
+	Yf = bdNew();
+	
+	resultsBA[0] = bdNew();
+	resultsBA[1] = bdNew();
+	resultsBA[2] = bdNew();
+	
+	resultsBB[0] = bdNew();
+	resultsBB[1] = bdNew();
+	resultsBB[2] = bdNew();
+
+	Xm = bdNew();
+	Ym = bdNew();
+	Xo = bdNew();
+	Yo = bdNew();
+	KEY = bdNew();
+	
+	
+switch (appState)
+{
+case APP_STATE_Init:
+{
+	appInit();
+	appState = APP_STATE_FazeA;
+
+} break;
+
+case APP_STATE_FazeA
+{ 
+	ECDH_PHASE_A_BIGD(MOD, a_parameter, b_parameter, resultsA);
+	
+	
+}
+```
+
+</br>
+Odeslani dat z Faze
 
 ```C
 static bool SendFromAToB_BB(NWK_DataInd_t *ind)  // Version BA
