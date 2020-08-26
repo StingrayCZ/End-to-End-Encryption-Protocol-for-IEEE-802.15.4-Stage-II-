@@ -7,5 +7,5 @@ Prezentace v PDF ke stažení <a href="https://github.com/StingrayCZ/End-to-End-
 ## Prezentace
 
 <p float="left">
-  <img src="/Pictures (general)/Presentation SEP 2020/01.png" width="400" /> 
+  <img src="/Pictures (general)/Presentation SEP 2020/01.png" width="900" /> 
 </p>
